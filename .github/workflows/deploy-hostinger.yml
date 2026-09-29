@@ -12,8 +12,11 @@ jobs:
     environment: production
     steps:
       - name: Trigger Hostinger deployment
-        if: ${{ secrets.HOSTINGER_DEPLOY_HOOK != '' }}
-        run: curl --fail --silent --show-error --request POST "${{ secrets.HOSTINGER_DEPLOY_HOOK }}"
-      - name: Explain missing setup
-        if: ${{ secrets.HOSTINGER_DEPLOY_HOOK == '' }}
-        run: echo "Add HOSTINGER_DEPLOY_HOOK to the production environment, or use Hostinger's native Git integration."
+        env:
+          HOSTINGER_DEPLOY_HOOK: ${{ secrets.HOSTINGER_DEPLOY_HOOK }}
+        run: |
+          if [[ -n "$HOSTINGER_DEPLOY_HOOK" ]]; then
+            curl --fail --silent --show-error --request POST "$HOSTINGER_DEPLOY_HOOK"
+          else
+            echo "Add HOSTINGER_DEPLOY_HOOK to the production environment, or use Hostinger's native Git integration."
+          fi
