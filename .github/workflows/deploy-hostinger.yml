@@ -32,6 +32,7 @@ jobs:
           git config user.email a@b
           git checkout --orphan hostinger-dist
           git rm -rf .
+          git clean -fdx
           cp -R /tmp/tech-updates-site/. .
           touch .nojekyll
           git add --all
