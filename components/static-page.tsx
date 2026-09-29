@@ -1,0 +1,1 @@
+export function StaticPage({eyebrow,title,children}:{eyebrow:string;title:string;children:React.ReactNode}){return <main className="static-page shell"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><div className="prose">{children}</div></main>}

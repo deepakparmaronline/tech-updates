@@ -1,0 +1,13 @@
+import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArticleCard } from '@/components/article-card';
+import { Newsletter } from '@/components/site-footer';
+import { formatDate, getAllArticles, getCategories } from '@/lib/articles';
+
+export default function Home(){const articles=getAllArticles();const featured=articles.find(a=>a.featured)||articles[0];const categories=getCategories();return <main>
+  <section className="hero shell"><div><p className="eyebrow"><Sparkles/> Real tech problems. Real solutions.</p><h1>Make sense of the tech conversations shaping today.</h1><p className="lede">Clear, practical reporting on AI, search, code, and automation—built from the questions real people are asking.</p><a className="primary-button" href="#latest">Read today&apos;s updates <ArrowRight/></a></div>{featured&&<a className="hero-card" href={`/articles/${featured.slug}/`}><div className="visual-grid" style={{backgroundImage:`linear-gradient(135deg,rgba(37,99,235,.72),rgba(15,23,42,.8)),url(${featured.featuredImage})`}}><span>01</span><strong>{featured.category.slice(0,3)}</strong><em>{formatDate(featured.date)}</em></div><div className="hero-card-copy"><span className="tag">Featured</span><h2>{featured.title}</h2><p>{featured.description}</p></div></a>}</section>
+  <section className="section shell"><div className="section-heading"><div><p className="eyebrow">Fresh reporting</p><h2>Trending today</h2></div><a href="/search/">View all <ArrowRight/></a></div><div className="story-grid">{articles.slice(0,3).map((a,i)=><ArticleCard key={a.slug} article={a} index={i}/>)}</div></section>
+  <section className="section surface" id="latest"><div className="shell"><div className="section-heading"><div><p className="eyebrow">Always current</p><h2>Latest articles</h2></div></div><div className="story-grid">{articles.map((a,i)=><ArticleCard key={a.slug} article={a} index={i}/>)}</div></div></section>
+  <section className="section shell" id="categories"><div className="section-heading"><div><p className="eyebrow">Browse a beat</p><h2>Explore categories</h2></div></div><div className="category-grid">{categories.map((c,i)=>{const count=articles.filter(a=>a.category===c).length;return <a key={c} href={`/category/${c.toLowerCase()}/`}><span>0{i+1}</span><h3>{c}</h3><p>{count} {count===1?'article':'articles'}</p><ArrowRight/></a>})}</div></section>
+  <div className="shell"><Newsletter/></div>
+  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({'@context':'https://schema.org','@type':'Organization',name:'Tech Updates',url:process.env.NEXT_PUBLIC_SITE_URL||'https://techupdates.example.com'})}}/>
+  </main>}
