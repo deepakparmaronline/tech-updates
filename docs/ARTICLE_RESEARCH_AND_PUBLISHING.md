@@ -58,9 +58,9 @@ Repeat this process independently for each of the day's five categories.
 1. Open <https://www.reddit.com/>.
 2. Enter the exact category name in Reddit's visible search box.
 3. Select **Posts**.
-4. Set the time filter to **Today**.
+4. Do **not** apply a Today-only time filter. Use Reddit's general Posts results so useful discussions are not excluded by an artificial 24-hour window.
 5. Prefer **Top** sorting when Reddit offers it. If Top is unavailable, use the best visible ranking and manually compare recency, votes, comment activity, relevance, and discussion quality.
-6. Review at least five useful results when five are available. Ignore advertisements, promoted posts, spam, duplicate posts, jokes without substance, unsupported rumors, and unrelated results.
+6. Review at least **10 useful results when 10 are available**. Ignore advertisements, promoted posts, spam, duplicate posts, jokes without substance, unsupported rumors, and unrelated results.
 7. Do not automatically choose the first result. Prefer a current thread with a genuine reader problem, meaningful comments, a distinct angle, and claims that can be verified.
 8. Open the strongest thread. Read the complete original post, leading comments, useful replies, disagreements, attempted fixes, repeated questions, misconceptions, and unresolved points.
 9. Record the query, thread title, URL, subreddit, age, visible score, visible comment count, and why it was chosen.
