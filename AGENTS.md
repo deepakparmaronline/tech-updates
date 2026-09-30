@@ -61,14 +61,14 @@ A normal article therefore requires no component or route change. Add the Markdo
 ## Article file contract
 
 - Location: `content/articles/`
-- Filename: `YYYY-MM-DD-topic-slug.md`
+- Filename: `YYYY-MM-DD-topic-slug.md` (the date remains an internal source filename, not part of the public URL).
 - Use YAML frontmatter matching an existing article.
 - Required metadata includes `title`, `description`, `category`, `author`, `date`, `readingTime`, `featuredImage`, `tags`, at least three `keyTakeaways`, and at least six `faqs`.
 - Use `author: Tech Updates` unless the repository owner explicitly adds another author.
 - The featured image must exist under `public/images/` and the frontmatter path must start with `/images/`.
 - The article must be at least 1,200 original words; 1,500–2,000 words is the normal target.
 - Required headings and writing rules are defined in `docs/CONTENT_STYLE.md`.
-- Internal links must point only to routes that exist.
+- Internal links must point only to routes that exist. Public article URLs use `/articles/topic-slug/` without the publication date.
 - Important factual claims must cite current primary or authoritative sources in the prose.
 
 ## Category behavior
