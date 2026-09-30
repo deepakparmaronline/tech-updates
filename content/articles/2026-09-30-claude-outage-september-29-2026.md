@@ -64,7 +64,7 @@ Treat an outage as a reliability test. Keep logs, make retries idempotent where 
 
 ## Related Reading
 
-See our [AI agents privacy guide](/articles/2026-09-29-ai-agents-privacy/) for a broader approach to controlling automated systems.
+See our [AI agents privacy guide](/articles/ai-agents-privacy/) for a broader approach to controlling automated systems.
 
 ### Practical checks for the next week
 
