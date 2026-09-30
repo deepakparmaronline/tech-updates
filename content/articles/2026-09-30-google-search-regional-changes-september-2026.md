@@ -64,7 +64,7 @@ Make SEO measurement regional when Search features are regional. Keep technical 
 
 ## Related Reading
 
-See our [Next.js static SEO guide](/articles/2026-09-26-nextjs-static-seo/) for a broader technical SEO workflow.
+See our [Next.js static SEO guide](/articles/nextjs-static-seo/) for a broader technical SEO workflow.
 
 ### Practical checks for the next week
 
