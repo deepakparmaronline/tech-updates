@@ -94,4 +94,4 @@ A static publication becomes reliable when the build owns consistency. One artic
 
 ## Related Reading
 
-See the [GitHub Actions workflow pattern](/articles/2026-09-28-github-actions-automation/) that validates and ships this architecture.
+See the [GitHub Actions workflow pattern](/articles/github-actions-automation/) that validates and ships this architecture.
