@@ -94,4 +94,4 @@ The best pipeline is boring in the right ways. It fails early, builds once, depl
 
 ## Related Reading
 
-Read [how to control AI agent permissions](/articles/2026-09-29-ai-agents-privacy/) before giving an automated publisher repository access.
+Read [how to control AI agent permissions](/articles/ai-agents-privacy/) before giving an automated publisher repository access.
