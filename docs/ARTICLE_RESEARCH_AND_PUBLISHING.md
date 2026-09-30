@@ -65,9 +65,9 @@ Repeat this process independently for each of the day's five categories.
 8. Open the strongest thread. Read the complete original post, leading comments, useful replies, disagreements, attempted fixes, repeated questions, misconceptions, and unresolved points.
 9. Record the query, thread title, URL, subreddit, age, visible score, visible comment count, and why it was chosen.
 
-If the exact category search is too broad, try focused variants such as `[category] problem`, `[category] update`, `[category] error`, `[category] feature`, or `[category] workflow`, while retaining Posts and Today. Do not claim a filter was applied unless it was visibly confirmed.
+If the exact category search is too broad, try focused variants such as `[category] problem`, `[category] update`, `[category] error`, `[category] feature`, or `[category] workflow`, while retaining Posts and the general Posts search. Do not add a Today-only restriction. Do not claim a filter was applied unless it was visibly confirmed.
 
-If no responsible topic exists in the previous 24 hours, try reasonable search variations and relevant subreddits. Extend to 48 hours only when necessary and disclose the exception. Never fabricate a trend. If no suitable topic exists, skip it and report every query attempted rather than publishing weak content.
+If no responsible topic exists in the initial results, try reasonable search variations and relevant subreddits. There is no mandatory 24-hour or 48-hour cutoff; select the most useful current discussion available and record the search scope. Never fabricate a trend. If no suitable topic exists, skip it and report every query attempted rather than publishing weak content.
 
 ## Phase 3: topic qualification
 
@@ -154,7 +154,7 @@ Report:
 
 - date, start and completion time;
 - rotation day, assigned categories, new categories discovered, and next rotation day;
-- for each category: Reddit query, Posts/Today confirmation, chosen thread, subreddit, visible activity, selection reason, reader questions, and authoritative sources;
+- for each category: Reddit query, Posts confirmation, ranking/scope used, chosen thread, subreddit, visible activity, selection reason, reader questions, and authoritative sources;
 - for each article: title, category, Markdown file, image file, word count, and live URL;
 - validation, build, commit, push, GitHub Actions, Hostinger, homepage, and category-page results; and
 - every skipped topic, exception, failure, missing permission, or manual action required.
