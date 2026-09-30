@@ -20,7 +20,7 @@ export function getAllArticles(): Article[] {
   }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 export const getArticle = (slug: string) => getAllArticles().find((article) => article.slug === slug);
-export const CATEGORIES = ['AI','ChatGPT','Google','Microsoft','Apple','SEO','Automation','Coding','Python','WordPress'];
+export const CATEGORIES = ['AI','ChatGPT','OpenAI','Google','Gemini','Claude','Microsoft','Apple','SEO','Automation','Coding','Python','WordPress'];
 export const getCategories = () => CATEGORIES;
 export const formatDate = (value: string) => new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(value));
 export function getRelated(article: Article) { return getAllArticles().filter((item) => item.slug !== article.slug).sort((a,b) => Number(b.category === article.category) - Number(a.category === article.category) || b.tags.filter((t) => article.tags.includes(t)).length - a.tags.filter((t) => article.tags.includes(t)).length).slice(0,3); }
