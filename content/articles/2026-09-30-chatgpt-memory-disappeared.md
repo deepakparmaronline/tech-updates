@@ -90,4 +90,4 @@ Missing memory is usually diagnosable. Confirm the account and workspace first, 
 
 ## Related Reading
 
-Continue with our guide to [AI agent privacy](/articles/2026-09-29-ai-agents-privacy/) and the practical overview of [GitHub automation](/articles/2026-09-28-github-actions-automation/).
+Continue with our guide to [AI agent privacy](/articles/ai-agents-privacy/) and the practical overview of [GitHub automation](/articles/github-actions-automation/).
