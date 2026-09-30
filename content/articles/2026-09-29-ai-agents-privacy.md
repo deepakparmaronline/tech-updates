@@ -94,4 +94,4 @@ Useful agents need access, but they rarely need all access. Narrow the job, narr
 
 ## Related Reading
 
-See our [GitHub Actions automation guide](/articles/2026-09-28-github-actions-automation/) for a practical example of staged validation and deployment.
+See our [GitHub Actions automation guide](/articles/github-actions-automation/) for a practical example of staged validation and deployment.
