@@ -78,6 +78,17 @@ Keep a short evidence log while you test. Note the date, exact product surface, 
 
 Before publishing a change, check the exact current documentation one more time. Fast-moving products can change between research and implementation, and a dated source is safer than an undated summary.
 
+
+### Implementation notes
+
+There is another practical reason to slow down during a fast product change: the visible symptom is not always the real problem. A user may describe a feature as missing when it has moved, an account may appear different because of a workspace policy, or an API request may fail because a dependency changed rather than because the model or service is unavailable. Good troubleshooting starts by narrowing the question. Write down what worked previously, what changed, when it changed, and whether the same behavior appears in another environment. Then test one variable at a time.
+
+For teams, keep the evidence close to the workflow. Store important prompts, configuration examples, test inputs, screenshots, and expected outputs in a controlled project location. This makes it possible to compare a new release with the previous behavior without depending on memory or scattered social posts. When the product is changing quickly, a small regression checklist is often more useful than a large document. Run the same five or ten representative tasks after a meaningful update and record whether the result changed.
+
+The same principle applies to community reports. Reddit can surface a problem long before official documentation explains it, but the discussion should remain labeled as a report. Look for repeated observations, exact dates, reproducible examples, and comments that provide useful counterexamples. Then verify the important claim against an official release note, status page, API document, or primary announcement. If the evidence does not establish a cause, say that clearly. A useful technology article can explain what is known, what is uncertain, and what a reader can safely do next without pretending that every open question has already been answered.
+
+Before making a production change, create a reversible checkpoint. For a UI workflow, keep the old process documented. For an API migration, keep the previous model or endpoint available where practical. For Search changes, preserve the original template and record the affected market. For an outage, preserve logs and avoid duplicate actions. This turns uncertainty into a controlled experiment and reduces the cost of being wrong.
+
 ## FAQ
 
 ### What is the main issue?
