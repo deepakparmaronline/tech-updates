@@ -89,6 +89,11 @@ The same principle applies to community reports. Reddit can surface a problem lo
 
 Before making a production change, create a reversible checkpoint. For a UI workflow, keep the old process documented. For an API migration, keep the previous model or endpoint available where practical. For Search changes, preserve the original template and record the affected market. For an outage, preserve logs and avoid duplicate actions. This turns uncertainty into a controlled experiment and reduces the cost of being wrong.
 
+
+### Final QA checklist
+
+Before switching a production workflow, confirm the exact model ID, tool support, limits, pricing source, fallback path, and rollback plan. Keep the previous configuration available until the new path has passed the same representative tasks.
+
 ## FAQ
 
 ### What is the main issue?
