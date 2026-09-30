@@ -94,4 +94,4 @@ Search changes require calm investigation. Confirm the measurement, isolate the 
 
 ## Related Reading
 
-Our guide to [technical SEO for static sites](/articles/2026-09-26-nextjs-static-seo/) explains the foundation that makes diagnosis easier.
+Our guide to [technical SEO for static sites](/articles/nextjs-static-seo/) explains the foundation that makes diagnosis easier.
