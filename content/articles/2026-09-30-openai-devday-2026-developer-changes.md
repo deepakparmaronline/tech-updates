@@ -64,7 +64,7 @@ Turn launch announcements into controlled experiments. Keep a benchmark in the r
 
 ## Related Reading
 
-See our [GitHub automation guide](/articles/2026-09-28-github-actions-automation/) for an example of staged validation and deployment.
+See our [GitHub automation guide](/articles/github-actions-automation/) for an example of staged validation and deployment.
 
 ### Practical checks for the next week
 
