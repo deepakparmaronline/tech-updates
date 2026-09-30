@@ -111,7 +111,7 @@ Follow `docs/CONTENT_STYLE.md` exactly. Each article must:
 - include at least six accurate frontmatter FAQs; and
 - link internally only to articles that exist.
 
-Use `author: Tech Updates`, the real publication date, one assigned primary category, focused tags, and an accurate reading time. Name the file `YYYY-MM-DD-topic-slug.md` and place it in `content/articles/`.
+Use `author: Tech Updates`, the real publication date, one assigned primary category, focused tags, and an accurate reading time. Name the source file `YYYY-MM-DD-topic-slug.md` and place it in `content/articles/`. The date is only part of the source filename; the public URL must be date-free: `/articles/topic-slug/`.
 
 Do not make the finished article a summary of Reddit. It must stand alone as useful reporting supported by deeper research.
 
@@ -140,7 +140,7 @@ Review the diff. Routine publishing should contain only the new Markdown and ima
 Daily Tech Updates YYYY-MM-DD — Rotation Day N
 ```
 
-Push to `deepakparmaronline/tech-updates`. Confirm that GitHub Actions succeeds and updates `hostinger-dist`, then confirm Hostinger completes deployment. Open every live article URL and verify the homepage and category pages display the new articles. Do not claim success before these checks pass.
+Push to `deepakparmaronline/tech-updates`. Confirm that GitHub Actions succeeds and updates `hostinger-dist`, then confirm Hostinger completes deployment. Open every new date-free live article URL and verify the homepage and category pages display the new articles. Confirm the corresponding legacy date-based URL redirects to the date-free URL. Do not claim success before these checks pass.
 
 ## Safety and failure behavior
 
@@ -155,7 +155,7 @@ Report:
 - date, start and completion time;
 - rotation day, assigned categories, new categories discovered, and next rotation day;
 - for each category: Reddit query, Posts confirmation, ranking/scope used, chosen thread, subreddit, visible activity, selection reason, reader questions, and authoritative sources;
-- for each article: title, category, Markdown file, image file, word count, and live URL;
+- for each article: title, category, Markdown file, image file, word count, date-free live URL, and legacy-URL redirect check;
 - validation, build, commit, push, GitHub Actions, Hostinger, homepage, and category-page results; and
 - every skipped topic, exception, failure, missing permission, or manual action required.
 
