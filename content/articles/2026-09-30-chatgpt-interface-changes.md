@@ -64,7 +64,7 @@ Treat the interface as a changing layer around a more stable workflow. Verify th
 
 ## Related Reading
 
-Continue with our [AI agents privacy guide](/articles/2026-09-29-ai-agents-privacy/) and [GitHub automation guide](/articles/2026-09-28-github-actions-automation/).
+Continue with our [AI agents privacy guide](/articles/ai-agents-privacy/) and [GitHub automation guide](/articles/github-actions-automation/).
 
 ### Practical checks for the next week
 
