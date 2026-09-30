@@ -64,7 +64,7 @@ Treat model changes as software dependency changes. Record the current model, bu
 
 ## Related Reading
 
-Continue with our [AI agents privacy guide](/articles/2026-09-29-ai-agents-privacy/) when Gemini is part of an agent workflow.
+Continue with our [AI agents privacy guide](/articles/ai-agents-privacy/) when Gemini is part of an agent workflow.
 
 ### Practical checks for the next week
 
