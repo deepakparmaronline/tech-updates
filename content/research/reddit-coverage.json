@@ -1,78 +1,18 @@
 {
   "version": 1,
-  "last_run": "2026-09-30",
-  "rotation_day": 1,
+  "last_run": "2026-10-01",
+  "rotation_day": 2,
   "records": [
-    {
-      "category": "ChatGPT",
-      "topic": "ChatGPT interface changes",
-      "status": "prepared",
-      "reddit_url": "https://www.reddit.com/r/ChatGPT/comments/1wpseja/new_chatgpt_update_sucks/",
-      "reddit_post_id": "1wpseja",
-      "subreddit": "r/ChatGPT",
-      "published_date": "2026-09-25",
-      "activity": "111 votes; additional comments",
-      "reason": "Current interface discussion with concrete navigation and workflow complaints; distinct from existing memory article.",
-      "deploymentCommit": "7c7e7807e1e792d71ad58279607a9ad4b1752916",
-      "hostingerDistCommit": "8691975a5cfce03d399303c7499a186aec91750b",
-      "liveVerification": "not_completed: web environment could not fetch techupates.blog"
-    },
-    {
-      "category": "OpenAI",
-      "topic": "OpenAI DevDay 2026 developer changes",
-      "status": "prepared",
-      "reddit_url": "https://www.reddit.com/r/OpenAI/comments/1wtkt11/was_anyone_else_underwhelmed_by_dev_day/",
-      "reddit_post_id": "1wtkt11",
-      "subreddit": "r/OpenAI",
-      "published_date": "2026-09-29",
-      "activity": "50 votes",
-      "reason": "Current event discussion focused on models, agents, Dots and developer expectations.",
-      "deploymentCommit": "7c7e7807e1e792d71ad58279607a9ad4b1752916",
-      "hostingerDistCommit": "8691975a5cfce03d399303c7499a186aec91750b",
-      "liveVerification": "not_completed: web environment could not fetch techupates.blog"
-    },
-    {
-      "category": "Google",
-      "topic": "Google Search regional changes",
-      "status": "prepared",
-      "reddit_url": "https://www.reddit.com/r/google/comments/1wbt0m2/big_google_just_changed_how_search_works_in/",
-      "reddit_post_id": "1wbt0m2",
-      "subreddit": "r/google",
-      "published_date": "2026-09-09",
-      "activity": "51 votes",
-      "reason": "Concrete discussion of EEA Search changes and third-party visibility.",
-      "deploymentCommit": "7c7e7807e1e792d71ad58279607a9ad4b1752916",
-      "hostingerDistCommit": "8691975a5cfce03d399303c7499a186aec91750b",
-      "liveVerification": "not_completed: web environment could not fetch techupates.blog"
-    },
-    {
-      "category": "Gemini",
-      "topic": "Gemini 3.8 Flash model migration",
-      "status": "prepared",
-      "reddit_url": "https://www.reddit.com/r/GeminiAI/comments/1w59tfa/38_flash_coming_out_today/",
-      "reddit_post_id": "1w59tfa",
-      "subreddit": "r/GeminiAI",
-      "published_date": "2026-09-02",
-      "activity": "1875 votes",
-      "reason": "High-activity release discussion; paired with later 3.8 behavior reports to avoid relying on one post.",
-      "deploymentCommit": "7c7e7807e1e792d71ad58279607a9ad4b1752916",
-      "hostingerDistCommit": "8691975a5cfce03d399303c7499a186aec91750b",
-      "liveVerification": "not_completed: web environment could not fetch techupates.blog"
-    },
-    {
-      "category": "Claude",
-      "topic": "Claude September 29 service incident",
-      "status": "prepared",
-      "reddit_url": "https://www.reddit.com/r/ClaudeAI/comments/1wtbgj0/discussion_hub_for_new_claude_incident_elevated/",
-      "reddit_post_id": "1wtbgj0",
-      "subreddit": "r/ClaudeAI",
-      "published_date": "2026-09-29",
-      "activity": "70 votes",
-      "reason": "Current incident hub with user symptoms and recovery updates.",
-      "deploymentCommit": "7c7e7807e1e792d71ad58279607a9ad4b1752916",
-      "hostingerDistCommit": "8691975a5cfce03d399303c7499a186aec91750b",
-      "liveVerification": "not_completed: web environment could not fetch techupates.blog"
-    }
+    {"category":"ChatGPT","topic":"ChatGPT interface changes","status":"prepared","reddit_url":"https://www.reddit.com/r/ChatGPT/comments/1wpseja/new_chatgpt_update_sucks/","reddit_post_id":"1wpseja","subreddit":"r/ChatGPT","published_date":"2026-09-25","activity":"111 votes; additional comments","reason":"Current interface discussion with concrete navigation and workflow complaints; distinct from existing memory article.","deploymentCommit":"7c7e7807e1e792d71ad58279607a9ad4b1752916","hostingerDistCommit":"8691975a5cfce03d399303c7499a186aec91750b","liveVerification":"not_completed: web environment could not fetch techupates.blog"},
+    {"category":"OpenAI","topic":"OpenAI DevDay 2026 developer changes","status":"prepared","reddit_url":"https://www.reddit.com/r/OpenAI/comments/1wtkt11/was_anyone_else_underwhelmed_by_dev_day/","reddit_post_id":"1wtkt11","subreddit":"r/OpenAI","published_date":"2026-09-29","activity":"50 votes","reason":"Current event discussion focused on models, agents, Dots and developer expectations.","deploymentCommit":"7c7e7807e1e792d71ad58279607a9ad4b1752916","hostingerDistCommit":"8691975a5cfce03d399303c7499a186aec91750b","liveVerification":"not_completed: web environment could not fetch techupates.blog"},
+    {"category":"Google","topic":"Google Search regional changes","status":"prepared","reddit_url":"https://www.reddit.com/r/google/comments/1wbt0m2/big_google_just_changed_how_search_works_in/","reddit_post_id":"1wbt0m2","subreddit":"r/google","published_date":"2026-09-09","activity":"51 votes","reason":"Concrete discussion of EEA Search changes and third-party visibility.","deploymentCommit":"7c7e7807e1e792d71ad58279607a9ad4b1752916","hostingerDistCommit":"8691975a5cfce03d399303c7499a186aec91750b","liveVerification":"not_completed: web environment could not fetch techupates.blog"},
+    {"category":"Gemini","topic":"Gemini 3.8 Flash model migration","status":"prepared","reddit_url":"https://www.reddit.com/r/GeminiAI/comments/1w59tfa/38_flash_coming_out_today/","reddit_post_id":"1w59tfa","subreddit":"r/GeminiAI","published_date":"2026-09-02","activity":"1875 votes","reason":"High-activity release discussion; paired with later 3.8 behavior reports to avoid relying on one post.","deploymentCommit":"7c7e7807e1e792d71ad58279607a9ad4b1752916","hostingerDistCommit":"8691975a5cfce03d399303c7499a186aec91750b","liveVerification":"not_completed: web environment could not fetch techupates.blog"},
+    {"category":"Claude","topic":"Claude September 29 service incident","status":"prepared","reddit_url":"https://www.reddit.com/r/ClaudeAI/comments/1wtbgj0/discussion_hub_for_new_claude_incident_elevated/","reddit_post_id":"1wtbgj0","subreddit":"r/ClaudeAI","published_date":"2026-09-29","activity":"70 votes","reason":"Current incident hub with user symptoms and recovery updates.","deploymentCommit":"7c7e7807e1e792d71ad58279607a9ad4b1752916","hostingerDistCommit":"8691975a5cfce03d399303c7499a186aec91750b","liveVerification":"not_completed: web environment could not fetch techupates.blog"},
+    {"category":"Cursor","topic":"Cursor background agents and review","status":"prepared","reddit_url":"https://www.reddit.com/r/cursor/comments/1u8gsyv/i_think_the_agent_just_generated_proprietary_code/","reddit_post_id":"1u8gsyv","subreddit":"r/cursor","published_date":"2026-06-17","activity":"59 comments","reason":"User report raised a concrete review and provenance concern around agent-generated implementation; article separates the report from verified product behavior.","articleTitle":"Cursor Background Agents: Review AI Changes Before You Merge","articleSlug":"cursor-background-agents-review-before-merge","articleFile":"content/articles/2026-10-01-cursor-background-agents-review-before-merge.md","publishedUrl":"https://techupates.blog/articles/cursor-background-agents-review-before-merge/"},
+    {"category":"GitHub","topic":"GitHub Actions scheduled workflow not running","status":"prepared","reddit_url":"https://www.reddit.com/r/github/comments/1v2hoks/github_actions_running_issue/","reddit_post_id":"1v2hoks","subreddit":"r/github","published_date":"2026-07-21","activity":"low visible votes; discussion about manual versus scheduled execution","reason":"Concrete automation problem with a distinct scheduling/debugging angle; independently verified against GitHub workflow-event documentation.","articleTitle":"GitHub Actions Not Running on Schedule? Check These First","articleSlug":"github-actions-scheduled-workflows-not-running","articleFile":"content/articles/2026-10-01-github-actions-scheduled-workflows-not-running.md","publishedUrl":"https://techupates.blog/articles/github-actions-scheduled-workflows-not-running/"},
+    {"category":"Programming","topic":"AI-generated code and AI code review","status":"prepared","reddit_url":"https://www.reddit.com/r/programming/comments/1sk0ap5/removed/","reddit_post_id":"1sk0ap5","subreddit":"r/programming","published_date":"2026-04-13","activity":"removed post with visible discussion","reason":"Discussion raised the human-responsibility question in AI-assisted review; article treats it as community experience and verifies the review workflow with GitHub and Cursor documentation.","articleTitle":"AI Code Review Is Useful, but Keep a Human Merge Gate","articleSlug":"programming-ai-code-review-human-gate","articleFile":"content/articles/2026-10-01-programming-ai-code-review-human-gate.md","publishedUrl":"https://techupates.blog/articles/programming-ai-code-review-human-gate/"},
+    {"category":"Python","topic":"Modern pyproject.toml and Python dependency workflow","status":"prepared","reddit_url":"https://www.reddit.com/r/Python/comments/1spt2kb/building_a_python_library_in_2026/","reddit_post_id":"1spt2kb","subreddit":"r/Python","published_date":"2026-04-19","activity":"discussion about pyproject.toml, packaging and dependency tooling","reason":"Packaging discussion provided current reader questions around pyproject.toml; article independently verifies PEP 735 dependency groups and clearly separates them from lockfiles and installer-specific behavior.","articleTitle":"Python Dependency Groups: A Cleaner pyproject.toml Workflow","articleSlug":"python-dependency-groups-pyproject","articleFile":"content/articles/2026-10-01-python-dependency-groups-pyproject.md","publishedUrl":"https://techupates.blog/articles/python-dependency-groups-pyproject/"},
+    {"category":"WordPress","topic":"WordPress slow despite optimization","status":"prepared","reddit_url":"https://www.reddit.com/r/Wordpress/comments/1utdghx/website-slows-although-already-with-optimization/","reddit_post_id":"1utdghx","subreddit":"r/Wordpress","published_date":"2026-07-11","activity":"9 votes; performance discussion","reason":"Concrete slow-site report with TTFB, LCP and FCP measurements; article uses the report as a hypothesis source and verifies recommendations with WordPress performance documentation.","articleTitle":"WordPress Still Slow After Caching? Find the Real Bottleneck","articleSlug":"wordpress-slow-despite-cache-diagnosis","articleFile":"content/articles/2026-10-01-wordpress-slow-despite-cache-diagnosis.md","publishedUrl":"https://techupates.blog/articles/wordpress-slow-despite-cache-diagnosis/"}
   ],
-  "updated_at": "2026-09-30T04:08:00Z"
+  "updated_at":"2026-10-01T05:45:00Z"
 }
