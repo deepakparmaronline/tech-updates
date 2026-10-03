@@ -9,10 +9,11 @@ Write like a skilled technology journalist explaining a real problem to a though
 - A useful description around 150–155 characters.
 - One primary category and focused tags.
 - Opening hook under 100 words.
-- Required H2 sections: What Happened?, Why People Are Talking About It, What Users Experienced, Why It Happens, Working Fixes, What Doesn't Work, Official Response, Key Takeaways, Related Reading.
-- At least three frontmatter takeaways and six frontmatter FAQs.
+- Required H2 sections: What Happened?, Why People Are Talking About It, What Users Experienced, Why It Happens, Working Fixes, What Doesn't Work, Official Response, Key Takeaways, Related Reading, FAQ.
+- At least three frontmatter takeaways and six frontmatter FAQs. Frontmatter FAQs are retained for FAQ structured data; they are not rendered as a separate FAQ section.
+- The article body must contain the FAQ section so readers see the questions and answers in the article itself.
 - Separate verified facts, user reports, opinions, and rumors.
 - Link internally only to articles that exist.
 - Cite primary sources in the prose when publishing researched claims.
 
-The article page adds the title, breadcrumb, byline, featured image, takeaways, table of contents, FAQ, related stories, sharing, navigation, schema, newsletter, and footer automatically.
+The article page adds the title, breadcrumb, byline, featured image, takeaways, table of contents, related stories, sharing, navigation, schema, newsletter, and footer automatically. It does not add a separate FAQ section.
