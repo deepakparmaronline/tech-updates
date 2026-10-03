@@ -96,6 +96,8 @@ Google’s AI Search documentation also says SEO remains relevant for generative
 
 ## FAQ
 
+## FAQ
+
 **Did Google ban AI-generated content?**
 
 No. Google says generative AI can be useful for research and structure. The problem is generating content at scale without adding value, especially when the purpose is to manipulate Search.
@@ -119,4 +121,3 @@ Start with pages created at scale, pages with little original information, dupli
 **Can adding schema fix weak AI content?**
 
 No. Structured data can help search systems understand eligible content, but it does not compensate for thin or unhelpful information.
-\n### A practical editorial check before publishing\n\nBefore a page goes live, an SEO lead should be able to answer five questions. First, what new information does this page provide that a searcher could not get by reading several existing pages on the site? Second, which claims came from primary documentation, and has someone checked the source rather than trusting a generated citation? Third, does the page show the site's expertise through examples, original data, testing, experience or a clearly explained process? Fourth, is the page targeting a genuinely different intent from the site's existing URLs? Fifth, would the page still be useful if the search engine sent no traffic at all?\n\nThose questions also help with AI-search visibility. Google does not describe a special content format that guarantees inclusion in AI Overviews or AI Mode. A strong page still needs to be accessible, understandable and useful. Publishers should therefore resist the temptation to create a second layer of “AI SEO” content that merely repeats the same information in a different format. Instead, improve the source material that a search system would want to retrieve: clearer definitions, original evidence, accurate details, useful comparisons and direct answers. This approach also makes editorial review easier because the reason for publishing the page is visible from the brief.
