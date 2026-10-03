@@ -121,3 +121,5 @@ Expose the interpreter version in deployment or health information and compare i
 **Who should prioritize this?**
 
 Services handling untrusted archives, network connections and sensitive inputs should review the release promptly.
+
+Keep the release record with the service deployment record for auditability.
