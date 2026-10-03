@@ -96,6 +96,8 @@ For teams, the safer principle is to select tools based on a specific job and me
 
 ## FAQ
 
+## FAQ
+
 **How many AI tools should a team use?**
 
 There is no ideal number. The useful number is the smallest set that covers important workflows without creating unnecessary handoffs.
@@ -119,4 +121,3 @@ Usually, if several tools perform overlapping work. Consolidation can reduce con
 **What is the biggest AI-tool buying mistake?**
 
 Buying from a feature list without testing the tool against the exact workflow and data constraints it must handle.
-\n### A simple procurement test\n\nBefore adding another AI subscription, run the candidate against ten real tasks from the team. Record the time needed to prepare the input, the quality of the first result, the time needed for human correction and the final output quality. Also record failures. A tool that produces a beautiful answer on eight easy examples but fails on two important cases may be less useful than a simpler tool that is consistently reliable.\n\nThe second test is operational. Ask where the data is stored, how access is controlled, whether administrators can remove access, what happens when the vendor changes models, and whether the team can export its work. Check whether the tool duplicates capabilities already available in the company's existing stack. Finally, calculate the monthly cost using actual usage rather than the headline plan price. This turns an AI-tool decision from a popularity contest into a measurable business decision.\n\nA final check is whether the tool improves the whole process rather than one step. If a writer saves ten minutes drafting but spends fifteen minutes moving the output into another system and correcting formatting, the net result is negative. The same applies to research, coding and customer support. Measure the complete path from input to approved result. That is the number that should determine whether a tool stays in the stack. Teams should also document the approved use cases so employees do not unknowingly send sensitive information to an unapproved service.
