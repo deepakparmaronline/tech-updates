@@ -63,7 +63,7 @@ A normal article therefore requires no component or route change. Add the Markdo
 - Location: `content/articles/`
 - Filename: `YYYY-MM-DD-topic-slug.md` (the date remains an internal source filename, not part of the public URL).
 - Use YAML frontmatter matching an existing article.
-- Required metadata includes `title`, `description`, `category`, `author`, `date`, `readingTime`, `featuredImage`, `tags`, at least three `keyTakeaways`, and at least six `faqs`.
+- Required metadata includes `title`, `description`, `category`, `author`, `date`, `readingTime`, `featuredImage`, `tags`, at least three `keyTakeaways`, and at least six `faqs` for structured data.\n- The article body must contain its FAQ section; the page template must not render a second FAQ section.
 - Use `author: Tech Updates` unless the repository owner explicitly adds another author.
 - The featured image must exist under `public/images/` and the frontmatter path must start with `/images/`.
 - The article must be at least 1,200 original words; 1,500–2,000 words is the normal target.

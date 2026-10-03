@@ -108,7 +108,7 @@ Follow `docs/CONTENT_STYLE.md` exactly. Each article must:
 - cite primary sources in the prose;
 - include all required headings;
 - include at least three frontmatter key takeaways;
-- include at least six accurate frontmatter FAQs; and
+- include an FAQ section in the article body with accurate questions and answers;\n- include at least six accurate frontmatter FAQs for structured data; and
 - link internally only to articles that exist.
 
 Use `author: Tech Updates`, the real publication date, one assigned primary category, focused tags, and an accurate reading time. Name the source file `YYYY-MM-DD-topic-slug.md` and place it in `content/articles/`. The date is only part of the source filename; the public URL must be date-free: `/articles/topic-slug/`.
