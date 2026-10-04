@@ -98,6 +98,16 @@ If the application is self-hosted, test the same production-like environment. A 
 
 Deploy to staging first where possible. Watch logs and cache behavior, then move to production.
 
+## A Safer Patch-and-Rollback Checklist
+
+Before changing dependencies, record the exact application version and deployment configuration. Check the package manager lockfile rather than relying only on the version range in package.json: the lockfile shows what a reproducible install is expected to resolve. Review the official release advisory for the precise affected versions and fixes, and confirm that the selected patched version belongs to the application's supported release line.
+
+Make the version change in a branch and let the package manager update the lockfile. Review that diff so it contains the intended Next.js and related dependency changes rather than a broad, accidental refresh. Install from the lockfile in a clean environment, then run the production build and the project's existing tests. If the project has integration or end-to-end tests, include the routes and user journeys that rely on server rendering, metadata, images or cached output.
+
+Test in an environment that resembles production. For a self-hosted deployment, that means exercising the actual reverse proxy, cache and hosting configuration where practical. Check both a warm and a cold request for pages that use static generation or revalidation. Confirm that personalized responses are not shared between users and that expected metadata images still resolve. These checks do not replace the security fix; they help catch regressions introduced by the upgrade.
+
+Prepare a rollback that restores the prior known-good application artifact and dependency lockfile together. Do not roll back to a vulnerable version as a long-term response: if the patched release causes a serious regression, limit exposure, consult the project advisory and prepare another supported fix. Keep the deployment record, test results and observed errors together so the next maintainer can see what was changed and why.
+
 ## What Doesn't Work
 
 Do not stay on 15.5.26 simply because the September 22 patch worked.

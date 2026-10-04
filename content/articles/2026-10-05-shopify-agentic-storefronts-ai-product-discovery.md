@@ -96,6 +96,16 @@ Next, review Agentic Storefront settings. Shopify says merchants can manage AI c
 
 Finally, measure the channel. Look for AI visibility, referrals, attributed orders and conversion behavior. Do not judge success by AI mentions alone.
 
+## Check the Product Journey Before Enabling a Channel
+
+Choose a small, representative set of products for an initial review: a best seller, an item with several variants, a product that is temporarily unavailable and a product with special delivery or return conditions. For each one, compare the information in Shopify with the customer-facing product page. Names, descriptions, prices, availability, variant options and images should agree. Fix the source record first instead of trying to compensate with extra AI-oriented wording.
+
+Then walk through the route a customer would take after discovery. Confirm that the destination opens the intended product and variant, that inventory and price remain current, and that shipping, returns and privacy information is easy to find. Review any channel-specific checkout path separately. A search result that recommends a product is not useful if the shopper lands on a missing variant or encounters an unexpected price before purchase.
+
+Decide how the team will assess the rollout before looking at results. Track the relevant channel's availability and referrals, but also examine orders, conversion behavior and support questions. Compare like with like over a useful period and account for promotions, stock changes and seasonal demand. Where attribution is incomplete, say so rather than assigning every sale to an AI surface.
+
+Give someone ownership of the routine checks. Product details change as inventory, pricing and policies change; a one-time catalog cleanup will not keep them accurate forever. A lightweight review after major catalog updates can catch mismatches before they confuse shoppers or channel systems. Expand the test only when the product information and customer journey are working reliably.
+
 ## What Doesn't Work
 
 Do not assume enabling an AI channel fixes poor product data.

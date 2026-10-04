@@ -96,6 +96,16 @@ Look at conversions too. Leads, purchases, sign-ups and engaged sessions are str
 
 Review content quality at the page level. A citation is not the final goal if the page does not answer the reader's question.
 
+## Read the Report as a Signal, Not a Verdict
+
+Start by recording the date range, site section and business changes that could affect the comparison. If the report shows a shift, check whether it lines up with a site release, a product change, a campaign or a known search update. An observation that happens at the same time as an AI feature change is worth investigating, but timing alone does not prove the feature caused a traffic change.
+
+Compare the report with the pages and search activity that matter to the business. A site-wide total can hide one important product category gaining visibility while another loses it. Review the corresponding landing pages, relevant query groups and ordinary Search performance. Then check analytics or the site's own conversion records for visits and outcomes. Keep in mind that a person may discover a brand in one place and return later through another channel, so attribution data will not necessarily describe the entire journey.
+
+Use a consistent review window rather than reacting to one unusual day. Search Console data can change as reporting is processed, and small samples can move sharply when a few impressions are added or removed. Save a baseline, note the comparison period and make one change at a time where possible. This helps the team distinguish a stable pattern from a short-lived fluctuation.
+
+Finally, share the limits with stakeholders. The report can help answer whether visibility in covered generative Search features changed; it cannot explain every model decision, identify every exposure across other AI products or promise future traffic. Pair it with conversions, customer feedback and standard technical checks before changing a content strategy.
+
 ## What Doesn't Work
 
 Do not buy a tool that claims to expose Google's internal AI ranking score. Google warns that third-party tools do not have access to its internal ranking or AI systems.

@@ -104,6 +104,16 @@ Log important tool calls. Store the task ID, selected tool, arguments, result st
 
 Test unusual inputs before expanding access. Deliberately give the agent duplicate records, missing data, expired sessions and unexpected values.
 
+## A Small ERP Pilot
+
+Consider an order-status assistant as a first pilot. Give it permission to look up an order using an order number, read the status and shipment fields, and draft a plain-language update. Keep the actual send action with an employee. This tests whether the agent can identify the right record and explain the result without giving it authority to change orders or contact customers on its own.
+
+Write down the expected result for a small set of ordinary requests before testing. Include a few deliberately awkward cases: an order number that does not exist, two records that could match, a missing shipping update and a request to change a delivery address. The correct response to an unclear or incomplete case is to stop and ask, not to guess. Record whether the agent selected the right record, whether its summary matched the ERP and whether a reviewer could understand what it did.
+
+Keep retries safe. A read-only lookup can usually be repeated without changing business data; a payment, refund or order edit cannot be assumed safe to repeat. Give state-changing operations an explicit confirmation step and a unique request identifier where the surrounding system supports one. That helps an operator investigate a timeout without accidentally applying the same change twice.
+
+Agree on a stop condition before launch. If a tool returns an unexpected status, the session expires or a required field is missing, route the task to a person and preserve the error details. A pilot is successful when it reduces routine effort while making exceptions visible, not when it completes every request without asking for help.
+
 ## What Doesn't Work
 
 Do not start by giving an agent full ERP credentials and asking it to handle everything.

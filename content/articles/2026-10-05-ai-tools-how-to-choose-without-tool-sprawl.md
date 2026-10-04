@@ -103,6 +103,16 @@ Test failure cases too. A tool that performs perfectly on simple examples but fa
 
 Finally, give the pilot an end date. At the end, keep the tool, change the workflow or remove it. Do not let every experiment become another permanent subscription.
 
+## Build a Simple Pilot Scorecard
+
+Before signing up, choose a short list of real tasks the team already performs. Include a routine case, a difficult case and an example that should cause the tool to ask for help. Use the same inputs and the same success criteria for each product. A polished vendor demonstration is not a fair comparison if your own workflow involves different files, permissions or review steps.
+
+Record a baseline before the pilot. For each task, note the current completion time, the number of handoffs and the checks a person must perform. During the trial, track the same measures along with corrections, missed details and time spent reviewing the output. A tool that generates a draft quickly may still make the full task slower if an employee must verify every sentence or copy results into another system.
+
+Separate must-haves from preferences. An acceptable privacy arrangement, access control and export path may be mandatory. A particular interface or optional feature may simply be convenient. Decide who can approve the tool, which information may be entered, and how staff should report an incorrect result. For tools connected to company data, test with the least access possible before considering broader permissions.
+
+Set an end date and an exit test. At the end of the pilot, ask whether the tool improved the workflow enough to justify its subscription, integration and training costs. If it did, identify the owner and review date. If it did not, cancel the trial, remove test data where appropriate and document why. An experiment should have a clear decision at its end; otherwise a temporary subscription can quietly become permanent tool sprawl.
+
 ## What Doesn't Work
 
 Do not compare tools only on benchmark scores. Benchmarks can be useful, but they are not the same as your workflow.
