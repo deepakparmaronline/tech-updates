@@ -92,7 +92,7 @@ Then deploy to a staging environment and run smoke tests.
 
 Keep the old deployment available long enough to roll back safely.
 
-## What Doesn’t Work
+## What Doesn't Work
 
 Do not update only the version shown in package.json and ignore the lockfile.
 

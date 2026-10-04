@@ -90,7 +90,7 @@ For AI-assisted content, compare the pages against Google’s own guidance. Ask 
 
 Finally, wait for the rollout to finish before judging the full effect. A live rollout can make short-term measurements noisy.
 
-## What Doesn’t Work
+## What Doesn't Work
 
 Do not respond to a live spam update by changing titles, deleting pages, changing URLs and rebuilding the site at the same time. You will lose the ability to identify what helped or hurt.
 

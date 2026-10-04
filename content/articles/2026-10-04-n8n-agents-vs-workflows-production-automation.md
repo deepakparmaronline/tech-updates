@@ -100,7 +100,7 @@ Use approvals for actions that change customer records, move money, publish cont
 
 Also keep a rollback path. If an agent changes a record, you should know how to reverse the action.
 
-## What Doesn’t Work
+## What Doesn't Work
 
 Do not turn every automation into an agent. A scheduled report, data sync or webhook notification usually does not need one.
 

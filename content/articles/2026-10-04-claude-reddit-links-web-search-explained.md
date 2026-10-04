@@ -94,7 +94,7 @@ For research workflows, keep source links in the final notes. That lets you swit
 
 A good research sequence is: discover the conversation, retrieve what the tool can access, identify the claim that needs verification, then find the primary source.
 
-## What Doesn’t Work
+## What Doesn't Work
 
 Do not assume a proxy or scraper will always fix the problem. A third-party proxy adds another system that can fail, change content or introduce privacy concerns.
 

@@ -88,7 +88,7 @@ Use a test store before changing the app’s visual system. Check navigation, sp
 
 Agencies should also expect mixed environments during the rollout. Support documentation should avoid screenshots when a simple text instruction can survive both versions.
 
-## What Doesn’t Work
+## What Doesn't Work
 
 Do not assume every merchant has the new interface immediately.
 
