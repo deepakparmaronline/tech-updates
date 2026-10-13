@@ -29,7 +29,7 @@ Use the United States database in Semrush Keyword Magic Tool.
 6. Prefer meaningful volume, clear informational intent, current usefulness, and a question that the site has not answered.
 7. Record the exact keyword, volume, KD, intent, database, and research date in the daily run report.
 
-Never invent a Semrush metric. If Semrush is temporarily unavailable, use only an unused entry already recorded in `docs/SEMRUSH_KEYWORD_BACKLOG.md`. Confirm that its product details are still current before writing.
+Never invent a Semrush metric. The scheduled task does not need live Semrush access. Choose unused entries from the ranked category queues under `data/semrush/queues/`, check them against `data/semrush/used-keywords.csv`, and confirm that product details are still current before writing.
 
 ## Semrush method for alternatives articles
 
@@ -41,6 +41,8 @@ Start with tools that are gaining attention but do not yet have saturated result
 4. Require measurable search volume. Record the exact keyword, volume, KD, intent, database, and date.
 5. Prefer emerging products over broad incumbents such as Shopify or Semrush unless the measured opportunity is unusually strong.
 6. Select two different products with clearly different search intents or audiences.
+
+For unattended runs, use `data/semrush/queues/alternatives.csv`. Its `canonical_topic` field groups close wording variations so they become fanout questions for one article rather than separate articles. Reject a queue row if the subject is not a current technology product or if an existing article already covers the same product intent.
 
 An alternatives article must compare real products using current official evidence. Never promise a ranking, accept payment, or imply that a company paid for inclusion. Future sponsored placement must be disclosed and must not change the editorial assessment.
 
@@ -90,3 +92,5 @@ If a recoverable validation, build, or deployment problem occurs, diagnose and c
 ## Required run report
 
 Record the date, start time, completion time, five selected topics, exact Semrush metrics, fanout questions, sources, article and image paths, word counts, commit, push, workflow, deployment, live URL, homepage, category page, and legacy redirect results. Also record rejected duplicates, skipped topics, access problems, and any metric that could not be refreshed.
+
+After live verification, append the five successful primary keywords to `data/semrush/used-keywords.csv`. Do not update the ledger for drafts or failed deployments.
