@@ -1,0 +1,11 @@
+{
+  "rawAuthorityRows": 3893,
+  "authorityQueues": {
+    "ChatGPT": 954,
+    "Claude": 1304,
+    "Gemini": 458,
+    "Perplexity": 165
+  },
+  "rawAlternativesRows": 6426,
+  "alternativesTopics": 424
+}
