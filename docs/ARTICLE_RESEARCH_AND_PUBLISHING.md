@@ -1,127 +1,80 @@
 # AI Article Research and Publishing Runbook
 
-This is the source of truth for every scheduled or manual Tech Updates publishing run. Read this file completely, together with the root `AGENTS.md` and `docs/CONTENT_STYLE.md`, before opening Reddit, selecting topics, writing files, or publishing.
+This is the source of truth for every scheduled or manual Tech Updates publishing run. Read it with the root `AGENTS.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, and `docs/SEMRUSH_KEYWORD_BACKLOG.md` before research or publication.
 
-## Required outcome
+## Required daily outcome
 
-Publish five original, deeply researched articles per successful daily run: one article for each category assigned to that rotation day. Each article begins with a current Reddit discussion, but Reddit is used only to discover reader interest, problems, language, and questions. Factual claims must be independently verified with authoritative sources.
+Publish exactly five original English articles per successful day:
 
-## Schedule and rotation
+1. Three authority articles that answer real search questions in depth.
+2. Two commercial discovery articles in the `Alternatives` category. Each must cover a different emerging tool.
 
-The standard schedule is 11:00 AM Asia/Kolkata every day.
+The automation starts at 6:00 AM Asia/Kolkata and targets completed live publication by 8:00 AM. Never touch `toolboxcard.tech`, its repository, or its scheduled task.
 
-### Rotation Day 1
+## Daily category mix
 
-1. ChatGPT
-2. OpenAI
-3. Google
-4. Gemini
-5. Claude
+Choose the three authority articles from ChatGPT, Claude, Gemini, Perplexity, OpenAI, AI Tools, Automation, Coding, GitHub, or another current technology category already supported by the site. Prefer three distinct categories in one batch. Rotate fairly so one brand does not dominate the site.
 
-### Rotation Day 2
+Publish the two commercial articles under `Alternatives`. Do not reuse the same product in a daily batch. Do not publish another alternatives article for a product until meaningful search demand, product changes, or a clearly different intent justifies it.
 
-1. Cursor
-2. GitHub
-3. Programming
-4. Python
-5. WordPress
+## Semrush method for authority articles
 
-### Rotation Day 3
+Use the United States database in Semrush Keyword Magic Tool.
 
-1. SEO
-2. Automation
-3. AI Tools
-4. Shopify
-5. Development
+1. Search one exact seed, such as ChatGPT, Claude, Gemini, or Perplexity AI.
+2. Select `Questions`.
+3. Keep `All Keywords` selected.
+4. Review the `Possible` bucket from KD 30 through 49, then `Easy` from 15 through 29, then `Very easy` from 0 through 14.
+5. Reject KD 50 or higher unless the repository owner explicitly changes this rule.
+6. Prefer meaningful volume, clear informational intent, current usefulness, and a question that the site has not answered.
+7. Record the exact keyword, volume, KD, intent, database, and research date in the daily run report.
 
-After Rotation Day 3, restart at Rotation Day 1. Determine the next day from the last successful daily publishing commit and previous run report. A failed or partial run does not silently advance the rotation.
+Never invent a Semrush metric. If Semrush is temporarily unavailable, use only an unused entry already recorded in `docs/SEMRUSH_KEYWORD_BACKLOG.md`. Confirm that its product details are still current before writing.
 
-## Newly added categories
+## Semrush method for alternatives articles
 
-At the start of every run, inspect existing article frontmatter and the repository's category implementation. Preserve the original 15 categories and their order. Append any genuinely supported new category after Rotation Day 3, grouping added categories into extra rotation days of no more than five categories.
+Start with tools that are gaining attention but do not yet have saturated results. Product Hunt recent launches, trending product lists, official changelogs, and credible technology communities are discovery sources, not proof by themselves.
 
-Every run must still target five distinct categories. If a final added-category day contains fewer than five new categories, fill the remaining positions with supported categories that have gone the longest without a new article. Never repeat a category within one run. Report every new category added to the rotation. If it is unclear whether a label is a supported website category, request approval rather than changing code or inventing a category.
+1. Confirm that the product is active through its official site or documentation.
+2. Search `[product] alternatives` in Keyword Magic Tool with `All Keywords` selected.
+3. Prefer KD 0 through 29. Allow KD 30 through 49 only when the intent is strong and the current results leave a clear content gap.
+4. Require measurable search volume. Record the exact keyword, volume, KD, intent, database, and date.
+5. Prefer emerging products over broad incumbents such as Shopify or Semrush unless the measured opportunity is unusually strong.
+6. Select two different products with clearly different search intents or audiences.
 
-## Phase 1: preflight
+An alternatives article must compare real products using current official evidence. Never promise a ranking, accept payment, or imply that a company paid for inclusion. Future sponsored placement must be disclosed and must not change the editorial assessment.
 
-1. Pull or inspect the latest `main` branch.
-2. Read `AGENTS.md`, this file, and `docs/CONTENT_STYLE.md` completely.
-3. Inspect `content/articles/`, `public/images/`, recent commits, and the previous run report.
-4. Determine the correct rotation day and five assigned categories.
-5. Build a duplicate-avoidance list from existing titles, slugs, descriptions, tags, and recent topics.
-6. Confirm that only new files under `content/articles/` and `public/images/` should be needed.
+## Duplicate and cannibalization check
 
-## Phase 2: Reddit research for each category
+Before selecting any topic, inspect all existing titles, slugs, descriptions, tags, target keywords, and recent commits. Reject a topic that answers the same primary intent as an existing article. A new article may cover a nearby query only when it serves a distinct audience or task and links to the earlier article.
 
-Repeat this process independently for each of the day's five categories.
+## Query fanout research
 
-1. Open <https://www.reddit.com/>.
-2. Enter the exact category name in Reddit's visible search box.
-3. Select **Posts**.
-4. Do **not** apply a Today-only time filter. Use Reddit's general Posts results so useful discussions are not excluded by an artificial 24-hour window.
-5. Prefer **Top** sorting when Reddit offers it. If Top is unavailable, use the best visible ranking and manually compare recency, votes, comment activity, relevance, and discussion quality.
-6. Review at least **10 useful results when 10 are available**. Ignore advertisements, promoted posts, spam, duplicate posts, jokes without substance, unsupported rumors, and unrelated results.
-7. Do not automatically choose the first result. Prefer a current thread with a genuine reader problem, meaningful comments, a distinct angle, and claims that can be verified.
-8. Open the strongest thread. Read the complete original post, leading comments, useful replies, disagreements, attempted fixes, repeated questions, misconceptions, and unresolved points.
-9. Record the query, thread title, URL, subreddit, age, visible score, visible comment count, and why it was chosen.
+Every authority article starts with one primary Semrush question and expands into a complete topic.
 
-If the exact category search is too broad, try focused variants such as `[category] problem`, `[category] update`, `[category] error`, `[category] feature`, or `[category] workflow`, while retaining Posts and the general Posts search. Do not add a Today-only restriction. Do not claim a filter was applied unless it was visibly confirmed.
+1. Identify six to ten supporting questions from Semrush variations, Google style related questions, official documentation, support pages, community discussions, and current search results.
+2. Group the supporting questions by intent: definition, setup, use, comparison, troubleshooting, limitations, privacy, cost, and alternatives when relevant.
+3. Answer the primary question in the opening section.
+4. Answer every useful supporting question in the body or FAQ without repeating the same paragraph.
+5. Verify time sensitive claims using current primary sources.
 
-If no responsible topic exists in the initial results, try reasonable search variations and relevant subreddits. There is no mandatory 24-hour or 48-hour cutoff; select the most useful current discussion available and record the search scope. Never fabricate a trend. If no suitable topic exists, skip it and report every query attempted rather than publishing weak content.
+The finished article must satisfy the reader who asks the main question and the natural follow up questions that come next.
 
-## Phase 3: topic qualification
+## Deep verification
 
-Reject a candidate that duplicates an existing article or substantially overlaps another article in the same daily batch. A follow-up is allowed only when a material new development creates a clearly different search intent.
+Use at least two current authoritative sources for every article. Prefer official documentation, company announcements, support pages, release notes, status pages, maintainer repositories, standards, and original research. Use credible secondary reporting only when a primary source is unavailable.
 
-Score candidates by:
+Community discussions can reveal wording, pain points, and misconceptions. They are not proof. Clearly separate verified facts, user reports, opinions, and inference. Do not invent features, prices, limits, dates, quotes, test results, or personal experience.
 
-- relevance to the assigned category;
-- recency;
-- meaningful comment depth, not only vote count;
-- practical reader value;
-- uniqueness within the site;
-- ability to provide responsible solutions;
-- current search interest; and
-- availability of authoritative verification.
+For alternatives articles, verify each included product through its current official product page, pricing page, and documentation when those sources exist. State when pricing or a feature varies by plan or changes frequently.
 
-One Reddit thread must not generate multiple daily articles under different category labels.
+## Writing and images
 
-## Phase 4: deep verification
+Follow `docs/CONTENT_STYLE.md` exactly. Each article must be original, detailed, practical, and at least 1,200 words, with 1,600 to 2,400 words preferred for full topic coverage. Create one distinct 16:9 editorial image per article under `public/images/`.
 
-For every selected topic, use fresh research. Verify important claims with at least two authoritative sources in addition to the Reddit discussion. Prefer official documentation, company announcements, support pages, release notes, maintainer repositories, status pages, original research, and standards. Use reputable secondary reporting only when a primary source is unavailable.
+Use simple human English. Do not use em dashes or en dashes. Avoid hyphens in prose when a natural rewrite is possible. Product names, URLs, code, and required technical syntax may retain their official punctuation.
 
-Check publication dates and distinguish facts, user reports, opinions, experiments, rumors, and inference. Reddit comments are not proof. Do not invent features, releases, outages, quotes, prices, statistics, dates, fixes, sources, user experiences, or test results.
-
-If the Reddit premise is false, the article may correct the misconception with evidence. For high-stakes security, financial, medical, or legal implications, use especially cautious language and current authoritative sources.
-
-## Phase 5: write the five articles
-
-Follow `docs/CONTENT_STYLE.md` exactly. Each article must:
-
-- be original and normally 1,500–2,000 words, never below 1,200;
-- answer the main reader question early;
-- use a useful problem-focused title and accurate description;
-- explain what users are discussing without copying comments;
-- separate verified facts from reports and opinions;
-- give practical steps when appropriate;
-- state limitations, risks, and ineffective approaches;
-- cite primary sources in the prose;
-- include all required headings;
-- include at least three frontmatter key takeaways;
-- include an FAQ section in the article body with accurate questions and answers;\n- include at least six accurate frontmatter FAQs for structured data; and
-- link internally only to articles that exist.
-
-Use `author: Tech Updates`, the real publication date, one assigned primary category, focused tags, and an accurate reading time. Name the source file `YYYY-MM-DD-topic-slug.md` and place it in `content/articles/`. The date is only part of the source filename; the public URL must be date-free: `/articles/topic-slug/`.
-
-Do not make the finished article a summary of Reddit. It must stand alone as useful reporting supported by deeper research.
-
-## Phase 6: create featured images
-
-Create one distinct 16:9 editorial image per article. Store it under `public/images/` with a descriptive lowercase filename. Optimize it for the web. Avoid watermarks, spelling errors, large text blocks, copyrighted artwork, fake screenshots, misleading interfaces, and unsupported visual claims. Set the exact `/images/...` path in frontmatter and never overwrite an existing image.
-
-## Phase 7: validate
-
-Before committing, confirm that the run created one article and one image for each successful assigned category, with no unintended modifications.
+## Validation, publication, and recovery
 
 Run:
 
@@ -130,33 +83,10 @@ npm run validate:content
 npm run build
 ```
 
-Fix every failure. Check unique titles and slugs, valid categories and dates, correct image paths, valid internal and source links, supported claims, and a successful static export. Never publish a partial or failing build.
+Fix every failure. Commit only intended files, push to `main`, confirm GitHub Actions succeeds, confirm Hostinger deploys, then open all five live article URLs plus the homepage and relevant category pages.
 
-## Phase 8: commit, deploy and verify
-
-Review the diff. Routine publishing should contain only the new Markdown and image files. Commit to `main` with:
-
-```text
-Daily Tech Updates YYYY-MM-DD — Rotation Day N
-```
-
-Push to `deepakparmaronline/tech-updates`. Confirm that GitHub Actions succeeds and updates `hostinger-dist`, then confirm Hostinger completes deployment. Open every new date-free live article URL and verify the homepage and category pages display the new articles. Confirm the corresponding legacy date-based URL redirects to the date-free URL. Do not claim success before these checks pass.
-
-## Safety and failure behavior
-
-The publishing agent may research public sources, add the intended article and image files, validate, build, commit, push, monitor deployment, and verify the public site.
-
-Stop before any new login, OAuth or permission grant, CAPTCHA, OTP, 2FA, payment, account-security change, repository-security change, DNS or hosting change, deletion, history rewrite, force-push, or publication outside this repository. Never bypass a security control or invent success. Preserve completed evidence and report the exact blocker.
+If a recoverable validation, build, or deployment problem occurs, diagnose and correct it in the same run. Never force push, delete unrelated files, alter hosting, change permissions, or touch another repository. A partial batch is not a successful run. Preserve completed draft work and report the blocker if publication cannot safely finish.
 
 ## Required run report
 
-Report:
-
-- date, start and completion time;
-- rotation day, assigned categories, new categories discovered, and next rotation day;
-- for each category: Reddit query, Posts confirmation, ranking/scope used, chosen thread, subreddit, visible activity, selection reason, reader questions, and authoritative sources;
-- for each article: title, category, Markdown file, image file, word count, date-free live URL, and legacy-URL redirect check;
-- validation, build, commit, push, GitHub Actions, Hostinger, homepage, and category-page results; and
-- every skipped topic, exception, failure, missing permission, or manual action required.
-
-If nothing is published, state that directly and explain why. Accuracy and site integrity are more important than forcing a daily quota.
+Record the date, start time, completion time, five selected topics, exact Semrush metrics, fanout questions, sources, article and image paths, word counts, commit, push, workflow, deployment, live URL, homepage, category page, and legacy redirect results. Also record rejected duplicates, skipped topics, access problems, and any metric that could not be refreshed.
