@@ -1,6 +1,6 @@
 # Tech Updates: AI Agent Site Guide
 
-This file is the mandatory starting point for any AI agent working in this repository. Read this file completely before planning, editing, researching, publishing, debugging, or deploying. For article work, also read `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md` and `docs/CONTENT_STYLE.md` completely before taking action.
+This file is the mandatory starting point for any AI agent working in this repository. Read this file completely before planning, editing, researching, publishing, debugging, or deploying. For article work, also read `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, and `docs/SEMRUSH_KEYWORD_BACKLOG.md` completely before taking action.
 
 ## Mission
 
@@ -67,7 +67,7 @@ A normal article therefore requires no component or route change. Add the Markdo
 - Use `author: Tech Updates` unless the repository owner explicitly adds another author.
 - The featured image must exist under `public/images/` and the frontmatter path must start with `/images/`.
 - The article must be at least 1,200 original words; 1,500–2,000 words is the normal target.
-- Required headings and writing rules are defined in `docs/CONTENT_STYLE.md`.
+- Required headings and writing rules are defined in `docs/CONTENT_STYLE.md`. Articles dated October 14, 2026 or later use the question or alternatives templates in that guide.
 - Internal links must point only to routes that exist. Public article URLs use `/articles/topic-slug/` without the publication date.
 - Important factual claims must cite current primary or authoritative sources in the prose.
 
@@ -131,4 +131,4 @@ Before any task:
 4. Preserve unrelated user changes.
 5. State any required assumption that could materially change the result.
 
-Before every scheduled or manual article run, additionally read `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md` and `docs/CONTENT_STYLE.md` completely. If either file is missing or unreadable, stop and report the problem instead of improvising a publishing workflow.
+Before every scheduled or manual article run, additionally read `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, and `docs/SEMRUSH_KEYWORD_BACKLOG.md` completely. If any file is missing or unreadable, stop and report the problem instead of improvising a publishing workflow.
