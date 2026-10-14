@@ -19,9 +19,9 @@ keyTakeaways:
   - "Keep your project changes committed or backed up before making major environment changes."
 faqs:
   - question: "How do I update Claude Code?"
-    answer: "Run claude update in a terminal. Claude Code also checks for updates automatically at startup and periodically while running."
+    answer: "For a native installation, run claude update. For npm, use npm install -g @anthropic-ai/claude-code@latest. Homebrew, WinGet, and Linux package manager installations use their own upgrade commands."
   - question: "Does Claude Code update automatically?"
-    answer: "Anthropic says automatic update checks run at startup and periodically while Claude Code is running. Updates take effect the next time you start it."
+    answer: "Native installations check for updates at startup and periodically while running. Homebrew, WinGet, and Linux package manager installs do not auto update by default. Restart after an update installs."
   - question: "How do I check my Claude Code version?"
     answer: "Run claude --version in your terminal and compare the result with the release information in Anthropic's official documentation."
   - question: "Should I use npm or the native installer?"
@@ -31,14 +31,14 @@ faqs:
   - question: "Can updating Claude Code damage my project?"
     answer: "A normal CLI update should update the tool, not intentionally rewrite project files, but you should still commit or back up important work first."
   - question: "Can I turn off automatic updates?"
-    answer: "Anthropic documents a global autoUpdates setting and an environment variable for disabling the updater."
+    answer: "Anthropic documents DISABLE_AUTOUPDATER to stop background checks and DISABLE_UPDATES to block all update paths. Check the current setup guide before changing these settings."
 ---
 
 ## Short Answer
 
-To update Claude Code, open a terminal and run **claude update**. Anthropic also says Claude Code checks for updates when it starts and periodically while it is running. An installed update takes effect the next time you start Claude Code, so close the current session and open it again after the update finishes.
+For a native Claude Code installation, open a terminal and run **claude update**. If you installed it with Homebrew, WinGet, or a Linux package manager, use that manager's upgrade command. For a global npm install, Anthropic documents **npm install -g @anthropic-ai/claude-code@latest**. Native installations check for updates at startup and periodically while running. An installed update takes effect the next time you start Claude Code.
 
-If the command fails, do not immediately remove the installation or delete configuration files. First check your installed version, identify how Claude Code was installed, and run its diagnostic command. The official [Claude Code setup guide](https://docs.anthropic.com/en/docs/claude-code/getting-started) explains the supported installation paths and update options.
+If the command fails, do not immediately remove the installation or delete configuration files. First check your installed version, identify how Claude Code was installed, and run its diagnostic command. The official [Claude Code setup guide](https://code.claude.com/docs/en/setup) explains the supported installation paths and update options.
 
 ## What the Question Really Means
 
@@ -46,15 +46,13 @@ People usually search for an update because they want a new feature, a bug fix, 
 
 These are slightly different situations. An automatic update may already have downloaded a release in the background. A manual update asks the installed program to check and apply the latest version. A fresh installation is a separate step and is usually not the first thing to try.
 
-Your installation method matters too. Claude Code has supported npm installation, a local installation path, and a native installer that Anthropic describes as being in alpha testing in its setup documentation. A company may also manage installation through an enterprise environment. The correct fix depends on which method is actually active on your computer.
+Your installation method matters too. Claude Code's current setup guide recommends the native installer and also documents Homebrew, WinGet, Linux package managers, and npm. Those installation methods do not all update in the same way. A company may also manage installation through an enterprise environment. The correct fix depends on which method is active on your computer.
 
 ## How It Works
 
-Claude Code is a command line tool, so its updater changes the tool installed in your environment. It does not mean that every project dependency, package, or source file should be updated at the same time.
+Claude Code's update behavior depends on how you installed it. Native installations check for updates at startup and periodically while running. Updates install in the background and take effect the next time you start the tool. Homebrew, WinGet, and Linux package manager installations do not auto update by default, so use the matching package manager. For npm, Anthropic documents npm install -g @anthropic-ai/claude-code@latest. For a native install, claude update applies an update immediately. Updating Claude Code does not automatically update your project dependencies.
 
-According to Anthropic's setup guide, automatic update checks happen at startup and periodically during use. When an update is installed, the new version becomes active the next time Claude Code starts. That explains why a version number may not appear to change inside a session that was already open.
-
-The same guide documents a manual update command: claude update. The [official CLI reference](https://docs.anthropic.com/en/docs/claude-code/cli-usage) is the best place to confirm command behavior rather than relying on old community posts or copied terminal instructions.
+The [official CLI reference](https://code.claude.com/docs/en/cli-usage) explains command behavior and should take priority over old community posts.
 
 ## Practical Steps
 
@@ -62,9 +60,9 @@ The same guide documents a manual update command: claude update. The [official C
 
 Open the terminal you normally use for Claude Code. Run claude --version and note the result. This gives you a baseline for checking whether the update worked. If the command is not found, that is an installation or PATH issue, not proof that the service is down.
 
-### 2. Run the built in updater
+### 2. Use the command for your installation
 
-Run claude update and let the process finish. Read the terminal output rather than assuming that a command succeeded because it returned to the prompt. If it reports a permissions problem or another error, save the message so you can diagnose the actual cause.
+For a native installation, run claude update and let the process finish. For a global npm installation, Anthropic documents npm install -g @anthropic-ai/claude-code@latest. For Homebrew, use brew upgrade claude-code or brew upgrade claude-code@latest, depending on the cask. For WinGet, use winget upgrade Anthropic.ClaudeCode. Linux package manager installations should use the upgrade command for apt, dnf, or apk. Read the terminal output and save any error message rather than assuming the command succeeded.
 
 ### 3. Restart Claude Code
 
@@ -126,15 +124,15 @@ Start with Anthropic's [Claude Code setup guide](https://docs.anthropic.com/en/d
 
 ### How do I update Claude Code on Windows?
 
-Open the terminal you use with Claude Code and run claude update. If you use Windows through WSL or Git Bash, run the command in the same environment where Claude Code is installed. Restart the session and check the version afterward.
+Use the update command for your installation. For a native install, run claude update. For WinGet, run winget upgrade Anthropic.ClaudeCode. For npm, use npm install -g @anthropic-ai/claude-code@latest. If you use WSL or Git Bash, run the command in the environment where Claude Code is installed. Restart the session and check the version afterward.
 
 ### How do I update Claude Code on macOS or Linux?
 
-Use the same manual updater, claude update. If it fails, check the installation method and run claude doctor. The exact repair steps depend on whether you use npm, a local installation, or the native installer.
+For a native installation, run claude update. For Homebrew, use brew upgrade claude-code or brew upgrade claude-code@latest. For npm, use npm install -g @anthropic-ai/claude-code@latest. For apt, dnf, or apk, use the package manager's upgrade command. If an update fails, check the installation method and run claude doctor.
 
 ### Does Claude Code update itself?
 
-Anthropic documents automatic checks at startup and periodically while the tool is running. The update becomes active after you start Claude Code again.
+Native installations check for updates at startup and periodically while running. Homebrew, WinGet, and Linux package manager installs do not auto update by default. After an update installs, restart Claude Code to use the new version.
 
 ### How do I stop automatic updates?
 
