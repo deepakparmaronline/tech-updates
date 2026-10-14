@@ -1,1 +1,6 @@
 used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
+2026-10-14,how-to-update-claude-code,Claude,,how to update claude code,data/semrush/queues/claude.csv
+2026-10-14,how-to-change-gemini-voice,Gemini,,how to change gemini's voice,data/semrush/queues/gemini.csv
+2026-10-14,what-is-perplexity-pro,Perplexity,,what is perplexity pro,data/semrush/queues/perplexity.csv
+2026-10-14,bolt-new-alternatives,Alternatives,bolt.new,bolt.new alternative,data/semrush/queues/alternatives.csv
+2026-10-14,wispr-flow-alternatives,Alternatives,wispr flow,wispr flow alternatives,data/semrush/queues/alternatives.csv
