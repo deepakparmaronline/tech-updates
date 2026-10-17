@@ -1,0 +1,4 @@
+RewriteEngine On
+# Preserve all existing date-based article URLs after the public URL migration.
+# Example: /articles/2026-09-30-chatgpt-memory-disappeared/ -> /articles/chatgpt-memory-disappeared/
+RewriteRule ^articles/[0-9]{4}-[0-9]{2}-[0-9]{2}-(.+)/?$ /articles/$1/ [R=301,L,NE]
