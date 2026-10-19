@@ -120,7 +120,7 @@ The practical choice is not always one replacement. A team may use a research to
 
 ## Related Reading
 
-- [How to Connect the Gemini API to Replit Safely](/articles/how-to-connect-the-gemini-api-to-replit/)
+- [How to Connect the Gemini API to Replit Safely](/articles/how-to-connect-gemini-api-to-replit/)
 - [How to Use Claude Code for QA Automation](/articles/how-to-use-claude-code-for-qa-automation/)
 
 These guides cover two more focused workflows: adding an AI model to an application and using a coding assistant to help with quality assurance.
