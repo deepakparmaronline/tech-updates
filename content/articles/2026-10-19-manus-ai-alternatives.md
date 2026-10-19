@@ -60,10 +60,17 @@ ChatGPT may suit a person who wants one familiar assistant for several different
 Claude is another general assistant for writing, analysis, and software work. Anthropic describes its product and coding tools through its [official Claude site](https://www.anthropic.com/claude) and [Claude Code documentation](https://docs.claude.com/en/docs/claude-code/overview). These are useful starting points if your work involves reviewing a large document, planning a code change, or iterating on tests.
 
 Claude is not a direct one for one replacement for every Manus workflow. You should check which features are available in your plan and whether the workflow requires a separate integration. For code, ask it to explain the proposed change, run the tests in a controlled environment, and inspect the diff before accepting it. For research, verify linked evidence rather than treating a fluent summary as proof.
-### Perplexity
-Outline: source oriented web research and citation checks.
-### Replit
-Outline: coding and app building.
+### Perplexity: Source Led Web Research
+
+Perplexity is a practical candidate when the main task is to investigate a question and inspect linked web sources. Its [official help center](https://www.perplexity.ai/help-center/) explains its search and subscription features, and the product experience emphasizes answers grounded in web results. This makes it a natural option for early research, comparing published explanations, or collecting starting points for a report.
+
+Citation links still need review. Open the cited page and check whether it supports the exact sentence, whether the source is current, and whether the answer has left out important context. A citation is a route to evidence, not a guarantee that the summary is correct. Perplexity is not automatically the best choice for tasks that require editing local files, managing a complex software project, or coordinating actions across many business systems.
+
+### Replit: Building and Testing Software
+
+Replit is more focused on creating and running applications than on acting as a general research assistant. Its [official product site](https://replit.com/) and [documentation](https://docs.replit.com/) describe a development environment for building and deploying software. It may be the stronger fit when the result you need is a working prototype, website, or application rather than a written analysis.
+
+Before choosing it, define who will maintain the resulting code, where data will be stored, and how deployment will be controlled. Generated applications still need testing, access controls, error handling, and review before they are used with real customers or private information. If your work is mainly research and writing, a development platform may add complexity rather than remove it.
 ### Zapier
 Outline: repeatable cross app workflows.
 
