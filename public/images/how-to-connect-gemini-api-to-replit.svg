@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Connecting Gemini API to Replit</title>
+<desc id="desc">An editorial illustration showing a secure key moving from a cloud AI service through a server to a code workspace.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101c36"/><stop offset="1" stop-color="#182d55"/></linearGradient>
+<linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#77d7bd"/><stop offset="1" stop-color="#a8e6ff"/></linearGradient>
+</defs>
+<rect width="1600" height="900" rx="42" fill="url(#bg)"/>
+<circle cx="1320" cy="120" r="210" fill="#2d4e7c" opacity=".28"/><circle cx="180" cy="780" r="260" fill="#2b6b76" opacity=".18"/>
+<g fill="none" stroke="#6f91b9" stroke-width="3" opacity=".35"><path d="M0 180H1600M0 720H1600M240 0V900M1360 0V900"/></g>
+<text x="110" y="128" fill="#a8e6ff" font-family="Arial,sans-serif" font-size="27" letter-spacing="5">PRACTICAL AI DEVELOPMENT</text>
+<text x="110" y="220" fill="#ffffff" font-family="Arial,sans-serif" font-size="58" font-weight="700">Connect Gemini</text>
+<text x="110" y="290" fill="#ffffff" font-family="Arial,sans-serif" font-size="58" font-weight="700">to Replit safely</text>
+<text x="110" y="350" fill="#c1d1e7" font-family="Arial,sans-serif" font-size="26">Keep the API key on the server.</text>
+<g transform="translate(120 455)">
+<rect width="320" height="210" rx="24" fill="#1d3c63" stroke="#83d8c4" stroke-width="3"/>
+<circle cx="65" cy="63" r="23" fill="none" stroke="#83d8c4" stroke-width="7"/>
+<path d="M84 79L112 107M104 99L94 109M113 107L103 117" stroke="#83d8c4" stroke-width="8" stroke-linecap="round"/>
+<text x="40" y="153" fill="#ffffff" font-family="Arial,sans-serif" font-size="30" font-weight="700">Google AI Studio</text>
+<text x="40" y="186" fill="#b8d5ea" font-family="Arial,sans-serif" font-size="21">Create a restricted key</text>
+</g>
+<g stroke="#82d9c3" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M455 560H550"/><path d="M530 540L552 560L530 580"/></g>
+<g transform="translate(575 455)">
+<rect width="300" height="210" rx="24" fill="#213b5a" stroke="#a8e6ff" stroke-width="3"/>
+<rect x="36" y="34" width="70" height="48" rx="9" fill="none" stroke="#a8e6ff" stroke-width="6"/>
+<path d="M52 50H90M52 64H78" stroke="#a8e6ff" stroke-width="5" stroke-linecap="round"/>
+<path d="M144 40V82M124 61H164" stroke="#a8e6ff" stroke-width="6" stroke-linecap="round"/>
+<text x="36" y="139" fill="#ffffff" font-family="Arial,sans-serif" font-size="30" font-weight="700">Replit Secrets</text>
+<text x="36" y="174" fill="#b8d5ea" font-family="Arial,sans-serif" font-size="21">Store it privately</text>
+</g>
+<g stroke="#82d9c3" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M890 560H985"/><path d="M965 540L987 560L965 580"/></g>
+<g transform="translate(1010 455)">
+<rect width="340" height="210" rx="24" fill="#1c4c5d" stroke="#83d8c4" stroke-width="3"/>
+<rect x="34" y="30" width="84" height="68" rx="10" fill="none" stroke="#83d8c4" stroke-width="6"/>
+<path d="M51 52L65 65L51 78M76 80H101" stroke="#83d8c4" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="34" y="139" fill="#ffffff" font-family="Arial,sans-serif" font-size="30" font-weight="700">Server route</text>
+<text x="34" y="174" fill="#c6e6e7" font-family="Arial,sans-serif" font-size="21">Call Gemini securely</text>
+</g>
+<text x="110" y="790" fill="#b8d5ea" font-family="Arial,sans-serif" font-size="23">Secret stays server side • Test the request • Check current quotas</text>
+</svg>
