@@ -109,10 +109,21 @@ Avoid pasting passwords, API keys, private customer records, or confidential com
 Finally, do not treat a citation, a generated test, or a successful demo as proof that the whole result is correct. Verify the source, run the relevant tests, inspect the output, and keep a record of what was reviewed.
 
 ## Key Takeaways
-Summarize recommendations by use case.
+
+- Choose the tool that matches the work. Perplexity is a reasonable starting point for source led web research, ChatGPT or Claude for mixed analysis and drafting, Replit for building software, and Zapier for repeatable app workflows.
+- Manus remains an active product with a broad feature set, so compare current capabilities rather than assuming it has been discontinued or that every alternative offers the same functions.
+- Measure accuracy, review time, integrations, and cost on the same low risk task before you switch.
+- Read current plan and privacy details. Features, quotas, and prices may change.
+- Keep human approval for sensitive data, external messages, financial actions, code changes, and production deployments.
+
+The practical choice is not always one replacement. A team may use a research tool to collect evidence, a general assistant to draft the report, and a workflow platform to deliver it. A small combination of tools can be easier to supervise than a single system with broad access. Keep the setup as simple as possible and document who reviews the results.
 
 ## Related Reading
-Link to the Gemini API and Replit guide and the Claude Code QA automation guide.
+
+- [How to Connect the Gemini API to Replit Safely](/articles/how-to-connect-the-gemini-api-to-replit/)
+- [How to Use Claude Code for QA Automation](/articles/how-to-use-claude-code-for-qa-automation/)
+
+These guides cover two more focused workflows: adding an AI model to an application and using a coding assistant to help with quality assurance.
 
 ## FAQ
 Expand the six frontmatter questions with practical detail.
