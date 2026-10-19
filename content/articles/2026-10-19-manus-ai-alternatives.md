@@ -89,10 +89,24 @@ This approach works best when the workflow is stable and the connected apps supp
 | Manus | Broad agent tasks | Combines research, creation, and automation features | Broad capability still needs review and task specific testing |
 
 ## How to Choose
-Define the task, test a sample, measure review time, check integrations, and estimate total cost.
+
+Start by writing down the exact output you need. "Research this market" is too vague to compare fairly. A more useful test is to produce a sourced summary of a specific topic, draft a short document from supplied material, fix a small issue in a test repository, or move sample information between two apps. Use the same task and success criteria for each candidate.
+
+Next, score the result against your real needs, not a vendor's marketing language. Was the output accurate? Could you inspect the sources or changes? Did the tool need repeated corrections? How much time did a person spend checking it? Did it work with the apps and files you already use? A tool that produces a polished first draft but needs extensive fact checking may not save much time.
+
+Compare total cost as well. A free tier can be useful for evaluation, but limits may make it unsuitable for daily work. Include subscriptions, usage credits, API charges, team seats, and the time needed to maintain integrations. Check the current official pricing pages before making a purchase because prices and plan features can change.
+
+Finally, review privacy and control. Understand what data is sent to the provider, what permissions an integration receives, how you can revoke access, and what happens when a workflow fails. Start with non sensitive data and keep human approval on actions that affect customers, money, accounts, or production systems.
 
 ## What to Avoid
-Avoid blind execution, assumed features, exposed credentials, and treating citations as proof.
+
+Do not choose a tool just because it promises to be fully autonomous. More autonomy can save effort, but it can also increase the impact of a mistaken instruction or an incorrect result. Keep a review step between an agent's recommendation and any consequential action.
+
+Do not assume that two products with similar feature names behave the same way. A "research" feature may summarize web pages, search a private workspace, or run a longer multi step investigation. Read the documentation and test the exact workflow you need.
+
+Avoid pasting passwords, API keys, private customer records, or confidential company documents into a tool without approval. Use environment secrets for application credentials, grant only the permissions required, and review retention and training settings. For a workflow connected to business apps, test failure handling and confirm that duplicate actions will not create unwanted side effects.
+
+Finally, do not treat a citation, a generated test, or a successful demo as proof that the whole result is correct. Verify the source, run the relevant tests, inspect the output, and keep a record of what was reviewed.
 
 ## Key Takeaways
 Summarize recommendations by use case.
