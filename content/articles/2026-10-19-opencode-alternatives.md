@@ -48,10 +48,17 @@ The primary sources are each product's own documentation: [Claude Code](https://
 This is a task based comparison, not a benchmark ranking. No product is declared faster or more accurate without a controlled test on the same codebase. The right choice is the one that produces reviewable changes, works with the team's environment, and can be operated safely within the project's permissions.
 
 ## Best Alternatives
-### Claude Code
-Outline: terminal based coding agent and repository work.
-### GitHub Copilot
-Outline: editor assistance and GitHub integration.
+### Claude Code: Terminal Based Repository Work
+
+Claude Code is a good candidate when your normal work involves reading a repository, planning a change, editing files, and running project commands. Anthropic's [official Claude Code overview](https://docs.claude.com/en/docs/claude-code/overview) describes it as a coding tool that can work with a codebase and development tools. Its terminal first approach makes it different from an editor that mainly offers inline completions.
+
+Choose Claude Code if you want an agent to help with a bounded issue, explain unfamiliar code, or support a test and review loop. Before granting access, inspect the permission model and understand which commands or file changes require approval. Keep the task narrow, ask for a plan before a large refactor, and review every diff. If the team already relies on an IDE centered workflow, test whether switching contexts creates extra friction.
+
+### GitHub Copilot: Editor and Repository Integration
+
+GitHub Copilot is worth evaluating when the team already works inside GitHub and a supported code editor. The [official Copilot documentation](https://docs.github.com/en/copilot) covers the available coding assistance and how it fits with GitHub workflows. Its main attraction is that developers can use assistance alongside their normal editing and review process rather than moving every task into a separate agent interface.
+
+Copilot's features vary by product, plan, and environment. Check the current [official plans page](https://github.com/features/copilot/plans) for the latest details before budgeting. It may be a strong fit for inline help and repository connected tasks, but do not assume that every agent action or model is available on every plan. For a fair test, give it the same bug or test task you used with OpenCode, then compare the quality of the patch and the effort required to verify it.
 ### Cursor
 Outline: AI focused code editor.
 ### Cline
