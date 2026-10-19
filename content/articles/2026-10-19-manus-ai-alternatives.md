@@ -71,11 +71,22 @@ Citation links still need review. Open the cited page and check whether it suppo
 Replit is more focused on creating and running applications than on acting as a general research assistant. Its [official product site](https://replit.com/) and [documentation](https://docs.replit.com/) describe a development environment for building and deploying software. It may be the stronger fit when the result you need is a working prototype, website, or application rather than a written analysis.
 
 Before choosing it, define who will maintain the resulting code, where data will be stored, and how deployment will be controlled. Generated applications still need testing, access controls, error handling, and review before they are used with real customers or private information. If your work is mainly research and writing, a development platform may add complexity rather than remove it.
-### Zapier
-Outline: repeatable cross app workflows.
+### Zapier: Repeatable Workflows Across Apps
+
+Zapier is worth considering when a task can be described as a predictable sequence, such as sending a form response to a spreadsheet and notifying a team. Its [official product site](https://zapier.com/) and [help documentation](https://help.zapier.com/) explain app connections and automation workflows. Instead of asking an agent to decide each step from scratch, you configure a trigger and actions that can be reviewed and tested.
+
+This approach works best when the workflow is stable and the connected apps support the required actions. It may be less suitable for open ended research where the next step depends on what the evidence reveals. Check task limits, app availability, error handling, and plan restrictions before using automation for a business process. Test with sample data first and include a way to notice failures.
 
 ## Comparison Table
-Compare best use, strengths, limitations, and pricing variability.
+
+| Tool | Best fit | Main strength | Important limitation |
+| --- | --- | --- | --- |
+| ChatGPT | Mixed research, drafting, and analysis | Flexible general assistant | Tools and usage depend on plan; verify outputs |
+| Claude | Writing, analysis, and coding support | Useful for document and code work | Not every Manus style integration is built in |
+| Perplexity | Web research | Source links make evidence easier to inspect | Citations still need checking |
+| Replit | Building and running apps | Development environment for working software | Requires code, security, and deployment review |
+| Zapier | Repeatable cross app processes | Explicit triggers and actions | Limited by integrations, task rules, and configuration |
+| Manus | Broad agent tasks | Combines research, creation, and automation features | Broad capability still needs review and task specific testing |
 
 ## How to Choose
 Define the task, test a sample, measure review time, check integrations, and estimate total cost.
