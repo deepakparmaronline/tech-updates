@@ -70,11 +70,22 @@ The tradeoff is the editor itself. If your team has invested in a different edit
 Cline is an option for developers who want an AI coding agent inside a supported editor. The [official Cline documentation](https://docs.cline.bot/) explains its setup and agent workflow. Its permission and tool model matters because a coding agent can request access to files, terminal commands, or other operations while it works.
 
 Cline can be a useful fit when you want to inspect and approve actions as part of the process. Check the current documentation for the exact controls in your installed version and configured provider. Costs may depend on the model or service you connect, so do not assume the editor extension and model usage have the same billing arrangement. Start in a disposable branch, limit access to what is needed, and inspect both the diff and test output before accepting a change.
-### Replit
-Outline: browser based development and app deployment.
+### Replit: Browser Based App Building
+
+Replit is a different kind of alternative. Rather than focusing only on an agent that works inside an existing local repository, it offers a browser based development environment for building and running applications. Its [official documentation](https://docs.replit.com/) describes the platform and its development workflows. This can be helpful when the goal is to produce a working prototype or deployable app, especially for people who prefer a hosted environment.
+
+It is not always a direct replacement for OpenCode. A developer who wants a terminal agent to operate in a local project may prefer OpenCode, Claude Code, or Cline. Someone who wants to start from an online workspace and move toward a deployed application may prefer Replit. Check the current pricing and deployment terms before using it for a long running project.
 
 ## Comparison Table
-Outline: environment, best use, strength, and limitation.
+
+| Tool | Best fit | Main strength | Important limitation |
+| --- | --- | --- | --- |
+| OpenCode | Terminal, desktop, or IDE based agent work | Open source and supports multiple model providers | Model provider setup and usage costs need review |
+| Claude Code | Repository tasks and terminal workflows | Agent based code exploration and edits | Permissions and plan access need checking |
+| GitHub Copilot | Editor and GitHub connected coding | Assistance within common developer workflows | Features vary by plan and environment |
+| Cursor | AI focused editor workflow | Editing and AI tools in one environment | May require an editor switch |
+| Cline | IDE based agent tasks | User control over tool actions | Model use may create separate costs |
+| Replit | Hosted app building and deployment | Browser based development environment | Different workflow from a local terminal agent |
 
 ## How to Choose
 Outline: use one representative task, inspect diffs, test integration, and compare costs.
