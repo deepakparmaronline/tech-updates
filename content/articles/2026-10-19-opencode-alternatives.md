@@ -125,4 +125,27 @@ The decision does not have to be permanent. A developer may use an editor assist
 The first guide covers a supervised testing workflow with a coding agent. The second explains how to connect a model API to an app while keeping credentials out of client side code.
 
 ## FAQ
-Expand the six frontmatter questions with practical detail.
+
+### What is the best alternative to OpenCode?
+
+The best choice depends on the work environment. GitHub Copilot suits developers who want assistance within supported editors and GitHub workflows. Cursor offers an AI focused editor, Claude Code suits terminal based repository work, Cline provides an IDE agent workflow, and Replit is useful for hosted app building. Compare each using the same small task.
+
+### Is OpenCode still active?
+
+Yes. The [official OpenCode site](https://opencode.ai/) and [documentation](https://docs.opencode.ai/docs/) provide current product information and setup instructions. Check the release and documentation pages before installing because the project has multiple versions and migration guidance.
+
+### Is OpenCode free?
+
+OpenCode is open source, but that does not mean every model or provider is free. The official site describes provider choices, and the cost depends on the service and plan you configure. Check the model provider's terms and any hosted service fees before estimating your total spend.
+
+### Which OpenCode alternative works in an IDE?
+
+GitHub Copilot, Cursor, and Cline offer editor centered workflows, but they differ in how they integrate with the environment and how their features are licensed. Review the official documentation for your editor and plan before migrating team settings or extensions.
+
+### Can AI coding agents replace code review?
+
+No. An agent can help draft a patch or tests, but a human should review behavior, edge cases, security, and project conventions. Run the relevant test suite and inspect the full diff before merging. Passing tests do not guarantee that the implementation meets every requirement.
+
+### How do I choose a coding agent safely?
+
+Start in a test branch with a small, reversible task. Keep secrets out of prompts and source code, grant minimum permissions, and review commands before running them. Require human approval for deployments, destructive operations, and changes to production data.
