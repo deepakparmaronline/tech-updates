@@ -120,7 +120,7 @@ The decision does not have to be permanent. A developer may use an editor assist
 ## Related Reading
 
 - [How to Use Claude Code for QA Automation](/articles/how-to-use-claude-code-for-qa-automation/)
-- [How to Connect the Gemini API to Replit Safely](/articles/how-to-connect-the-gemini-api-to-replit/)
+- [How to Connect the Gemini API to Replit Safely](/articles/how-to-connect-gemini-api-to-replit/)
 
 The first guide covers a supervised testing workflow with a coding agent. The second explains how to connect a model API to an app while keeping credentials out of client side code.
 
