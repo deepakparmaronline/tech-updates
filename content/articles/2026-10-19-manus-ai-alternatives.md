@@ -49,10 +49,17 @@ These tools are not identical replacements. A research assistant may not be able
 
 ## Best Alternatives
 
-### ChatGPT
-Outline: research and creation, plan dependent tools, and verification.
-### Claude
-Outline: writing, analysis, coding, and supervised work.
+### ChatGPT: General Research and Creation
+
+ChatGPT is worth comparing when your work mixes explanation, drafting, analysis, and other tasks instead of following one fixed workflow. Its current capabilities depend on the plan and tools available in the account, so check the [official plan comparison](https://chatgpt.com/pricing/) rather than assuming every feature is included. For research, ask for sources and open them yourself. For a report, separate claims from recommendations and confirm important facts before sharing the result.
+
+ChatGPT may suit a person who wants one familiar assistant for several different tasks. It is less suitable when you need a repeatable, auditable process that must always follow the same steps without supervision. Keep human approval for messages, purchases, changes to production systems, or other actions that have real consequences.
+
+### Claude: Long Documents and Coding Support
+
+Claude is another general assistant for writing, analysis, and software work. Anthropic describes its product and coding tools through its [official Claude site](https://www.anthropic.com/claude) and [Claude Code documentation](https://docs.claude.com/en/docs/claude-code/overview). These are useful starting points if your work involves reviewing a large document, planning a code change, or iterating on tests.
+
+Claude is not a direct one for one replacement for every Manus workflow. You should check which features are available in your plan and whether the workflow requires a separate integration. For code, ask it to explain the proposed change, run the tests in a controlled environment, and inspect the diff before accepting it. For research, verify linked evidence rather than treating a fluent summary as proof.
 ### Perplexity
 Outline: source oriented web research and citation checks.
 ### Replit
