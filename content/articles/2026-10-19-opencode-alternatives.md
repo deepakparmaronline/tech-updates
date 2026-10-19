@@ -59,10 +59,17 @@ Choose Claude Code if you want an agent to help with a bounded issue, explain un
 GitHub Copilot is worth evaluating when the team already works inside GitHub and a supported code editor. The [official Copilot documentation](https://docs.github.com/en/copilot) covers the available coding assistance and how it fits with GitHub workflows. Its main attraction is that developers can use assistance alongside their normal editing and review process rather than moving every task into a separate agent interface.
 
 Copilot's features vary by product, plan, and environment. Check the current [official plans page](https://github.com/features/copilot/plans) for the latest details before budgeting. It may be a strong fit for inline help and repository connected tasks, but do not assume that every agent action or model is available on every plan. For a fair test, give it the same bug or test task you used with OpenCode, then compare the quality of the patch and the effort required to verify it.
-### Cursor
-Outline: AI focused code editor.
-### Cline
-Outline: IDE agent with user controlled tool actions.
+### Cursor: An AI Focused Code Editor
+
+Cursor is a separate editor built around AI assisted development. Its [official feature page](https://cursor.com/features) describes ways to use AI in the editor, while its [pricing page](https://cursor.com/pricing) lists the current plan options. It may appeal to developers who want code navigation, editing, and AI interactions in one environment rather than a terminal first agent.
+
+The tradeoff is the editor itself. If your team has invested in a different editor, moving to Cursor can affect extensions, shortcuts, settings, and shared onboarding instructions. Test a real issue with your existing repository and confirm that the tools and integrations you depend on are available. Review generated edits as carefully as you would a patch from any other assistant.
+
+### Cline: IDE Agent With Explicit Tool Control
+
+Cline is an option for developers who want an AI coding agent inside a supported editor. The [official Cline documentation](https://docs.cline.bot/) explains its setup and agent workflow. Its permission and tool model matters because a coding agent can request access to files, terminal commands, or other operations while it works.
+
+Cline can be a useful fit when you want to inspect and approve actions as part of the process. Check the current documentation for the exact controls in your installed version and configured provider. Costs may depend on the model or service you connect, so do not assume the editor extension and model usage have the same billing arrangement. Start in a disposable branch, limit access to what is needed, and inspect both the diff and test output before accepting a change.
 ### Replit
 Outline: browser based development and app deployment.
 
