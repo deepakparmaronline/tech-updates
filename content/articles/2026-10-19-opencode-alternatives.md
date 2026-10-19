@@ -88,10 +88,24 @@ It is not always a direct replacement for OpenCode. A developer who wants a term
 | Replit | Hosted app building and deployment | Browser based development environment | Different workflow from a local terminal agent |
 
 ## How to Choose
-Outline: use one representative task, inspect diffs, test integration, and compare costs.
+
+Begin with the environment you already use. If your team standardizes on one IDE, an integrated assistant may reduce context switching. If you prefer terminal commands and want to choose among model providers, OpenCode or Claude Code may fit better. If you want a hosted environment for building an app, Replit solves a different problem. Write down the required workflow before comparing product names.
+
+Next, run one representative task against the same repository. Choose a small bug, a request to add a unit test, or an explanation of an unfamiliar module. Ask each tool to state its plan before making changes. Then inspect the resulting diff, run the project's tests, and check whether the solution respects existing conventions. A tool that writes more code is not automatically better; the patch should solve the task without adding unnecessary complexity.
+
+Compare how the agent handles project context and tool permissions. Can you limit the files it can access? Does it ask before running commands? Can you review changes before they are applied? Can the team use the same configuration safely? Read the current documentation because controls can vary by version and provider.
+
+Finally, calculate total cost. A subscription may cover some features while model usage or additional services may be billed separately. Check official pricing and usage terms for each product. Include time spent reviewing, correcting, and maintaining the workflow, not just the listed monthly fee.
 
 ## What to Avoid
-Outline: unchecked edits, exposed secrets, excessive permissions, and unverified claims.
+
+Do not let a coding agent apply a broad refactor to a production branch without a review step. Work in a clean branch or test repository, inspect every file change, and run automated tests before merging. For database changes, deployments, or destructive commands, require explicit human approval.
+
+Never put production secrets directly into prompts, source files, or screenshots. Use your project's approved secret store and give the agent only the permissions needed for the task. Review shell commands before running them, particularly commands that delete files, change access controls, or upload private data.
+
+Avoid trusting a generated test merely because it passes. A test may repeat the implementation's mistake or miss an important edge case. Review whether the test covers the requirement, includes a meaningful failure case, and runs in the same environment as the application.
+
+Do not choose based on unverified benchmark claims or star counts alone. The model, prompt, repository, and tool permissions all affect results. A short, repeatable evaluation using your own code is more useful than a broad claim that one coding agent is always the fastest or most accurate.
 
 ## Key Takeaways
 Outline: recommendations by developer workflow.
