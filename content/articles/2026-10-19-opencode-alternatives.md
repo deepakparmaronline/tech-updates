@@ -108,11 +108,21 @@ Avoid trusting a generated test merely because it passes. A test may repeat the 
 Do not choose based on unverified benchmark claims or star counts alone. The model, prompt, repository, and tool permissions all affect results. A short, repeatable evaluation using your own code is more useful than a broad claim that one coding agent is always the fastest or most accurate.
 
 ## Key Takeaways
-Outline: recommendations by developer workflow.
+
+- Choose by workflow: GitHub Copilot for integrated coding assistance, Cursor for an AI focused editor, Claude Code for terminal based repository tasks, Cline for IDE agent workflows, and Replit for hosted app building.
+- OpenCode remains an active option for developers who want an open source coding agent and provider flexibility.
+- Compare the editor or terminal experience, model access, permissions, review process, and total cost.
+- Test tools on the same small task and inspect the resulting code rather than relying on broad marketing claims.
+- Keep human review, tests, and minimum necessary permissions in place for every agent.
+
+The decision does not have to be permanent. A developer may use an editor assistant for everyday completions and a terminal agent for a carefully scoped repository task. Keep the number of tools small enough that the team can understand the data flow, manage subscriptions, and apply consistent security rules.
 
 ## Related Reading
-- Link to the Claude Code QA automation guide.
-- Link to the Gemini API and Replit guide.
+
+- [How to Use Claude Code for QA Automation](/articles/how-to-use-claude-code-for-qa-automation/)
+- [How to Connect the Gemini API to Replit Safely](/articles/how-to-connect-the-gemini-api-to-replit/)
+
+The first guide covers a supervised testing workflow with a coding agent. The second explains how to connect a model API to an app while keeping credentials out of client side code.
 
 ## FAQ
 Expand the six frontmatter questions with practical detail.
