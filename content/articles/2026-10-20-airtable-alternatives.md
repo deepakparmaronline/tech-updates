@@ -103,3 +103,23 @@ Export representative tables, map fields, preserve identifiers, and test relatio
 
 ### Will Airtable automations transfer automatically?
 Do not expect them to. Rebuild each automation and test triggers, permissions, errors, and notifications.
+
+## Plan the Migration Before You Move
+
+Make an inventory of every table, field type, linked record, formula, attachment, form, view, automation, and integration your Airtable workflow uses. Mark each item essential, optional, or no longer needed. This prevents the team from recreating unused features while missing a dependency that keeps a business process running.
+
+Choose a small but representative dataset for the first migration test. Include missing values, linked relationships, unusual dates, attachments, and long text. Export it, import it into the candidate, and compare record counts and important fields. Then test the workflow end to end: create a record, edit it, trigger automation, generate a report, and export the result again.
+
+Decide how to handle identifiers. If other systems refer to Airtable record IDs, replacing them without a mapping can break integrations. Keep a migration map between old and new IDs and test downstream connections. Do not switch the whole team until owners have checked the results and agreed on a rollback plan.
+
+## Security, Ownership, and Long Term Cost
+
+A tool is only a good replacement if it meets security and operating needs. Check single sign on, role based access, audit logs, data export, backup options, and the process for removing a former employee. For a self hosted product, assign ownership for updates, backups, monitoring, and incident response.
+
+Calculate costs using realistic usage rather than the lowest advertised tier. Include paid seats, automation limits, storage, support, administration time, and extra services needed to reproduce the old workflow. Free plans can suit a small personal project but may lack controls a company requires.
+
+Ask users to test the candidate before training the entire team. Document the new workflow and identify who can approve changes. After launch, review errors and support requests during a transition period. Keep the original system available in read only mode until critical reports and integrations pass checks.
+
+## A Simple Decision Rule
+
+Choose Notion when documents and team knowledge are central. Consider Coda when an interactive process document is the core experience. Evaluate Baserow when database structure and hosting choices matter. Use Google Sheets when a spreadsheet is genuinely enough. If your workflow relies on complex relationships or automations, compare candidates using a working prototype before committing.
