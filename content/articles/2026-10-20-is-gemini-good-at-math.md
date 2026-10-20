@@ -104,3 +104,9 @@ When using image input, crop the problem clearly and confirm that Gemini has tra
 If Gemini and a calculator or textbook disagree, pause instead of choosing the more confident explanation. Recheck the original problem, notation, units, and rounding. Ask Gemini to solve the problem using a different method, then independently verify the new result. If the conflict remains, ask a teacher or subject expert.
 
 Keep a record of mistakes that recur, such as negative signs, unit conversions, or assumptions about independence. That helps you design better checks for future problems. The aim is to understand where the model helps and what evidence you need before trusting an answer.
+
+## A Quick Checklist Before You Trust an Answer
+
+Before accepting a solution, ask whether the question was copied correctly, whether the units match, and whether the answer is reasonable in size. Check the special cases: zero, negative values, boundaries, and division by zero where relevant. If the result is a percentage, confirm the denominator. If it is a probability, make sure the value is between zero and one and that the events are defined clearly.
+
+For classroom learning, use the explanation to find the idea you do not understand. Then close the answer and solve a similar problem yourself. This is a stronger check of learning than reading a correct solution and feeling that it makes sense. Keep the teacher's rules about permitted tools in mind, especially during tests and graded assignments.
