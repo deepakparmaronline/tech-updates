@@ -82,3 +82,23 @@ Not automatically. Review file, shell, network, and permission behavior before r
 
 ### Does Claude need Python installed?
 Not to draft code, but you need a Python runtime to execute and test a local script.
+
+## A Better Prompt for Python Work
+
+A useful prompt gives the model a clear definition of success. State the input format, expected output, constraints, and how you will check the result. For a data task, include a few fake rows that show normal values and edge cases. Ask for a short explanation of each important function and a test that can run without touching the original data.
+
+For example, ask for a Python 3 script that reads input.csv, trims whitespace from the email column, removes rows with an empty email, and writes cleaned.csv. Require it to preserve every other column and never overwrite the source. This is far easier to validate than a vague request to clean data. If you use pandas, ask which version and functions the code expects. If you prefer the standard library, say so.
+
+## A Safe Testing Checklist
+
+Before execution, read the entire script. Look for file deletion, recursive directory operations, shell commands, network requests, credential access, and unexpected package installation. Check the input and output paths explicitly. Use a copy of the data and a virtual environment.
+
+Run the smallest test first. Try an empty file, one valid row, a missing column, an unexpected date, and a duplicate value if those cases matter. Compare output to an expected result. Keep the traceback if something fails, remove private values, and ask for a targeted fix rather than replacing the whole program blindly.
+
+For an important workflow, add automated tests and put the code in version control. Ask Claude to explain what each test proves and what it does not prove. Passing a few examples is useful evidence, but it is not proof that every possible input is handled.
+
+## When to Ask a Human
+
+Get a developer to review code that handles payments, personal data, authentication, production systems, or security boundaries. AI can help you understand unfamiliar code, but a reviewer must consider architecture, operational failure, access control, and maintenance. Keep responsibility for the final decision with the person or team that owns the system.
+
+The practical rule is simple: use Claude to move faster through a well defined task, then use tests, documentation, and review to decide whether the result is ready.
