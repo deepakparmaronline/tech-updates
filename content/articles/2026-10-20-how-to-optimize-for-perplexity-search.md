@@ -109,3 +109,9 @@ Use server logs and analytics where available to understand crawling and referra
 Choose a small set of measures: organic impressions and clicks, referral visits attributable to the service, engagement, and whether users complete the task the page supports. Keep the date range and method consistent. One observed citation is not a stable ranking metric.
 
 Review pages when the product or evidence changes. Keep a change log for meaningful updates and correct errors promptly. Avoid changing publication dates to create an appearance of freshness. Durable trust comes from accurate information, useful examples, and a clear record of what is known.
+
+## Keep Editorial Quality Ahead of Tricks
+
+A useful content audit starts with the reader's task. Does the page resolve the question without forcing the reader to open several thin pages? Does it explain what is known, what is uncertain, and where the evidence comes from? Does it give enough context to prevent a quoted fact from being misunderstood? These qualities improve the page for readers regardless of which search interface they use.
+
+Avoid mass producing near identical pages for minor keyword variations. Combine overlapping questions when one complete guide serves them better, and create a separate page only when the user need is genuinely different. Review internal links so that related pages support each other instead of competing for the same intent. Keep a record of the query, evidence, and date of review when the topic changes quickly.
