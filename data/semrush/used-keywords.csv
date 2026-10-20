@@ -14,3 +14,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-18,how-perplexity-differs-from-search-engines,Perplexity,,how does perplexity ai differ from traditional search engines,data/semrush/queues/perplexity.csv
 2026-10-18,replit-alternatives,Alternatives,replit,replit alternatives,data/semrush/queues/alternatives.csv
 2026-10-18,grok-alternatives,Alternatives,grok,grok alternative,data/semrush/queues/alternatives.csv
+2026-10-19,how-accurate-is-chatgpt,ChatGPT,,how accurate is chatgpt,data/semrush/queues/chatgpt.csv
+2026-10-19,how-to-connect-gemini-api-to-replit,Gemini,,how to connect gemini api to replit,data/semrush/queues/gemini.csv
+2026-10-19,how-to-use-claude-code-for-qa-automation,Claude,,how to use claude code for qa automation,data/semrush/queues/claude.csv
+2026-10-19,manus-ai-alternatives,Alternatives,manus ai,manus ai alternatives,data/semrush/queues/alternatives.csv
+2026-10-19,opencode-alternatives,Alternatives,opencode,opencode alternatives,data/semrush/queues/alternatives.csv
