@@ -110,3 +110,18 @@ For data analysis, separate the task into loading, checking, transforming, and r
 When a result includes totals or averages, compare a small sample by hand and verify row counts before and after each step. If the script makes assumptions about missing values, time zones, currency, or duplicate records, document them. Those assumptions often matter more than the syntax itself.
 
 For repeatable work, request a command line interface with clear input and output arguments and helpful error messages. Avoid hard coded personal paths. Add a README with the required Python version and installation steps so another person can run the script safely.
+
+## Ask for Tests Alongside the Code
+
+A useful Python response should include a way to tell whether it worked. Ask Claude to provide a few tests covering an ordinary input, an empty input, a boundary case, and malformed data where relevant. For a function that calculates totals, include a case with zero items and one with a missing or invalid value. For a file converter, check that output rows and columns match the expected format. Tests should describe expected behavior, not merely repeat the implementation's assumptions.
+
+Keep tests separate from the production script where practical. Run them before and after a proposed fix so you can detect regressions. If Claude suggests changing a dependency, verify that the package is real, maintained, and compatible with your Python version. Check the official documentation for functions that affect file handling, dates, network access, or authentication.
+
+## Make Debugging More Efficient
+
+When a script fails, share the smallest reproducible example. Include the relevant function, the full traceback, a sample input with private values removed, and what you expected to happen. State what you already tried. This gives Claude enough context to reason about the failure without asking it to guess at your environment.
+
+Change one thing at a time. If the proposed fix changes several functions, ask for the smallest patch that addresses the identified cause. Run the same failing case again, then run the broader tests. Keep a copy of the last working version so a speculative change can be reverted quickly.
+
+For long-running scripts, ask for logging and clear error messages rather than silently skipping failures. For destructive operations, require a dry-run mode that reports planned changes before writing anything. These practices make AI-assisted coding easier to audit and safer to maintain.
+
