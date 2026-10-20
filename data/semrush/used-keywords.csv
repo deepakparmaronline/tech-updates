@@ -19,3 +19,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-19,how-to-use-claude-code-for-qa-automation,Claude,,how to use claude code for qa automation,data/semrush/queues/claude.csv
 2026-10-19,manus-ai-alternatives,Alternatives,manus ai,manus ai alternatives,data/semrush/queues/alternatives.csv
 2026-10-19,opencode-alternatives,Alternatives,opencode,opencode alternatives,data/semrush/queues/alternatives.csv
+2026-10-20,can-claude-write-python-code,Claude,,can claude write python code,data/semrush/queues/claude.csv
+2026-10-20,is-gemini-good-at-math,Gemini,,is gemini good at math,data/semrush/queues/gemini.csv
+2026-10-20,how-to-optimize-for-perplexity-search,Perplexity,,how to optimize for perplexity search,data/semrush/queues/perplexity.csv
+2026-10-20,airtable-alternatives,Alternatives,airtable,airtable alternatives,data/semrush/queues/alternatives.csv
+2026-10-20,cursor-alternatives,Alternatives,cursor,cursor alternatives,data/semrush/queues/alternatives.csv
