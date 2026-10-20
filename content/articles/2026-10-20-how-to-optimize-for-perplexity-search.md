@@ -87,3 +87,25 @@ Use referral analytics and interpret small samples carefully.
 
 ### Should I update old articles?
 Update them when facts, features, or evidence change.
+
+## Build Pages That Can Be Checked
+
+A strong source page makes it clear who wrote it, what evidence supports it, and when its claims were reviewed. Link to official documentation for product behavior, original studies for research findings, and primary announcements for release details. When a claim is uncertain or based on reports, say so rather than presenting it as established fact.
+
+Use descriptive page titles and headings that reflect the actual question. Define technical terms before relying on them. Add tables only when they make comparisons easier to inspect, and keep important information in text instead of embedding it only in an image. A page should still make sense when a person lands in the middle from a search result.
+
+Structured data can help describe a page to systems that support it, but it must match visible content and relevant schema requirements. Do not add invented reviews, FAQ answers, author credentials, or product details. Markup that misrepresents the page harms trust and may violate search guidelines.
+
+## A Practical Technical Audit
+
+Start with the exact URL and check that it returns a successful response without an unexpected redirect chain. Confirm the canonical points to the intended URL, the page is not blocked unintentionally, and the sitemap lists the correct canonical version. Check internal links and ensure the main text appears in rendered HTML.
+
+Then inspect mobile usability, page speed, and accessibility. A slow page does not automatically explain why it was not cited, but a poor experience can make it less useful. Compress images, provide descriptive alternative text where it adds meaning, and avoid intrusive elements that hide the answer.
+
+Use server logs and analytics where available to understand crawling and referral patterns. Do not infer that a page was indexed simply because it appears in a sitemap. Do not claim that a referral source drove a visit unless analytics supports that conclusion.
+
+## Measure the Work Honestly
+
+Choose a small set of measures: organic impressions and clicks, referral visits attributable to the service, engagement, and whether users complete the task the page supports. Keep the date range and method consistent. One observed citation is not a stable ranking metric.
+
+Review pages when the product or evidence changes. Keep a change log for meaningful updates and correct errors promptly. Avoid changing publication dates to create an appearance of freshness. Durable trust comes from accurate information, useful examples, and a clear record of what is known.
