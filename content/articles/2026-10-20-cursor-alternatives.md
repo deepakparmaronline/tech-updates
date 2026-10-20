@@ -102,3 +102,27 @@ VS Code and JetBrains are candidates. Test debugging, environments, linting, and
 
 ### Are AI coding tools safe for private code?
 It depends on settings, plan, and connected services. Review terms and follow company policy.
+
+## Test Real Development Work, Not Demos
+
+A fair editor comparison uses the same repository, tasks, and acceptance criteria. Pick one task involving existing code, one small feature, one bug fix, and one test update. Start each candidate from the same branch and compare the final diff, not just how quickly it produces text.
+
+Check whether the tool reads project instructions, finds the correct files, follows existing patterns, and runs the right tests. Review whether it changes unrelated code or introduces dependencies without asking. A fast first draft can cost more time if the developer must undo broad changes or discover hidden assumptions.
+
+Measure the workflow as a whole. Include time spent writing prompts, reviewing changes, fixing mistakes, and explaining the result to a teammate. A tool that produces fewer but clearer changes may be more useful than one that makes a large patch quickly.
+
+## Privacy and Team Controls
+
+Before using an AI coding tool with private repositories, read the current data handling terms and check which privacy controls apply to your plan. Determine whether code or prompts may be retained, which model providers are involved, and what an administrator can enforce. Extensions and external integrations may have their own data practices, so assess them separately.
+
+For a company, set rules about approved tools, secrets, customer data, and production access. Never paste API keys or passwords into a prompt. Use environment variables or a secrets manager for credentials and scan changes for accidentally exposed values. AI generated code should go through the same review, tests, and release process as code written by a person.
+
+## Switching Without Losing Productivity
+
+Before switching, export or document keybindings, editor settings, snippets, extensions, formatter rules, linting, and debugging configuration. Keep project instructions in version control when portable and appropriate. Install the replacement alongside the current editor and use a noncritical project first.
+
+Run the same task set for several days and ask the team for specific feedback. If a workflow depends on a feature the new tool lacks, record the workaround and its cost. Do not cancel an existing plan until required work is covered and billing and data export terms are clear.
+
+## Which Alternative Should You Try First?
+
+Start with VS Code if flexibility and ecosystem matter most. Test Copilot if the team is centered on GitHub. Try JetBrains when language aware refactoring and debugging matter. Consider Zed if you value a focused editor and collaboration. These are starting points, not universal winners: choose the option that fits your codebase, policies, and review habits.
