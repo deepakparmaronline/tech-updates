@@ -110,3 +110,20 @@ Keep a record of mistakes that recur, such as negative signs, unit conversions, 
 Before accepting a solution, ask whether the question was copied correctly, whether the units match, and whether the answer is reasonable in size. Check the special cases: zero, negative values, boundaries, and division by zero where relevant. If the result is a percentage, confirm the denominator. If it is a probability, make sure the value is between zero and one and that the events are defined clearly.
 
 For classroom learning, use the explanation to find the idea you do not understand. Then close the answer and solve a similar problem yourself. This is a stronger check of learning than reading a correct solution and feeling that it makes sense. Keep the teacher's rules about permitted tools in mind, especially during tests and graded assignments.
+
+## Examples of Checks by Topic
+
+For linear equations, substitute the proposed value into the original equation and simplify both sides. For a quadratic, check the roots in the original expression and confirm that the factorization expands correctly. For derivatives, compare the result with a known rule and test a simple value or graph where appropriate. For integrals, differentiate the proposed antiderivative and remember to include the constant of integration for an indefinite integral.
+
+For geometry, list which measurements are given and which are inferred from the drawing. A diagram may look symmetrical without stating that it is symmetrical. For probability, identify the sample space and check whether the events are independent before multiplying probabilities. For statistics, confirm the definitions of mean, median, variance, and the denominator used. A plausible number can still be wrong if the problem was interpreted differently.
+
+## Get More Value From an Explanation
+
+If you are stuck, ask Gemini to explain the concept before solving the whole problem. Request a small example with different numbers, then try the original question yourself. If a step is unclear, ask what rule justifies it and under what conditions that rule applies. This helps distinguish a genuine explanation from a sequence of symbols that only looks convincing.
+
+You can also ask for hints rather than the full solution. For example, ask which equation to set up first or which theorem may be relevant. After solving, request a review of your own work and ask it to identify the first incorrect step. This is often more useful for learning than receiving a finished answer immediately.
+
+## Keep School Rules and Privacy in Mind
+
+Follow your teacher's rules about AI assistance, especially on exams or graded work. Do not submit a generated solution as your own if the assignment requires independent work. Avoid uploading personal information or confidential school records. When the answer affects a consequential decision, use a qualified human or an authoritative calculator or reference as the final check. The aim is to strengthen understanding while keeping responsibility for the answer with you.
+
