@@ -82,3 +82,25 @@ It may help, but unclear notation can be misread. Type the problem if symbols ma
 
 ### How do I check a Gemini answer?
 Substitute the answer, use another method, check units, or compare with a trusted source.
+
+## Match the Check to the Problem
+
+For arithmetic, calculate the result independently with a calculator. For an equation, substitute the proposed answer into the original expression. For a graph, check intercepts, domain, range, and whether the plotted curve matches the equation. For a proof, examine whether each statement follows from the previous one and whether the conditions of a theorem are met.
+
+Statistics requires extra care because the calculation may be correct while the assumptions are not. Ask what the sample represents, how missing values are handled, and which probability model is being used. A numerical answer without these details can create a false sense of certainty.
+
+For word problems, rewrite the problem in your own words before asking for a solution. Identify known values, unknown values, units, and constraints. This catches misunderstandings early. If Gemini chooses an assumption, ask it to state that assumption and show whether a different assumption changes the result.
+
+## Use Gemini as a Tutor, Not a Shortcut
+
+A productive learning session begins with your own attempt. Ask Gemini to point out the first incorrect step instead of giving the full solution. Then ask for a similar practice problem and solve it without help. This approach can show whether you understand the method or only recognize a completed example.
+
+If the response uses a formula you have not learned, ask for the definition and the conditions under which it applies. Compare the explanation with your textbook or class notes. Do not assume a formula is valid simply because it is written in mathematical notation.
+
+When using image input, crop the problem clearly and confirm that Gemini has transcribed it correctly. Read the equation back before accepting a result. If the task includes a diagram, specify whether lengths, angles, or proportions are given facts or only visual clues.
+
+## How to Handle Conflicting Answers
+
+If Gemini and a calculator or textbook disagree, pause instead of choosing the more confident explanation. Recheck the original problem, notation, units, and rounding. Ask Gemini to solve the problem using a different method, then independently verify the new result. If the conflict remains, ask a teacher or subject expert.
+
+Keep a record of mistakes that recur, such as negative signs, unit conversions, or assumptions about independence. That helps you design better checks for future problems. The aim is to understand where the model helps and what evidence you need before trusting an answer.
