@@ -126,3 +126,16 @@ Run the same task set for several days and ask the team for specific feedback. I
 ## Which Alternative Should You Try First?
 
 Start with VS Code if flexibility and ecosystem matter most. Test Copilot if the team is centered on GitHub. Try JetBrains when language aware refactoring and debugging matter. Consider Zed if you value a focused editor and collaboration. These are starting points, not universal winners: choose the option that fits your codebase, policies, and review habits.
+
+## Compare the Cost of a Real Workflow
+
+Subscription price alone is not the full cost of an AI coding editor. Check which models are available, whether usage is capped or metered, what happens after a limit, and whether team administration requires a higher tier. Also count the time spent reviewing generated diffs, correcting mistakes, and maintaining project instructions. A low-priced tool may be expensive if it creates broad changes that require careful cleanup.
+
+Use the same representative tasks for every candidate. Include navigating an unfamiliar module, fixing a bug with a regression test, adding a small feature, and explaining a proposed refactor. Record whether the tool found the right files, respected project conventions, ran tests, and explained limitations. Repeat a task if results depend heavily on prompt wording, and keep notes on the prompt so the comparison is fair.
+
+## Check Editor and Language Support
+
+Your choice may depend on languages and frameworks in the repository. Before switching, confirm support for your language server, formatter, linter, debugger, test runner, remote development setup, and container workflow. A tool that generates code well but breaks familiar debugging habits may slow down daily work. For a large repository, test how it handles project-specific instructions and whether it can stay within the requested files.
+
+Check extension compatibility and settings migration before removing your existing editor. Try the alternative on a branch or a noncritical project, then review every changed file. Keep version control and pull request review as the final gate, even when an agent can run commands. If the tool requests terminal or network access, understand what it can read and modify before granting permission.
+
