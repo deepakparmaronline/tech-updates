@@ -123,3 +123,16 @@ Ask users to test the candidate before training the entire team. Document the ne
 ## A Simple Decision Rule
 
 Choose Notion when documents and team knowledge are central. Consider Coda when an interactive process document is the core experience. Evaluate Baserow when database structure and hosting choices matter. Use Google Sheets when a spreadsheet is genuinely enough. If your workflow relies on complex relationships or automations, compare candidates using a working prototype before committing.
+
+## A Migration Scorecard You Can Reuse
+
+Score each shortlisted product against the same requirements before choosing. Use a simple scale such as not supported, supported with a workaround, and supported directly. Include linked records, field types, permissions, forms, views, automations, integrations, exports, and reporting. A weighted score is useful only if the weights reflect real business needs. For example, a team that relies on approval workflows should give those workflows more weight than appearance or template variety.
+
+Ask the people who maintain the current base to review the scorecard. They know which exceptions and manual workarounds are easy to overlook. Include a representative end user too, because a technically capable replacement can still fail if common tasks become confusing. Record the evidence behind each rating, such as a test result or official feature page, rather than relying on a sales demonstration.
+
+## A Cutover Plan That Reduces Risk
+
+Set a cutover date only after a trial migration has passed. Freeze structural changes in the source for a defined window, export a final backup, import the data, and compare totals and key records. Rebuild automations in the new system and test both successful and failure paths. Confirm who receives notifications, what happens when a required field is missing, and how duplicate records are handled.
+
+Tell users where new work should be entered during the transition. Avoid allowing two systems to become competing sources of truth. Keep the old base read only until stakeholders confirm reports, integrations, and permissions. If a critical check fails, use the documented rollback plan instead of improvising under deadline pressure. After launch, review errors and user feedback, then remove old access only when retention and compliance requirements permit it.
+
