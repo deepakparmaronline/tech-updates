@@ -102,3 +102,11 @@ For an important workflow, add automated tests and put the code in version contr
 Get a developer to review code that handles payments, personal data, authentication, production systems, or security boundaries. AI can help you understand unfamiliar code, but a reviewer must consider architecture, operational failure, access control, and maintenance. Keep responsibility for the final decision with the person or team that owns the system.
 
 The practical rule is simple: use Claude to move faster through a well defined task, then use tests, documentation, and review to decide whether the result is ready.
+
+## A Workflow for Data Analysis
+
+For data analysis, separate the task into loading, checking, transforming, and reporting. Ask Claude to inspect column names and data types first, then suggest a transformation. Keep the raw input immutable and write intermediate results to a new location. Ask for a summary of rows dropped or changed so that data loss is visible rather than silent.
+
+When a result includes totals or averages, compare a small sample by hand and verify row counts before and after each step. If the script makes assumptions about missing values, time zones, currency, or duplicate records, document them. Those assumptions often matter more than the syntax itself.
+
+For repeatable work, request a command line interface with clear input and output arguments and helpful error messages. Avoid hard coded personal paths. Add a README with the required Python version and installation steps so another person can run the script safely.
