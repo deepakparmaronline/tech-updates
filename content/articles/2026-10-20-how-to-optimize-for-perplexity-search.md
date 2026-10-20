@@ -115,3 +115,20 @@ Review pages when the product or evidence changes. Keep a change log for meaning
 A useful content audit starts with the reader's task. Does the page resolve the question without forcing the reader to open several thin pages? Does it explain what is known, what is uncertain, and where the evidence comes from? Does it give enough context to prevent a quoted fact from being misunderstood? These qualities improve the page for readers regardless of which search interface they use.
 
 Avoid mass producing near identical pages for minor keyword variations. Combine overlapping questions when one complete guide serves them better, and create a separate page only when the user need is genuinely different. Review internal links so that related pages support each other instead of competing for the same intent. Keep a record of the query, evidence, and date of review when the topic changes quickly.
+
+## Build a Source Page That Answers Follow-Up Questions
+
+A page often needs more than a short definition to serve as a useful reference. Anticipate the next questions a reader will ask: what the term means, when it applies, what the limitations are, how to use it, and where to verify the details. Answer those questions in a logical order. Use examples that show the advice in practice and distinguish a documented fact from your own interpretation.
+
+Cite the original source close to the claim it supports. If a product feature is described in official documentation, link to that documentation instead of a page that merely repeats it. For research, prefer the original paper or institution. If the source does not support the exact wording, narrow the claim. Add context for statistics, including the date, population, and method, so a number cannot be read as broader evidence than it is.
+
+## Keep Technical Signals Consistent
+
+Technical SEO is a foundation, not a shortcut to inclusion. Make sure each important article has a stable URL, a descriptive title, one clear main heading, and a self-consistent canonical. Link to it from relevant category pages and related articles. Use redirects when URLs change, and remove broken internal links. Keep the XML sitemap limited to canonical pages you intend search engines to discover.
+
+Check robots.txt and any page-level indexing directives before changing crawler access. Do not open private, paid, or sensitive content simply to seek visibility. If you use structured data, validate it and make sure it reflects what visitors can see. Avoid inventing author credentials, review scores, or dates. These checks improve clarity and crawlability, but they cannot force an answer engine to select a page.
+
+## Review Performance Without Overclaiming
+
+Create a repeatable review sheet with the page URL, target question, last substantive update, source links, organic search data, and attributable referral traffic if available. Compare consistent periods and annotate major changes. A rise or fall in visits can have several causes, so do not credit one edit without supporting evidence. Use the findings to improve usefulness and fix technical problems, not to chase a promised citation formula.
+
