@@ -42,7 +42,20 @@ The file is not source code and does not change how an application runs by itsel
 
 ## What the Question Really Means
 
+People often find that a coding assistant needs the same project details repeated in many prompts. Which package manager does the repository use? What tests should run before a change? Which folders are generated and should not be edited? A `CLAUDE.md` file gives Claude Code a place to find these recurring rules.
+
+It helps to separate three kinds of guidance. Project instructions belong in a repository file so teammates can share them. Personal preferences can live in a user level memory file. Short task specific requirements can stay in the current prompt. Keeping these layers clear makes the instructions easier to maintain and reduces conflicting advice.
+
+The file is not a security boundary. It cannot replace repository permissions, automated tests, code review, or careful handling of secrets. It is best treated as a durable project brief that improves the assistant's context, not as a guarantee that every instruction will always be followed.
+
 ## How It Works
+
+Claude Code supports memory files such as `CLAUDE.md` to provide context about a project. According to Anthropic's documentation, it can discover applicable files in the working directory and parent directories. A root level file is a useful place for instructions that apply to the whole repository. More local files can describe rules for a specific subfolder or component.
+
+A useful file answers questions the assistant would otherwise need to ask repeatedly. It might explain the repository layout, the preferred commands for installing dependencies, how to run unit tests, formatting rules, and which files are generated. Keep instructions clear enough that a person could follow them too.
+
+Claude Code also supports importing other files with an `@path` reference. This can help teams split a long guide into smaller documents, but imported instructions should remain easy to find and review. Check the current official memory documentation for supported syntax and behavior, because features can change between versions.
+
 
 ## Practical Steps
 
