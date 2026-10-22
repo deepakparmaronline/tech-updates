@@ -35,28 +35,6 @@ sources:
   - "https://help.openai.com/en/articles/10421635-multicurrency-billing"
 ---
 
-# Outline
-
-## Short Answer
-
-## What the Question Really Means
-
-## How It Works
-
-## Practical Steps
-
-## Common Problems
-
-## What Does Not Work
-
-## Safety and Limitations
-
-## Key Takeaways
-
-## Related Reading
-
-## FAQ
-
 ChatGPT pricing is not one fixed price for every user. OpenAI offers a free plan and several paid options, with availability and billing details that can differ by region. The best way to compare costs is to check the plan shown in your account, list the features you actually use, and confirm whether you are paying through the web or an app store.
 
 This guide uses OpenAI's current Help Center pages as the source for plan details. Prices and usage limits can change, so confirm the final amount at checkout before subscribing.
