@@ -31,3 +31,4 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-17,suno-alternatives,Alternatives,suno,suno alternatives,data/semrush/queues/alternatives.csv
 2026-10-15,how-much-is-chatgpt,ChatGPT,,how much is chatgpt,data/semrush/queues/chatgpt.csv
 2026-10-15,what-is-claude-md,Claude,,what is claude.md,data/semrush/queues/claude.csv
+2026-10-15,why-is-gemini-so-slow,Gemini,,why is gemini so slow,data/semrush/queues/gemini.csv
