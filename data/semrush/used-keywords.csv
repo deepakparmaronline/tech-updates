@@ -33,3 +33,4 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-15,what-is-claude-md,Claude,,what is claude.md,data/semrush/queues/claude.csv
 2026-10-15,why-is-gemini-so-slow,Gemini,,why is gemini so slow,data/semrush/queues/gemini.csv
 2026-10-15,otterly-ai-alternatives,Alternatives,otterly ai,otterly ai alternatives,data/semrush/queues/alternatives.csv
+2026-10-15,kling-ai-alternatives,Alternatives,kling ai,kling ai alternative,data/semrush/queues/alternatives.csv
