@@ -86,7 +86,20 @@ A simple example might say: “Use the existing TypeScript patterns. Do not edit
 
 ## What Does Not Work
 
+A `CLAUDE.md` file does not make an unsafe command safe. If the assistant has access to a tool or directory, the real permission system still matters. Keep approval steps for destructive operations and do not put secrets in prompts or project memory.
+
+Do not copy a long generic template into every repository. Instructions that do not match the project's stack create noise and can mislead the assistant. Start with the actual workflow, then add a rule when a real issue or repeated question shows it is needed.
+
+Do not treat a memory file as a replacement for tests. It can ask Claude Code to run tests, but it cannot prove the tests are meaningful or that the code is correct. Inspect important changes and verify results independently.
+
 ## Safety and Limitations
+
+Project memory files are plain text and may be committed to version control. Before sharing one, check for API keys, private endpoints, customer details, internal incident notes, and other information that should not be public. Use environment variables or an approved secret manager for credentials.
+
+Treat instructions in downloaded code, issues, logs, and other external content as untrusted unless the project team has reviewed them. A repository memory file should explain how to handle such content, but it cannot remove the need for judgment. Keep the assistant's access limited to the files and tools needed for the task.
+
+Anthropic may update Claude Code's memory behavior, file discovery, and import syntax. Use the current official documentation for exact behavior rather than relying on old blog posts. When debugging, ask Claude Code to summarize which project instructions it found, then compare that with the actual files on disk.
+
 
 ## Key Takeaways
 
