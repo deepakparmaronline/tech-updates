@@ -68,9 +68,37 @@ This approach helps you use the products for their intended strengths instead of
 
 ## Common Problems
 
+### AI Mode is not available in Search
+
+Availability can depend on location, language, account type, age requirements, and Google's rollout. Check Google's current support information and the official AI Mode page. Avoid assuming that changing browsers or devices will unlock a feature that is not enabled for the account.
+
+### Gemini opens when you expected Search
+
+The Gemini app and AI Mode are separate experiences. Check the address bar and product name so you know which interface you are using. If your task depends on web sources, open the search results or links directly.
+
+### The answer has no useful source
+
+Generated summaries may omit context or point to sources that do not fully support a claim. Open the source pages and look for the exact detail you need. If a fact is important, compare more than one authoritative source.
+
+### The products give different answers
+
+They may use different context, features, settings, or model versions. A difference does not prove that one product is always better. Rephrase the question, check the sources, and decide which answer is supported by evidence.
+
 ## What Does Not Work
 
+Do not assume that AI Mode is simply another name for the Gemini app. The model family and product interface are different concepts. Do not assume that every Gemini feature appears in AI Mode or that every search feature is available in the assistant app.
+
+Do not use a generated summary as a replacement for reading a source when the exact wording matters. For example, a policy, eligibility rule, price, or release date can change. Open the official page and check the date and details yourself.
+
+Do not treat the absence of a feature as proof of a bug. Product availability can change across regions and accounts. Check official help information before troubleshooting browser settings or reinstalling apps.
+
 ## Safety and Limitations
+
+AI answers can be incomplete, outdated, or wrong. Google itself notes that AI Mode is experimental and may make mistakes. Verify important claims and use primary sources for decisions that affect money, health, legal obligations, or safety.
+
+Avoid entering private business information, passwords, or sensitive personal details unless you understand the applicable account settings and have permission to share that data. Review Google's current privacy controls and activity settings for the product you use.
+
+The product experience can change after this article is published. Use Google's official AI Mode page and the Gemini app to confirm current availability and capabilities rather than relying on a fixed feature list.
 
 ## Key Takeaways
 
