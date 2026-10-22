@@ -102,9 +102,43 @@ Prices and feature lists in this guide can become outdated. The official OpenAI 
 
 ## Key Takeaways
 
+- ChatGPT Pro is most useful when you regularly need the extra capacity and tools included in the current plan.
+- Start with the official plan comparison because features, prices, and usage allowances change.
+- Track real usage and time saved before upgrading.
+- ChatGPT subscriptions and API billing are separate.
+- Review important outputs and protect sensitive information on every plan.
+
 ## Related Reading
 
+- [ChatGPT pricing](https://chatgpt.com/pricing/)
+- [About ChatGPT Pro tiers](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers)
+- [OpenAI API pricing](https://openai.com/api/pricing/)
+
 ## FAQ
+
+### Is ChatGPT Pro worth the money?
+
+It can be worthwhile if you use ChatGPT every day for demanding research, coding, file analysis, or other tasks that need higher usage. If you rarely hit limits, a lower plan may be enough.
+
+### What does ChatGPT Pro include?
+
+OpenAI's current Pro plans include higher access to advanced reasoning and tools such as research and coding. The exact features and usage differ by tier, so check the official plan page before subscribing.
+
+### Is ChatGPT Pro better than Plus?
+
+Pro is designed for users who need more capacity. Plus can offer better value if its available models, features, and limits already cover your work.
+
+### Can I cancel ChatGPT Pro?
+
+You can manage a subscription through the billing channel where you purchased it. Review the current cancellation instructions and renewal date before making a change.
+
+### Does ChatGPT Pro include API credits?
+
+No. The ChatGPT app subscription and API usage are separate. API users should review the OpenAI API pricing page and billing controls.
+
+### Should students pay for ChatGPT Pro?
+
+Students should start by identifying their actual tasks and testing a lower plan. Pro is worth considering only if the extra features and usage make a clear difference and the cost fits their budget.
 
 ## Sources
 - [About ChatGPT Pro tiers](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers)
