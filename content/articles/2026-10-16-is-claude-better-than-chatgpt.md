@@ -102,9 +102,43 @@ The products and plans continue to change. This guide compares the decision proc
 
 ## Key Takeaways
 
+- Neither Claude nor ChatGPT is the best choice for every task.
+- Test both on the same real tasks, prompts, and source material.
+- Judge coding output with tests and research output against primary sources.
+- Compare current plan prices, limits, tools, and privacy terms.
+- Choose the workflow that gives you reliable results with the least correction work.
+
 ## Related Reading
 
+- [Claude plans and pricing](https://claude.com/pricing)
+- [Claude plan guide](https://support.claude.com/en/articles/11049762-choose-a-claude-plan)
+- [ChatGPT pricing](https://chatgpt.com/pricing/)
+
 ## FAQ
+
+### Is Claude better than ChatGPT?
+
+There is no universal winner. The better choice depends on your task, the model available, the plan, and how much checking or editing the result needs.
+
+### Is Claude better for coding?
+
+Both products offer coding support. Use the same code task in each assistant, then run tests and inspect the proposed changes before deciding which works better for your codebase.
+
+### Is ChatGPT cheaper than Claude?
+
+Prices vary by plan, region, and billing interval. Check both official pricing pages for the current option you would buy.
+
+### Can Claude and ChatGPT analyze files?
+
+Both offer document and file related workflows, but supported features and usage limits vary. Confirm the current details for your account.
+
+### Can I use both assistants?
+
+Yes. You can use different tools for different tasks, provided the cost makes sense and your data handling rules allow it.
+
+### Which assistant is best for students?
+
+Test the assistants with your subject material, compare explanations against reliable sources, and follow school rules. A free plan may be enough for occasional study.
 
 ## Sources
 - [Claude plans and pricing](https://claude.com/pricing)
