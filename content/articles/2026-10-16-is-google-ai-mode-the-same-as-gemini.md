@@ -46,7 +46,25 @@ That difference matters when you need to find sources, compare websites, or foll
 
 ## How It Works
 
+AI Mode sits within Google Search. Instead of treating every query as a single short search, it supports follow up questions and a more conversational exploration of a subject. Google describes it as a way to ask complex questions and continue investigating with helpful web links. Its exact interface and availability can change as Google rolls out updates.
+
+The Gemini app is a separate entry point for working with Google's AI assistant. Depending on the account and region, it can help with writing, brainstorming, learning, analysis, and connected Google experiences. Its feature set is not identical to Search's AI Mode, even when both rely on Gemini models.
+
+Traditional search results remain useful in both workflows. A generated summary can help you understand a topic, but the linked source is where you should confirm dates, policies, product details, and other facts. When a question has multiple reasonable answers, open more than one source rather than relying on a single generated response.
+
 ## Practical Steps
+
+Use this quick process to choose the right experience.
+
+1. **Start with your goal.** If you need to discover websites and explore a topic through follow up search questions, start in Google Search and look for AI Mode if it is available. If you need a general assistant for drafting, planning, or idea development, open Gemini.
+2. **Check availability.** Google features can roll out by country, language, age, and account. If a feature is missing, check the official help pages before assuming something is wrong with your device.
+3. **Ask a clear first question.** Include the context, time period, and type of answer you need. A vague question can produce a vague answer in either product.
+4. **Use follow up questions carefully.** Ask for missing details, alternatives, and sources. Do not treat a follow up answer as confirmation unless you verify it.
+5. **Open the cited links.** Check whether a source is current and directly supports the claim. For health, financial, legal, or safety questions, use authoritative sources.
+6. **Switch tools when the task changes.** Use Search for broader discovery and Gemini for assistant work, then return to normal search results when you need a particular website or official document.
+7. **Review account controls.** Before sharing private information, read the data and activity settings that apply to the product and account you use.
+
+This approach helps you use the products for their intended strengths instead of trying to force one interface to handle every task.
 
 ## Common Problems
 
