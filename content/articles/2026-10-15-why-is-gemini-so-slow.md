@@ -55,7 +55,33 @@ Google's public status dashboard can help identify reported incidents for suppor
 
 ## Practical Steps
 
+Follow these checks in order, and test Gemini after each one.
+
+1. **Check your connection.** Open a few other websites. If they also load slowly, restart your router or switch between Wi-Fi and mobile data if available.
+2. **Start a fresh chat.** Send a short, direct prompt. If it responds quickly, the original conversation may have accumulated too much context or included a difficult task.
+3. **Reduce the request.** Ask for one result at a time instead of requesting a long report, multiple files, and detailed analysis in a single prompt. You can ask for the next part after reviewing the first answer.
+4. **Reload the page or restart the app.** Save any prompt you need first. Reload once rather than repeatedly clicking submit, which can create confusion about whether a request is still running.
+5. **Try a private browser window.** If Gemini works there, an extension, cached site data, or a browser profile setting may be involved. Disable extensions one at a time to identify the cause.
+6. **Test another supported browser or device.** If Gemini is fast elsewhere on the same network, the problem may be local to the original browser or device.
+7. **Check official service information.** Review Google's status dashboard for relevant incidents. Also check the Gemini page or Help Center for service notices that apply to your account.
+8. **Review account and feature limits.** If a particular model or feature is unavailable or behaves differently, check the options displayed in Gemini. Do not assume a delay alone proves that a usage limit has been reached.
+
+Make only one change at a time. If you clear site data, remember that you may need to sign in again. Do not clear all browser data as a first step when a simple new chat or reload can test the issue.
+
 ## Common Problems
+
+**Gemini takes a long time to start answering.** Try a short prompt in a new chat. If that works, split the original request into smaller steps and avoid attaching files unless they are needed.
+
+**The answer starts but appears stuck.** Give the request a little time if it is complex. If it does not progress, copy your prompt, stop the attempt if the interface allows it, and retry once with a smaller request. Check whether the service reports an incident before repeating the same long prompt.
+
+**Only one browser is slow.** Test a private window or a different browser. Extensions, an outdated browser, or local site data can affect how a web application behaves.
+
+**Gemini is slow on Wi-Fi but works on mobile data.** That points toward a network or router issue, but it does not identify the exact cause. Try moving closer to the router, restarting it, or checking whether a VPN or filtering service changes the result.
+
+**File uploads or connected tools take longer.** Test a text-only prompt. Large files and multi-step tools can take longer than a simple chat. If text-only use is normal, try a smaller supported file and check the relevant feature's guidance.
+
+**The problem appears across devices.** Check official service notices and try again later if an incident is reported. If no incident is shown and the issue continues, record the approximate time, device, browser, and steps that reproduce it before contacting support.
+
 
 ## What Does Not Work
 
