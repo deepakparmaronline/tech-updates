@@ -102,11 +102,52 @@ If Gemini is used for work, save important prompt text locally before testing br
 
 ## Key Takeaways
 
+- A slow response does not automatically mean Gemini is down.
+- Test a new chat with a short prompt before changing browser settings.
+- Check your connection and compare another browser or device.
+- Use official Google status information, while remembering that not every Gemini issue appears there.
+- Change one setting at a time so you can identify what helps.
+- Avoid unofficial speed tools and do not share sensitive information just to test performance.
+
 ## Related Reading
+
+- [Gemini](https://gemini.google.com/)
+- [Google Cloud status dashboard](https://status.cloud.google.com/)
+- [Google Gemini Help](https://support.google.com/gemini/)
 
 ## FAQ
 
-Gemini can feel slow for several reasons, including a weak connection, a long conversation, a complex request, or temporary service demand. Check simple causes first, then review Google's current status and the options shown in your account.
+### Why is Gemini so slow?
+
+Common possible causes include an unstable connection, a long conversation, a complex request, browser issues, or temporary service demand. Test a short prompt in a new chat to narrow it down.
+
+### Is Gemini down right now?
+
+Check Google's current status information and any notices in the Gemini app. A status dashboard may not list every issue affecting the consumer Gemini service.
+
+### Will a shorter prompt make Gemini faster?
+
+It can help when a request is complex or asks for a large output. Break the task into smaller steps and compare the response time.
+
+### Should I clear my browser cache?
+
+Try a reload or private window first. If Gemini works in a private window, site data or an extension may be involved. Clear only the relevant site data if needed.
+
+### Can my internet connection affect Gemini?
+
+Yes. Weak Wi-Fi, packet loss, VPN routing, or network filtering can make a web app feel slow. Test another site or connection to compare.
+
+### Does slow performance mean I reached a usage limit?
+
+Not necessarily. Slow responses alone do not confirm a limit. Check the model and feature options shown in your account and consult official help guidance.
+
+### What should I do if Gemini is slow on every device?
+
+Check official service notices, try again later if an incident is reported, and record the time and steps that reproduce the issue if it continues.
+
+### Are third party Gemini speed extensions safe?
+
+Do not rely on unofficial tools that promise guaranteed speed improvements. Use the official service and avoid sharing login details or sensitive information with unknown sites.
 
 ## Sources
 
