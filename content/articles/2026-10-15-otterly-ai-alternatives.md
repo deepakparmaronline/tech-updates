@@ -96,7 +96,20 @@ Feature sets and plan packaging change. Use the official product pages for final
 
 ## How to Choose
 
+Start by writing down the questions the tool must answer. For example: does the brand appear for a high intent prompt, which page is cited, which competitors are named, and has the pattern changed since last month? A shortlist should be tested against these same questions rather than a vendor's broad feature count.
+
+Next, compare data coverage. Confirm which AI experiences are tracked, whether you can choose models and regions, how often prompts are checked, and whether results include citations at URL level. Make sure the tool separates a brand mention from a citation to your website. Those signals answer different questions.
+
+Then check reporting and workflow fit. If your team sends recurring client reports, exports and a Looker Studio connector may matter more than a large dashboard. If developers need to connect data to internal systems, confirm API access and its plan limits. Ask how prompts, historical data, users, and projects are handled if you cancel or move to another product.
+
+Finally, calculate the total cost. Include seats, tracked prompts, models, regions, projects, onboarding, and the time required to maintain the data. Trial plans can be useful for setup, but a short trial may not reveal how much reports vary from day to day. Use a stable prompt set and compare multiple collection cycles before deciding.
+
 ## What to Avoid
+
+Avoid treating visibility scores as a universal ranking across all AI searches. Results vary with prompt wording, location, model version, and the way each vendor samples answers. Use these tools to identify patterns and investigate citations, not to promise a fixed position in every answer.
+
+Do not pay for a platform before confirming that it covers the engines your audience uses. Check the official documentation and ask for a demonstration with your own prompts. Also avoid migrating without preserving your existing prompt list, competitor set, report definitions, and baseline data where export options allow it.
+
 
 ## Key Takeaways
 
