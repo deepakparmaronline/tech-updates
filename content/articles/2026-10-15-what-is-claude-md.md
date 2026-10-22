@@ -103,9 +103,52 @@ Anthropic may update Claude Code's memory behavior, file discovery, and import s
 
 ## Key Takeaways
 
+- `CLAUDE.md` gives Claude Code repeatable project context and working rules.
+- Put shared instructions in the repository and personal preferences in a user level file.
+- Keep instructions short, current, specific, and easy to verify.
+- Use imports when supported and when they make a large guide easier to maintain.
+- Do not store credentials or private customer information in project memory.
+- Use real permissions, tests, and code review for safeguards. A Markdown file is not a security boundary.
+
 ## Related Reading
 
+- [Give Claude context with CLAUDE.md](https://support.claude.com/en/articles/14553240-give-claude-context-claude-md-and-better-prompts)
+- [Manage Claude Code memory](https://docs.anthropic.com/en/docs/claude-code/memory)
+- [Claude Code settings](https://docs.anthropic.com/en/docs/claude-code/settings)
+
 ## FAQ
+
+### What is CLAUDE.md?
+
+It is a Markdown file that provides Claude Code with project instructions, conventions, commands, and useful context.
+
+### Does Claude Code read CLAUDE.md automatically?
+
+Claude Code can load applicable memory files from the project and parent directories. Check the current official guide for exact discovery behavior.
+
+### Where should I put CLAUDE.md?
+
+A repository root file is a practical place for shared project guidance. Use a user level memory file for personal instructions that should apply across projects.
+
+### Can CLAUDE.md include other files?
+
+Yes. Anthropic documents an `@path` import syntax for bringing in other files. Review the current documentation for the supported syntax and limitations.
+
+### Does CLAUDE.md replace tests?
+
+No. It can document which tests to run, but the tests still need to execute and their results need to be reviewed.
+
+### Can CLAUDE.md make Claude follow every rule?
+
+No. It can improve consistency, but it is not a guarantee. Use appropriate permissions, tests, and human review for important changes.
+
+### Should I include API keys in CLAUDE.md?
+
+No. Treat the file as ordinary project text that may be committed and shared. Use approved environment variables or a secret manager for credentials.
+
+### How often should I update the file?
+
+Review it when setup commands, project structure, coding standards, or test workflows change. Remove stale guidance that no longer matches the repository.
 
 ## Sources
 
