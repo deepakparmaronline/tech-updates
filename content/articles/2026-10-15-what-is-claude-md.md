@@ -59,7 +59,30 @@ Claude Code also supports importing other files with an `@path` reference. This 
 
 ## Practical Steps
 
+Start with a short file at the repository root. Add only instructions that are useful across many tasks, then expand it when you discover a repeated problem.
+
+1. **Describe the project.** Explain what the application does, the main language and framework, and where important code lives.
+2. **List the setup commands.** Include the supported package manager and the commands needed to install dependencies and start a local development environment.
+3. **Document the checks.** Tell the assistant which lint, test, type check, and build commands to run. State which checks are required before a change is considered ready.
+4. **Set code conventions.** Mention patterns the project already uses, naming rules, and any important compatibility constraints. Avoid vague instructions such as “write perfect code.”
+5. **Mark sensitive or generated areas.** Explain which folders are generated, which files should not be edited manually, and how secrets should be handled. Never paste real credentials into the file.
+6. **Keep instructions testable.** Prefer “run `npm run test` after changing a component” over “always make the code high quality.”
+7. **Review it with the team.** Treat the file like documentation. Update it when commands, architecture, or conventions change.
+
+A simple example might say: “Use the existing TypeScript patterns. Do not edit generated files in `dist/`. Run `npm run lint` and `npm test` after code changes. Do not commit environment files or credentials.” Adjust the commands and folders to match the actual repository rather than copying this example unchanged.
+
 ## Common Problems
+
+**Claude ignores a rule in the file.** Check that the instruction is loaded in the current project, written clearly, and not contradicted by another instruction. Then review the actual change and run the required tests. Do not rely on memory files as the only control for important actions.
+
+**The file becomes too long.** Keep the most important rules near the top and move detailed topic specific guidance into linked or imported files when supported. Remove outdated instructions and repeated examples.
+
+**Two files give conflicting directions.** Review the project root file, local memory files, and user level guidance. Decide which rule should apply and make the hierarchy explicit. Do not assume the assistant will infer the team's intended priority correctly.
+
+**A teammate cannot reproduce the behavior.** Confirm that the shared file is committed and is in the expected directory. Personal user level memory is not automatically shared with the repository.
+
+**The instructions mention commands that no longer work.** Run them yourself, update the file to match the current project, and keep the setup guide aligned with the package scripts and development documentation.
+
 
 ## What Does Not Work
 
