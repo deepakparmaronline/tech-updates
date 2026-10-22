@@ -68,9 +68,37 @@ If the difference is small, choose based on price, workflow, privacy terms, and 
 
 ## Common Problems
 
+### One answer looks better, but the result is not repeatable
+
+AI output varies with prompt wording, context, and model version. Do not choose a product after one trial. Run several examples and keep the input consistent. If the task is important, include at least one difficult case rather than only easy prompts.
+
+### A feature is missing from the plan
+
+A company may advertise a tool that is only available to certain accounts, regions, or plans. Read the current plan details and support pages. If a feature is essential, confirm that it is available in your own account before subscribing.
+
+### One assistant uses a different style
+
+Style is not the same as correctness. A concise answer can omit an important detail, while a long answer can sound polished but contain errors. Give both assistants the same format requirements and judge the result against a clear checklist.
+
+### The answer cites sources that do not prove the claim
+
+Open the original sources and check the exact passage. If the source is missing, outdated, or unrelated, do not count the answer as well researched. For time sensitive facts, prefer official release notes, product documentation, and current support pages.
+
 ## What Does Not Work
 
+A universal ranking such as "Claude always writes better" or "ChatGPT always codes better" hides the most important variables. Product quality changes, and different tasks reward different strengths. Avoid treating a single benchmark, social post, or personal anecdote as proof that one assistant wins for everyone.
+
+Do not compare a free plan in one product with a premium plan in another unless that is the choice you are actually making. Compare like with like, including limits and tools. Also avoid using the number of listed features as a shortcut for value. A feature you never use adds little value to your workflow.
+
+Do not assume that an AI assistant can safely make a final decision just because its answer sounds confident. Review outputs, test code, and verify important facts independently.
+
 ## Safety and Limitations
+
+Before uploading a document or codebase, check whether it contains private, customer, employee, or confidential information. Use only accounts and data controls approved for that material. Read each provider's current privacy and retention terms rather than assuming the policies are identical.
+
+For coding, review proposed changes before applying them and run tests in a controlled environment. For research, confirm claims from the linked source. For work involving health, law, finance, or safety, use qualified professional judgment and suitable primary evidence.
+
+The products and plans continue to change. This guide compares the decision process, not every temporary model feature. The official plan pages linked above should be checked again before purchase.
 
 ## Key Takeaways
 
