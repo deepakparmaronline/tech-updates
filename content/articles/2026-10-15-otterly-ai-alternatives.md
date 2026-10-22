@@ -126,6 +126,8 @@ Do not pay for a platform before confirming that it covers the engines your audi
 - [Profound features](https://www.tryprofound.com/features)
 - [Peec AI](https://peec.ai/)
 - [Semrush](https://www.semrush.com/)
+- [Profound features](https://www.tryprofound.com/features)
+- [Peec AI](https://peec.ai/)
 
 ## FAQ
 
