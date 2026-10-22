@@ -85,7 +85,20 @@ Make only one change at a time. If you clear site data, remember that you may ne
 
 ## What Does Not Work
 
+Repeatedly resending the same long prompt is not a reliable speed fix. It may start more attempts without identifying the cause. First test a short prompt and check whether the issue affects a new conversation too.
+
+Changing several settings at once also makes troubleshooting harder. If you disable extensions, clear site data, switch networks, and change browsers together, you will not know which change mattered. Start with simple reversible checks and move to more disruptive steps only when the evidence points that way.
+
+Do not install unofficial “Gemini speed booster” extensions or enter your Google login on third party diagnostic pages. These tools cannot guarantee faster service and may put your account or data at risk. Use the official Gemini website and Google's own support information.
+
 ## Safety and Limitations
+
+A slow response by itself does not prove that Google is experiencing an outage, that your account is restricted, or that your device is infected. The same symptom can have several causes. Treat status dashboards as useful signals, not as a complete diagnosis for every consumer product feature.
+
+Avoid sharing private documents or sensitive details merely to test response speed. Use a harmless short prompt first. If you need to report a problem, collect basic technical details such as the time, browser version, device type, and the steps that reproduce it. Remove personal information from screenshots before sharing them.
+
+If Gemini is used for work, save important prompt text locally before testing browser changes. For time sensitive tasks, keep a backup method rather than relying on a single AI service. When an official incident is active, wait for service recovery instead of making unnecessary account or device changes.
+
 
 ## Key Takeaways
 
