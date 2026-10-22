@@ -46,7 +46,25 @@ There is no single usage count that makes Pro worthwhile for everyone. The bette
 
 ## How It Works
 
+A subscription changes the level of access available in the ChatGPT product. The current plan comparison describes differences in reasoning models, research, file and data work, image creation, memory, coding tools, and other features. The exact set depends on the plan and may change as OpenAI updates the service.
+
+Pro is aimed at people who need more capacity for demanding work. However, a plan label does not mean every model is always available without limits. Usage rules, abuse guardrails, service availability, and feature eligibility still apply. OpenAI's help page explains the current Pro tiers, while the pricing page is useful for comparing them with Free, Go, Plus, and work plans.
+
+Remember that ChatGPT subscriptions are not the same as API credits. If you build an app that sends requests through the OpenAI API, check the separate [API pricing page](https://openai.com/api/pricing/). A ChatGPT Pro subscription should not be treated as a bundle of API usage.
+
 ## Practical Steps
+
+Use this short process before upgrading.
+
+1. **Write down your three most common tasks.** Examples include analyzing spreadsheets, researching a topic, working through code, drafting client material, or handling long documents.
+2. **Record your current limits.** For a week, note when you hit a usage cap, cannot access a needed tool, or have to switch to another workflow. Do not upgrade based on a limit you rarely encounter.
+3. **Check the current plan comparison.** OpenAI can change plan names, included features, and usage allowances. Read the live pricing and help pages rather than relying on an old review.
+4. **Estimate time saved.** If a paid plan saves two hours a month, compare that value with its full monthly cost. Include the time spent checking and correcting AI output.
+5. **Test a real task.** Use the same prompt and source files you normally use. Check whether the result is better or simply faster.
+6. **Review billing before subscribing.** Confirm the price, renewal date, cancellation route, and any local taxes or app store charges shown at checkout.
+7. **Set a reminder to reassess.** At the end of a month, decide whether the extra access changed your work enough to keep paying.
+
+This process makes the choice measurable. It also gives you a clear reason to downgrade if your needs change.
 
 ## Common Problems
 
