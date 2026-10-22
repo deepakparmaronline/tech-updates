@@ -117,6 +117,64 @@ A paid plan is easier to justify when it saves time on work you already do. For 
 
 **API requests still cost money.** This is expected. ChatGPT billing and API platform billing are separate systems. Check the billing dashboard for the product you are using.
 
+## What Does Not Work
+
+Do not compare plans using a screenshot from an old review and assume the prices are still correct. Model names, message allowances, and included tools can change after a review is published. A comparison is only useful when its date and region match your situation.
+
+Do not assume a subscription is a prepaid balance for the API. If you use an API key in Python, a website, or another application, check the API platform's billing and pricing separately.
+
+Do not choose the most expensive plan only because it sounds more capable. A higher tier can provide more access, but it will not automatically improve every prompt or remove the need to verify answers. Start with the plan that fits your actual work, then upgrade only when a specific limit repeatedly blocks you.
+
+## Safety and Limitations
+
+Before entering payment details, make sure you are on the official ChatGPT site or the app store where you intend to subscribe. Avoid third party pages that promise discounted accounts or shared access. Shared accounts can expose chat history and may violate service terms.
+
+Keep in mind that the listed price is not a promise that every feature will always be available. Usage caps may apply, and limits can vary with the model, tool, account, and demand. If you rely on ChatGPT for work, keep a backup process for important tasks.
+
+When you cancel, check the platform that manages the subscription and read the confirmation screen carefully. Removing the app from your phone does not necessarily cancel a subscription managed by an app store. If the billing page does not match what you expected, contact the platform that processed the charge before starting another plan.
+
+## Key Takeaways
+
+- Free can be enough for occasional personal use.
+- Go is available only in supported markets, so confirm local availability.
+- OpenAI lists Plus at $20 per month in the United States, but checkout may show a different local total.
+- Pro, Business, and Enterprise serve different levels of use and team needs.
+- ChatGPT subscriptions and API billing are separate.
+- Usage limits can still apply to paid plans.
+- Confirm the billing platform and renewal date before paying.
+
+## Related Reading
+
+- [What is ChatGPT Plus?](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus)
+- [What is ChatGPT Go?](https://help.openai.com/en/articles/11989085-what-is-chatgpt-go)
+- [Managing billing for ChatGPT and the API platform](https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform)
+
+## FAQ
+
+### Is ChatGPT free to use?
+
+Yes. OpenAI offers a free plan. It has different limits and access from paid plans, so check the plan comparison for the current details.
+
+### How much does ChatGPT Plus cost?
+
+OpenAI's Help Center lists Plus at $20 per month in the United States. Localized pricing, taxes, and app store billing can change the final amount you see.
+
+### Is ChatGPT Go cheaper than Plus?
+
+Go is positioned as a lower cost paid option in supported markets. Check the current offer in your account because availability and pricing differ by region.
+
+### Does ChatGPT Plus include API credits?
+
+No. ChatGPT subscriptions and API usage are billed separately. Developers should review API pricing and usage in the API platform.
+
+### Do paid ChatGPT plans have message limits?
+
+They can. Limits may vary by model, tool, account, demand, and plan. Check the current plan details and model picker for your account.
+
+### How do I avoid paying twice?
+
+Check whether your current subscription is managed by chatgpt.com, Apple, or Google Play before starting another one. Cancel through the same platform that manages the subscription.
+
 ## Sources
 
 - [What is ChatGPT Plus?](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus)
