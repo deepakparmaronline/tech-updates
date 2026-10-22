@@ -92,6 +92,31 @@ These are different questions. A monthly subscription buys access to the ChatGPT
 
 **Business and Enterprise** are team and organization plans. They can include workspace controls and administrative features that are not relevant to a person who only needs a private assistant. Their billing and terms differ from personal plans.
 
+## Practical Steps
+
+Use this short process before choosing a plan.
+
+1. **Write down your main tasks.** List what you do each week: quick questions, long research, file analysis, coding, image creation, voice, or team work.
+2. **Try the free plan first if it meets your needs.** Do not pay just because a plan has more features. Notice whether you actually hit limits or miss a tool you need.
+3. **Compare the plan page shown to your account.** Check the exact name, price, billing period, included tools, and usage limits. Plan names and offers can change.
+4. **Check your local total.** OpenAI supports localized currency in many markets. Taxes and app store billing can also affect the final amount. The US list price is useful for comparison, but it may not be the amount charged to you.
+5. **Separate personal and developer costs.** If you are building an app, estimate API use separately. A ChatGPT subscription does not act as a bundle of API credits.
+6. **Review the renewal date.** Know which account and payment platform manages the subscription, and set a reminder if you only need it for a short project.
+
+A paid plan is easier to justify when it saves time on work you already do. For example, a person who regularly analyzes long documents may value higher file limits. Someone who asks a few short questions each week may not notice enough difference to justify a recurring fee.
+
+## Common Problems
+
+**The price in an article differs from checkout.** The article may refer to another country, an old plan, or a subscription purchased through an app store. Check the current offer while signed in and review the amount before confirming.
+
+**A feature is missing after upgrading.** A paid subscription does not guarantee every model or tool is available at every moment. Availability can depend on the plan, account, rollout, region, and usage limits. Check the model picker and the plan details for your account.
+
+**A subscription appears on the wrong account.** Confirm that you signed in with the same account used to purchase the plan. If you subscribed through Apple or Google Play, billing is normally managed through that store.
+
+**You are charged twice.** This can happen when a person starts a second subscription on another platform before cancelling the first. OpenAI recommends checking web, Apple, and Google Play subscriptions to identify where each one is managed. Do not create a second subscription just to fix a sign in issue.
+
+**API requests still cost money.** This is expected. ChatGPT billing and API platform billing are separate systems. Check the billing dashboard for the product you are using.
+
 ## Sources
 
 - [What is ChatGPT Plus?](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus)
