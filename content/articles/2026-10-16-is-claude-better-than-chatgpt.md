@@ -46,7 +46,25 @@ It helps to define a winning outcome before testing. For writing, you might meas
 
 ## How It Works
 
+Claude and ChatGPT are AI assistant products, but each has its own models, interface, tools, policies, and subscription options. Both can support writing, analysis, coding, and work with documents. Exact capabilities depend on the model, the feature rollout, the account type, and the current plan.
+
+Anthropic's official [plan guide](https://support.claude.com/en/articles/11049762-choose-a-claude-plan) describes differences between Free, Pro, and Max options. OpenAI's [pricing page](https://chatgpt.com/pricing/) lists its own consumer and work plans. These pages are more reliable for current plan information than a third party comparison written months earlier.
+
+A subscription to either chat product should not be confused with API access. Developers who build an application may need a separate API account and billing setup. Likewise, an organization may have data handling, administration, or compliance requirements that are not met by a personal subscription.
+
 ## Practical Steps
+
+Use the following test to compare the two assistants without letting a single impressive answer decide the result.
+
+1. **Choose three real tasks.** Use tasks you perform regularly, such as editing a client brief, understanding a long report, or fixing a small code issue.
+2. **Keep the inputs the same.** Give both assistants the same prompt and source material. Avoid adding hints to only one of them.
+3. **Set a simple scorecard.** Rate correctness, completeness, clarity, source quality, tool fit, and the amount of editing required. Keep the scores tied to evidence.
+4. **Check factual claims.** Open any cited documentation and verify that the page supports the answer. If an assistant invents a reference or misreads a source, record that as a failure.
+5. **Run code rather than guessing.** For coding tasks, use tests, linting, or a small reproducible example. A confident explanation does not prove that the code works.
+6. **Compare the plan you would actually buy.** Check the current price, regional billing, usage limits, and included tools for your account.
+7. **Repeat the test later.** Models change. Recheck your decision when a new model or feature affects the tasks you care about.
+
+If the difference is small, choose based on price, workflow, privacy terms, and which interface you prefer. You can also keep both for separate tasks if that fits your budget and rules for handling data.
 
 ## Common Problems
 
