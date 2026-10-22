@@ -82,9 +82,37 @@ A good remote recording tool should be tested with an ordinary guest setup, not 
 
 Official details: [Zencastr](https://zencastr.com/).
 
+## Comparison Table
+
+| Tool | Main strength | Best fit | What to verify |
+|---|---|---|---|
+| Riverside | Remote recording and production tools | Interviews, podcasts, and video conversations | Current recording hours, track downloads, exports, and plan limits |
+| Descript | Transcript based editing and media production | Editing interviews, captions, and clips | Transcription hours, resolution, and export limits |
+| StreamYard | Live studio and guest broadcast workflow | Webinars, live interviews, and branded streams | Streaming destinations, recording options, and branding limits |
+| Zencastr | Podcast focused remote recording | Hosts who prioritize recording conversations | Track support, video options, storage, and exports |
+
+The table is a workflow guide, not a quality ranking. Features and prices can change, and some capabilities may be restricted to specific plans.
+
 ## How to Choose
 
+Start by mapping your production from recording to publishing.
+
+- **If you record first and edit later:** Prioritize stable source files, separate tracks, backups, and export quality.
+- **If you publish live:** Prioritize guest joining, on screen layouts, branding, and the destinations you use.
+- **If you make many short clips:** Look closely at transcript editing, captions, and how quickly you can find moments in a long conversation.
+- **If guests are not technical:** Choose a workflow that needs little setup and offers clear instructions when a microphone or browser permission fails.
+- **If several editors work together:** Check team access, shared projects, version history, and who can download source material.
+- **If budget is tight:** Compare the full cost of the plan you need, including extra editors, recording hours, storage, and transcription limits.
+
+Run a small pilot before switching. Record the same type of conversation on your current platform and the alternative. Use headphones to check for clipping, echo, and sync problems. Download the source files and test how easily you can edit and publish them. Do not judge only by the polished demo or the first minute of a recording.
+
 ## What to Avoid
+
+Do not cancel Riverside before exporting the recordings, transcripts, and project files you need to keep. Confirm that the new tool can accept or preserve the formats you already use. A switch can be expensive if it creates hours of manual work or leaves old projects difficult to access.
+
+Do not assume that "local recording" means you can ignore backups. Check that each participant's track has finished uploading before ending a session, and keep a separate copy of important source files. For interviews, ask guests to test their microphone and internet connection before the actual recording.
+
+Do not compare prices without checking plan limits. A low monthly price can become less attractive if the plan restricts export quality, recording time, or team seats. Verify current terms and make sure the workflow meets your needs before you pay.
 
 ## Key Takeaways
 
