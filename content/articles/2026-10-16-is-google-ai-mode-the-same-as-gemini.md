@@ -102,9 +102,43 @@ The product experience can change after this article is published. Use Google's 
 
 ## Key Takeaways
 
+- Google AI Mode is a conversational search experience, while the Gemini app is a broader assistant.
+- Both can use Gemini models, but their interfaces and purposes are different.
+- Use AI Mode for search exploration and Gemini for general assistant tasks when the relevant feature is available.
+- Availability varies, so check Google's current official pages.
+- Verify important answers by opening the sources rather than trusting a generated summary alone.
+
 ## Related Reading
 
+- [Google AI Mode](https://search.google/intl/en-IN/ways-to-search/ai-mode/)
+- [Gemini](https://gemini.google.com/)
+- [Google Search Help](https://support.google.com/websearch/)
+
 ## FAQ
+
+### Is Google AI Mode the same as Gemini?
+
+No. AI Mode is part of Google Search and is designed for conversational search. The Gemini app is a separate assistant experience with a broader set of tasks.
+
+### Does AI Mode use Gemini?
+
+Google says AI Mode uses Gemini models. The exact models and product features can change as Google updates its services.
+
+### Can Gemini replace Google Search?
+
+Gemini can help answer questions, but Search remains useful for finding specific websites, checking original sources, and navigating directly to official pages.
+
+### Can AI Mode answer follow up questions?
+
+Yes. Google describes AI Mode as supporting follow up questions so users can explore a topic conversationally and open helpful web links.
+
+### Why can I see AI Mode but not a Gemini feature?
+
+Availability can depend on country, language, age, account type, and staged rollout. Check Google's current support information for the feature.
+
+### Which is better for research?
+
+Use AI Mode when you want to explore a search topic and follow web links. Use Gemini for broader assistant work. For important claims, open and verify the original sources in either case.
 
 ## Sources
 - [Google AI Mode](https://search.google/intl/en-IN/ways-to-search/ai-mode/)
