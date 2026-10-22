@@ -26,3 +26,4 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-20,cursor-alternatives,Alternatives,cursor,cursor alternatives,data/semrush/queues/alternatives.csv
 2026-10-17,does-perplexity-use-chatgpt,Perplexity,,does perplexity use chatgpt,data/semrush/queues/perplexity.csv
 2026-10-17,how-to-get-gemini-api-key,Gemini,,how to get gemini api key,data/semrush/queues/gemini.csv
+2026-10-17,is-chatgpt-plus-worth-it,ChatGPT,,is chatgpt plus worth it,data/semrush/queues/chatgpt.csv
