@@ -66,7 +66,38 @@ Try prompts that expose common weaknesses: a person walking while the camera mov
 **Check before switching:** Verify current generation limits, output controls, export quality, and plan terms.
 
 
+### 3. Adobe Firefly
+
+Adobe Firefly is worth considering when AI generation needs to fit into a wider design and editing workflow. Adobe's official site describes generative tools across creative tasks. If your team already uses Adobe applications, check whether the current Firefly features fit your production process and licensing needs.
+
+Firefly is not automatically a direct substitute for every Kling video feature. Compare the specific video generation capability, editing workflow, output formats, and commercial terms that apply to your account. The useful question is whether it reduces steps in your workflow, not whether the product has the largest feature list.
+
+**Best for:** Designers and marketing teams already working with Adobe's creative tools.
+
+**Check before switching:** Verify the current video feature availability, plan limits, and the terms that apply to generated assets.
+
+### 4. Luma Dream Machine
+
+Luma's Dream Machine is another product to evaluate for AI generated video and image based creative workflows. Check the current official product page for available models, input types, and generation controls, since the feature set can change over time.
+
+As with other tools, compare the final output rather than relying on showcase clips. Test a subject moving through a scene, a camera move, and a sequence that requires visual continuity. Record the number of attempts needed, whether you can direct the result, and how much cleanup is required outside the generator.
+
+**Best for:** Creators who want to compare another dedicated generative video workflow.
+
+**Check before switching:** Confirm current availability, export options, credits, and commercial use terms.
+
 ## Comparison Table
+
+| Tool | Main reason to consider it | Best fit | What to verify |
+|---|---|---|---|
+| Kling AI | Video and image generation with motion control and editing features | Creators who need a combined generation workflow | Current model, credit, and export limits |
+| Runway | AI media generation and creative editing workflow | Teams making iterative video content | Exact model access and editing tools |
+| Pika | Short form video generation and transformations | Social and creative experiments | Current features and generation limits |
+| Adobe Firefly | Generative tools within a broader creative workflow | Designers and marketing teams using Adobe tools | Video feature access and asset terms |
+| Luma Dream Machine | Dedicated AI video generation | Creators comparing video output and controls | Model availability, credits, and exports |
+
+This is a practical shortlist, not a lab ranking. Products change and a result from one prompt cannot establish a universal quality winner.
+
 
 ## How to Choose
 
