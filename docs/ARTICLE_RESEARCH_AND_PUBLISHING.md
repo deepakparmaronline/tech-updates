@@ -6,7 +6,7 @@ This is the source of truth for every Tech Updates article run. Read it with the
 
 Do not create, schedule, resume, or run a recurring or unattended article publisher. Begin work only when the repository owner supplies the editorial input in the current conversation. There is no daily deadline, fixed daily quota, or automatic category rotation.
 
-The owner may request drafting only, a commit-ready Semrush queue batch, or full publication. For a drafting request, create and validate the requested articles but do not push or deploy unless the owner explicitly asks. For the Semrush queue prompt, complete every local check and the used keyword ledger, then stop before the owner's commit and push. For a publishing request, complete the validation, build, push, deployment, and live-page checks in this run.
+The owner may request drafting only, a commit-ready last seven days news batch, a commit-ready Semrush queue batch, or full publication. For a drafting request, create and validate the requested articles but do not push or deploy unless the owner explicitly asks. For either reusable prompt, complete every required local check, include the Semrush used-keyword ledger when applicable, and stop before the owner's commit and push. For a separate explicit publishing request, complete the validation, build, push, deployment, and live-page checks in this run.
 
 Never touch `toolboxcard.tech`, its repository, or any task associated with it.
 

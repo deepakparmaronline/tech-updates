@@ -41,6 +41,7 @@ For every article, verify current claims with at least two authoritative sources
 The owner's requested scope controls the endpoint:
 
 - For a draft or writing request, create and validate the files but do not push or deploy.
+- For the last seven days news prompt, complete current research, qualifying articles, images, validation, the production build, static export checks, sitemap checks, and the intended file manifest. Stop with a commit-ready batch before git add, commit, or push.
 - For the explicit Semrush queue prompt, complete the articles, images, validation, production build, static export checks, sitemap checks, documentation checks, and used keyword ledger. Stop with a commit-ready batch so the owner's only remaining publication action is committing and pushing it to `main`.
 - For a publishing request, commit and push, monitor the existing deployment pipeline, and verify every live article plus the homepage and relevant category pages.
 

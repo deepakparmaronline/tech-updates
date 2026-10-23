@@ -49,7 +49,7 @@ The site is a fixed newspaper system. The application owns the layout; Markdown 
 | `docs/CONTENT_STYLE.md` | Editorial and structural requirements | Read before publishing |
 | `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md` | Mandatory user-supplied topic research and publishing runbook | Read before publishing |
 | `docs/LAST_SEVEN_DAYS_NEWS_PUBLISHING.md` | Owner-triggered last seven days news discovery and publishing runbook | Read when invoked |
-| `docs/PROMPT_LAST_SEVEN_DAYS_NEWS.md` | Copy-and-paste prompts for research, drafting, or full news publication | Use to invoke the workflow |
+| `docs/PROMPT_LAST_SEVEN_DAYS_NEWS.md` | Copy-and-paste prompt for a commit-ready news batch, plus a research-only variant | Use to invoke the workflow |
 | `docs/DEPLOYMENT.md` | GitHub and Hostinger deployment instructions | Read before deployment changes |
 | `docs/TROUBLESHOOTING.md` | Build and deployment diagnosis | Read when a check fails |
 | `.github/workflows/` | Validation, static build and hosting automation | No during publishing |

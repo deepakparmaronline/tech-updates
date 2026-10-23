@@ -1,15 +1,15 @@
-# Copy and Paste Prompt for Last Seven Days News Publishing
+# Copy and Paste Prompt: Prepare a Last Seven Days News Batch
 
-Use this prompt in ChatGPT, ChatGPT Work, Codex in VS Code, Codex CLI, Codex Cloud, or another capable AI agent that has access to the `deepakparmaronline/tech-updates` repository and current web research.
+Use this prompt in ChatGPT with the `deepakparmaronline/tech-updates` GitHub repository connected, Codex in VS Code with the repository open, Codex CLI, Codex Cloud, or another capable AI agent with repository write access, current web research, image generation, and a terminal that can run the project checks.
 
-The publishing version below gives the agent permission to create files, commit, push to `main`, and verify deployment. Use it only when you intend to publish. It does not create a recurring or scheduled task.
+The prompt prepares a complete, validated, commit-ready news batch. It intentionally stops before `git add`, commit, push, deployment, and live verification. The repository owner performs the final commit and push to `main`, which triggers the existing GitHub Actions and Hostinger deployment pipeline. It never creates a recurring or scheduled task.
 
-## Full publishing prompt
+## Commit-ready news prompt
 
 ```text
-Work in the Tech Updates repository `deepakparmaronline/tech-updates` on the `main` branch.
+Work in the Tech Updates repository `deepakparmaronline/tech-updates` from the current `main` branch. In VS Code or Codex CLI, use the repository currently open in the workspace and confirm its Git remote before editing. In ChatGPT with GitHub connected, open that exact repository and branch. Stop if the repository or branch does not match.
 
-This is an explicit, one-time manual request to research, write, and publish the major technology news from the last seven calendar days. It is not permission to create, resume, or modify any recurring or scheduled task.
+This is an explicit, one-time manual request to research and prepare commit-ready articles about the major technology news from the last seven calendar days. Execute the work by editing the repository. Do not merely return a plan or paste article drafts into chat. Do not run git add, commit, push, deploy, or create, resume, or modify any recurring or scheduled task.
 
 Before taking action, read these repository files completely from the current `main` branch:
 
@@ -59,11 +59,11 @@ After creating all qualifying articles and images, run:
 
 Fix every in-scope failure. Confirm that all new article pages and category pages are included in the static export. Confirm that `/sitemap.xml` is a sitemap index and that every new article appears in the correct `/sitemaps/category-slug/sitemap.xml` file.
 
-Then commit only the intended article and image files, plus a narrowly required compatibility fix if the repository instructions authorize it. Push the commit to `main`. Confirm the GitHub Actions workflow succeeds, confirm Hostinger deployment completes, and open every new live article URL. Also verify the homepage, every relevant category page, `/ai-news/` when used, the live master sitemap index, and every relevant category sitemap.
+Stop after all local checks pass. Leave only the intended article files, image files, and any narrowly required compatibility or documentation changes in the workspace. Do not stage or commit them. Provide the exact file manifest the repository owner should review, commit, and push to `main`. Do not monitor GitHub Actions or Hostinger, because those actions begin only after the owner's push.
 
-Stop and ask me only if the workflow requires a new login, OAuth grant, CAPTCHA, OTP, 2FA, payment, destructive action, permission change, DNS or hosting change, force push, or a decision that would materially change the requested scope. Never expose credentials or authentication data.
+If the environment cannot browse current sources, create and save distinct article images, edit repository files, run content validation, run the production build, or inspect the static export, report the exact blocker and do not describe the batch as commit-ready. Stop and ask me only if the workflow requires a new login, OAuth grant, CAPTCHA, OTP, 2FA, payment, destructive action, permission change, DNS or hosting change, force push, or a decision that would materially change the requested scope. Never expose credentials or authentication data.
 
-Do not claim publication success until the commit, push, workflow, deployment, and live-page checks have all succeeded.
+Do not claim that any article is published. Report the batch as commit-ready only after every required local check succeeds.
 
 Finish with a concise run report containing:
 
@@ -73,27 +73,19 @@ Finish with a concise run report containing:
 - source links used for each article
 - article paths, image paths, and word counts
 - validation and build results
-- commit and push result
-- workflow and deployment result
-- every verified live URL, category URL, homepage check, and sitemap check
+- static article, category, homepage data, master sitemap index, and category sitemap checks
+- the complete list of intended files the owner should review, commit, and push
+- confirmation that no git add, commit, push, deployment, or live verification was performed
 - any unresolved fact, access problem, or blocker
 
-Begin now and continue autonomously until publication is verified or a repository-defined stop condition occurs.
+Begin now and continue autonomously until the complete news batch passes every required local check and is ready for the owner's commit, or until a repository-defined stop condition occurs. Stop before any Git commit or push.
 ```
 
-## Draft without publishing
+## How to use it
 
-To create local or reviewable drafts without pushing, use the full prompt but replace its second paragraph with:
+For VS Code Codex or Codex CLI, open the repository root, start a new agent session, and paste the complete prompt above. For ChatGPT with GitHub connected, select the `deepakparmaronline/tech-updates` repository and paste the same prompt. The prompt is intentionally identical in both environments.
 
-```text
-This is an explicit, one-time manual request to research and draft the major technology news from the last seven calendar days. Create the articles and images, validate them, and run the production build. Do not commit, push, deploy, or describe the drafts as published.
-```
-
-Remove the paragraph that begins with `Then commit only the intended article and image files` and replace the final sentence with:
-
-```text
-Begin now and continue autonomously until the drafts pass validation and the production build, or a repository-defined stop condition occurs.
-```
+Do not use a read-only GitHub connection for the commit-ready prompt. If the connected agent cannot save images or run repository commands, use the research-only prompt below instead.
 
 ## Research only
 
@@ -113,10 +105,10 @@ Do not write files, create images, commit, push, deploy, or schedule future work
 
 The agent needs:
 
-- read and write access to the correct repository for drafting
-- permission to push to `main` for the full publishing prompt
+- read and write access to the correct repository and current `main` branch
 - current web access for news verification
-- the repository's normal image-generation or image-creation capability
-- access to GitHub Actions and deployment status for full live verification
+- an image-generation capability that can save the resulting files under `public/images/`
+- a terminal capable of running `npm run validate:content` and `npm run build`
+- access to the generated `out/` directory for static page and sitemap verification
 
-If the agent has only GitHub read access, use the research-only prompt. If it can edit but cannot push, use the draft version.
+The prompt does not require permission to commit or push. If the agent has only GitHub read access, cannot save images, or cannot run the project checks, use the research-only prompt.

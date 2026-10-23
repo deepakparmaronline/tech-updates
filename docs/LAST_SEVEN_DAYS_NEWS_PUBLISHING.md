@@ -11,8 +11,8 @@ Read `AGENTS.md`, `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md`, `docs/CONTENT_STYLE
 The owner's wording controls the endpoint:
 
 1. If asked to **research**, search the required date window and return the qualified story list with sources. Do not create article files.
-2. If asked to **write** or **draft**, research the window, create the qualified articles and images, then validate and build. Do not push or deploy.
-3. If asked to **publish**, research the window, create the qualified articles and images, validate, build, commit, push, monitor deployment, and verify every live page.
+2. If asked to use `docs/PROMPT_LAST_SEVEN_DAYS_NEWS.md`, **write**, **draft**, or prepare a **commit-ready** batch, research the window, create the qualified articles and images, validate, build, inspect the static export and sitemaps, then stop before git add, commit, push, or deployment.
+3. Only if the owner separately and explicitly asks to **commit and publish**, commit the intended files, push to `main`, monitor deployment, and verify every live page.
 
 Do not treat the existence of this file, a new day, or an earlier run as permission to begin.
 
@@ -124,7 +124,7 @@ Apply senior editorial SEO judgment without claiming personal experience or a sp
 - Do not use em dashes or en dashes. Avoid ordinary hyphens in prose by rewriting the sentence. Keep a hyphen only when an official product name, URL, filename, code, or required technical syntax needs it.
 - Do not invent experience, quotes, traffic claims, rankings, test results, or certainty.
 
-## Validation and publication
+## Validation and commit-ready handoff
 
 Run:
 
@@ -133,7 +133,7 @@ npm run validate:content
 npm run build
 ```
 
-Fix every failure. Confirm that each selected category route builds, `/sitemap.xml` is a sitemap index, and each new article appears in its generated category sitemap under `/sitemaps/category-slug/sitemap.xml`. For a publish request, commit only intended files, push to `main`, confirm GitHub Actions succeeds, confirm Hostinger deploys, then open every new article URL, `/ai-news/` when used, the homepage, relevant brand category pages, the master sitemap index, and each relevant category sitemap.
+Fix every failure. Confirm that each selected category route builds, `/sitemap.xml` is a sitemap index, and each new article appears in its generated category sitemap under `/sitemaps/category-slug/sitemap.xml`. For the standard prompt workflow, stop with a complete file manifest before git add, commit, or push. The repository owner performs the final commit and push. For a separate explicit commit-and-publish request, commit only intended files, push to `main`, confirm GitHub Actions succeeds, confirm Hostinger deploys, then open every new article URL, `/ai-news/` when used, the homepage, relevant brand category pages, the master sitemap index, and each relevant category sitemap.
 
 Do not report an article as published until the commit, push, workflow, deployment, and live checks have succeeded.
 
@@ -148,6 +148,7 @@ Report:
 - category, title, slug, article path, image path, and word count
 - internal links and FAQ coverage
 - validation and build results
+- for a commit-ready batch, the complete intended file manifest and confirmation that no files were staged, committed, pushed, or deployed
 - for publication, the commit, push, workflow, deployment, article URLs, category URLs, homepage, and sitemap checks
 
 Clearly report access problems, unresolved facts, duplicate conflicts, and any story withheld because it did not meet the evidence standard.

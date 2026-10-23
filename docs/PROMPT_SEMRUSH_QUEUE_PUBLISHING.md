@@ -1,13 +1,13 @@
 # Copy and Paste Prompt: Prepare One Commit-Ready Article per Semrush Queue
 
-Use the prompt below in VS Code Codex, Codex CLI, or ChatGPT with the `deepakparmaronline/tech-updates` GitHub repository connected. Run it from the repository root. This is a one-time manual preparation instruction, not a schedule. It finishes with a validated, commit-ready batch and leaves the final commit and push to the repository owner.
+Use the same prompt below in VS Code Codex with the repository open, Codex CLI from the repository root, or ChatGPT with the `deepakparmaronline/tech-updates` GitHub repository connected. The agent needs repository write access, current web research, image generation that can save files, and a terminal that can run the project checks. This is a one-time manual preparation instruction, not a schedule. It finishes with a validated, commit-ready batch and leaves the final commit and push to the repository owner.
 
 The current repository uses `claude.csv` and the category name `Claude`. If the request informally says “Cloud,” interpret it as Claude only when the file and row data clearly confirm that mapping.
 
 ## Commit-ready batch prompt
 
 ```text
-Work in the Tech Updates repository currently open in this workspace. This is an explicit, one-time manual request to prepare one commit-ready article from every Semrush queue CSV currently present in data/semrush/queues/. Do not create, resume, or modify any recurring, scheduled, background, or unattended task. Do not commit, push, or deploy. The repository owner will perform the final commit and push to main, which triggers the existing GitHub Actions and Hostinger deployment pipeline.
+Work in the Tech Updates repository `deepakparmaronline/tech-updates` from the current `main` branch. In VS Code or Codex CLI, use the repository currently open in the workspace and confirm its Git remote before editing. In ChatGPT with GitHub connected, open that exact repository and branch. Stop if the repository or branch does not match. This is an explicit, one-time manual request to prepare one commit-ready article from every Semrush queue CSV currently present in data/semrush/queues/. Do not create, resume, or modify any recurring, scheduled, background, or unattended task. Do not run git add, commit, push, or deploy. The repository owner will perform the final commit and push to main, which triggers the existing GitHub Actions and Hostinger deployment pipeline.
 
 Execute the work. Do not merely give me a plan or paste draft article text into chat.
 
@@ -101,7 +101,7 @@ Include the ledger change with the same commit-ready batch. Do not wait for live
 
 Stop before running git add, git commit, or git push. Do not monitor GitHub Actions or Hostinger and do not claim that the articles are published. Leave the workspace in a state where the repository owner's only remaining publication action is reviewing, committing, and pushing the intended files to `main`; the existing pipeline will deploy from that push.
 
-Stop and ask me only if the local preparation requires a new login, OAuth grant, CAPTCHA, OTP, 2FA, payment, destructive operation, DNS or hosting change, permission change, or a decision that would materially alter the requested scope. Git commit, push, workflow monitoring, deployment, and live verification are intentionally outside this prompt.
+If the environment cannot browse current sources, create and save distinct article images, edit repository files, run content validation, run the production build, or inspect the static export, report the exact blocker. Do not append the selected keywords to the used-keyword ledger and do not describe the batch as commit-ready. Stop and ask me only if the local preparation requires a new login, OAuth grant, CAPTCHA, OTP, 2FA, payment, destructive operation, DNS or hosting change, permission change, or a decision that would materially alter the requested scope. Git commit, push, workflow monitoring, deployment, and live verification are intentionally outside this prompt.
 
 Final report
 
@@ -126,4 +126,8 @@ Begin now and continue autonomously until the full batch, all local checks, and 
 
 ## Expected batch size today
 
-At the time this prompt was created, the queue directory contains five CSV files, so a successful run should publish five articles: one each for Alternatives, ChatGPT, Claude, Gemini, and Perplexity. This note is informational only. The agent must recount the files every time because a later queue file increases the required article count automatically.
+At the time this prompt was created, the queue directory contains five CSV files, so a successful run should prepare five commit-ready articles: one each for Alternatives, ChatGPT, Claude, Gemini, and Perplexity. This note is informational only. The agent must recount the files every time because a later queue file increases the required article count automatically.
+
+## Connection requirements
+
+The commit-ready prompt requires repository write access, current web research, an image-generation capability that can save files under `public/images/`, a terminal capable of running `npm run validate:content` and `npm run build`, and access to the generated `out/` directory. It does not require permission to commit or push. A read-only GitHub connection or an environment that cannot save images and run the required checks cannot complete this workflow.
