@@ -1,0 +1,157 @@
+name: Finalize complete daily publisher branches
+
+on:
+  push:
+    branches:
+      - "daily-publisher-*"
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: Complete daily-publisher branch to validate and merge
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-publisher-finisher-${{ github.event_name == 'workflow_dispatch' && inputs.branch || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    env:
+      TARGET_BRANCH: ${{ github.event_name == 'workflow_dispatch' && inputs.branch || github.ref_name }}
+      NEXT_PUBLIC_SITE_URL: https://techupates.blog
+    steps:
+      - name: Check out the publisher branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ env.TARGET_BRANCH }}
+
+      - name: Confirm the branch is a complete daily batch
+        id: batch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+
+          run_date="$(TZ=Asia/Kolkata date +%F)"
+          branch_name="$TARGET_BRANCH"
+          echo "run_date=$run_date" >> "$GITHUB_OUTPUT"
+
+          if [[ ! "$branch_name" =~ ^daily-publisher-${run_date}($|-) ]]; then
+            echo "::error::Branch $branch_name is not for today's Asia/Kolkata date $run_date."
+            exit 1
+          fi
+
+          main_date_count="$(
+            git ls-tree -r --name-only origin/main content/articles \
+              | grep -Ec "^content/articles/${run_date}-.*\.md$" || true
+          )"
+          if [[ "$main_date_count" -gt 0 ]]; then
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "Today's articles already exist on main; no duplicate batch was merged." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          mapfile -t changed < <(git diff --name-only origin/main...HEAD)
+          mapfile -t added < <(git diff --diff-filter=A --name-only origin/main...HEAD)
+          mapfile -t removed < <(git diff --diff-filter=DR --name-only origin/main...HEAD)
+
+          article_count="$(
+            printf '%s\n' "${added[@]}" \
+              | grep -Ec "^content/articles/${run_date}-.*\.md$" || true
+          )"
+          image_count="$(
+            printf '%s\n' "${added[@]}" \
+              | grep -Ec '^public/images/[^/]+\.(svg|png|webp|jpg|jpeg)$' || true
+          )"
+          ledger_count="$(
+            printf '%s\n' "${changed[@]}" \
+              | grep -Ec '^data/semrush/used-keywords\.csv$' || true
+          )"
+          added_ledger_rows="$(
+            git diff --unified=0 origin/main...HEAD -- data/semrush/used-keywords.csv \
+              | grep '^+' \
+              | grep -v '^+++' || true
+          )"
+          ledger_row_count="$(printf '%s\n' "$added_ledger_rows" | grep -c . || true)"
+          valid_ledger_row_count="$(
+            printf '%s\n' "$added_ledger_rows" \
+              | grep -Ec "^\+${run_date}," || true
+          )"
+
+          invalid_count=0
+          for path in "${changed[@]}"; do
+            case "$path" in
+              content/articles/${run_date}-*.md|public/images/*|data/semrush/used-keywords.csv) ;;
+              *) invalid_count=$((invalid_count + 1)) ;;
+            esac
+          done
+
+          if [[ "${#changed[@]}" -ne 11 \
+             || "${#added[@]}" -ne 10 \
+             || "${#removed[@]}" -ne 0 \
+             || "$article_count" -ne 5 \
+             || "$image_count" -ne 5 \
+             || "$ledger_count" -ne 1 \
+             || "$ledger_row_count" -ne 5 \
+             || "$valid_ledger_row_count" -ne 5 \
+             || "$invalid_count" -ne 0 ]]; then
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            {
+              echo "The branch is not a complete, safe daily batch yet."
+              echo ""
+              echo "- Changed paths: ${#changed[@]} (expected 11)"
+              echo "- New articles: $article_count (expected 5)"
+              echo "- New images: $image_count (expected 5)"
+              echo "- New current-date ledger rows: $valid_ledger_row_count (expected 5)"
+              echo "- Removed or renamed paths: ${#removed[@]} (expected 0)"
+              echo "- Disallowed paths: $invalid_count (expected 0)"
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          echo "ready=true" >> "$GITHUB_OUTPUT"
+          echo "Complete daily batch detected on $branch_name." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Install dependencies
+        if: steps.batch.outputs.ready == 'true'
+        run: npm ci
+
+      - name: Validate content
+        if: steps.batch.outputs.ready == 'true'
+        run: npm run validate:content
+
+      - name: Build production site
+        if: steps.batch.outputs.ready == 'true'
+        run: npm run build
+
+      - name: Merge the validated batch into main
+        if: steps.batch.outputs.ready == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_sha="$(git rev-parse HEAD)"
+          git fetch origin main
+          run_date="${{ steps.batch.outputs.run_date }}"
+
+          main_date_count="$(
+            git ls-tree -r --name-only origin/main content/articles \
+              | grep -Ec "^content/articles/${run_date}-.*\.md$" || true
+          )"
+          if [[ "$main_date_count" -gt 0 ]]; then
+            echo "::error::Another run already published today's batch; refusing a duplicate."
+            exit 1
+          fi
+
+          git config user.name github-actions-bot
+          git config user.email github-actions-bot@users.noreply.github.com
+          git checkout -B main origin/main
+          git merge --no-ff "$source_sha" -m "Finalize daily publisher batch for $run_date"
+          git push origin HEAD:main
+
+          echo "Validated batch merged into main. Hostinger auto-deployment can now publish it." >> "$GITHUB_STEP_SUMMARY"
