@@ -2,6 +2,8 @@
 
 Write like a skilled technology journalist explaining a real problem to a thoughtful friend. Use simple English, active voice, short paragraphs, concrete evidence, and varied sentence rhythm. Sound human, calm, and useful.
 
+The repository owner's manual topic input changes what to cover, not how an article is structured. Use the applicable template below for Reddit-derived topics, requested alternatives articles, and invoked last seven days news articles.
+
 Do not use AI clichés, generic introductions, false certainty, keyword stuffing, copied comments, invented experience, or repetitive transitions. Do not use em dashes or en dashes. Avoid hyphens in prose when the sentence can be rewritten naturally. Official product names, URLs, code, and required technical syntax may keep their punctuation.
 
 ## Shared article contract
@@ -51,6 +53,25 @@ Use these H2 headings in this order for every article in the `Alternatives` cate
 9. `FAQ`
 
 Explain who each product suits, its key strengths, important limits, current pricing context, migration considerations, and why someone may prefer it over the original tool. Use a concise comparison table based on verified information. Do not rank products through arbitrary scores. Do not write filler entries just to make a large number.
+
+## AI News and breaking news template
+
+Use these H2 headings in this order for every article in the `AI News` category and for time-sensitive news articles created through `docs/LAST_SEVEN_DAYS_NEWS_PUBLISHING.md`:
+
+1. `News Summary`
+2. `What Happened`
+3. `Why It Matters`
+4. `Key Details`
+5. `Who Is Affected`
+6. `What Happens Next`
+7. `What We Know and Do Not Know`
+8. `Key Takeaways`
+9. `Related Reading`
+10. `FAQ`
+
+Before the first H2, add a concise standfirst that explains what happened, when it happened, who is affected, and why it matters. Keep the reporting factual and time specific. The site builds its table of contents automatically from the H2 headings, so never add a second manual table of contents.
+
+Every article created through the last seven days news workflow must set `contentType: news` in frontmatter so brand-category news receives the same validation as `AI News` articles.
 
 ## Editorial trust
 

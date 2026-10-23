@@ -28,17 +28,17 @@ The static website is written to `out/`.
 4. Add its 16:9 image under `public/images/`.
 5. Write at least 1,200 original words using the required headings.
 6. Run `npm run validate:content` and `npm run build`.
-7. Commit and push. No component or layout edit is required.
+7. Commit and push. No component or layout edit is required. The article is added to its generated category sitemap automatically.
 
 ## Architecture
 
-- `app/` — reusable routes, metadata, sitemap, robots, category and article pages
+- `app/` — reusable routes, metadata, the master sitemap index, category sitemaps, robots, category and article pages
 - `components/` — fixed header, footer, cards, search, theme and article tools
 - `content/articles/` — the only everyday publishing surface
 - `lib/articles.ts` — the single article parser and index
 - `scripts/validate-content.mjs` — frontmatter, image, structure and link checks
 - `.github/workflows/` — validation, build, artifact and Hostinger trigger workflows
-- `docs/` — deployment, automation, editorial and troubleshooting guides
+- `docs/` — deployment, manual publishing, editorial and troubleshooting guides
 
 ## Environment
 
@@ -48,4 +48,4 @@ The static website is written to `out/`.
 
 The newsletter form is intentionally presentation-only until a chosen email provider and privacy text are configured. Social links are icons without external destinations until official profiles are supplied. The generated sample art is reusable demonstration art; replace each file with a distinct 16:9 editorial image before a public launch.
 
-See [Deployment](docs/DEPLOYMENT.md), [Automation](docs/AUTOMATION.md), [Content Style](docs/CONTENT_STYLE.md), and [Troubleshooting](docs/TROUBLESHOOTING.md).
+See [Deployment](docs/DEPLOYMENT.md), [Manual Publishing Policy](docs/AUTOMATION.md), [Last Seven Days News Publishing](docs/LAST_SEVEN_DAYS_NEWS_PUBLISHING.md), [Copy-and-Paste News Prompt](docs/PROMPT_LAST_SEVEN_DAYS_NEWS.md), [Copy-and-Paste Semrush Queue Prompt](docs/PROMPT_SEMRUSH_QUEUE_PUBLISHING.md), [Content Style](docs/CONTENT_STYLE.md), and [Troubleshooting](docs/TROUBLESHOOTING.md).

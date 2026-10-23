@@ -39,3 +39,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-23,how-to-stop-gemini-data-training,Gemini,,how to stop gemini from using my data for training,data/semrush/queues/gemini.csv
 2026-10-23,v0-alternatives,Alternatives,v0,v0 alternatives,data/semrush/queues/alternatives.csv
 2026-10-23,glean-alternatives,Alternatives,glean,glean competitors,data/semrush/queues/alternatives.csv
+2026-10-23,flutter-alternatives,Alternatives,flutter,flutter alternatives,data/semrush/queues/alternatives.csv
+2026-10-23,when-did-chatgpt-come-out,ChatGPT,,when did chatgpt come out,data/semrush/queues/chatgpt.csv
+2026-10-23,how-to-install-claude-mem,Claude,,how to install claude mem,data/semrush/queues/claude.csv
+2026-10-23,can-i-create-a-project-in-gemini,Gemini,,can i create a project in gemini,data/semrush/queues/gemini.csv
+2026-10-23,is-perplexity-down,Perplexity,,is perplexity down,data/semrush/queues/perplexity.csv

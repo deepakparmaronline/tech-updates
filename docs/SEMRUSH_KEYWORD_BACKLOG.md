@@ -1,6 +1,8 @@
 # Semrush Saved Keyword Inventory
 
-This repository contains the durable Semrush inventory for the daily publisher. The scheduled ChatGPT task must use these files when it does not have a live Semrush session. Missing Semrush login access is not a publishing blocker.
+This repository contains a durable, dated Semrush keyword inventory. It never starts work automatically. The queues become a topic source only when the repository owner explicitly invokes `docs/PROMPT_SEMRUSH_QUEUE_PUBLISHING.md` or explicitly requests Semrush research in the current conversation.
+
+For Reddit, owner-named alternatives, and last seven days news runs, follow their own topic-selection rules. Do not use Semrush rows to fill or replace those batches.
 
 ## Snapshot provenance
 
@@ -29,48 +31,79 @@ All captured rows, including lower relevance semantic suggestions, are preserved
 | Granola AI alternatives | 1,268 |
 | Replit alternatives | 868 |
 
-Do not read every raw export during a normal daily run. They are the audit trail and the source for rebuilding queues with `npm run build:semrush-inventory`.
+Do not read every raw export during a normal queue run. They are the audit trail and the source for rebuilding queues with `npm run build:semrush-inventory` after a verified export is intentionally added.
 
-## Daily authority queues
+## Current publishing queues
 
-Use the ranked, brand relevant queues below. They already exclude duplicate keywords, zero volume rows, KD above 49, and obvious off topic matches.
+Every `.csv` file directly under `data/semrush/queues/` is one publishing queue when the Semrush queue prompt is explicitly invoked. Discover this list from the filesystem at the start of every run. Never assume that only the files listed below exist.
 
-| Queue | Ready questions |
-| --- | ---: |
-| `data/semrush/queues/chatgpt.csv` | 954 |
-| `data/semrush/queues/claude.csv` | 1,304 |
-| `data/semrush/queues/gemini.csv` | 458 |
-| `data/semrush/queues/perplexity.csv` | 165 |
+| Queue | Category | Saved topics |
+| --- | --- | ---: |
+| `data/semrush/queues/alternatives.csv` | Alternatives | 424 |
+| `data/semrush/queues/chatgpt.csv` | ChatGPT | 954 |
+| `data/semrush/queues/claude.csv` | Claude | 1,304 |
+| `data/semrush/queues/gemini.csv` | Gemini | 458 |
+| `data/semrush/queues/perplexity.csv` | Perplexity | 165 |
 
-For the three daily authority articles, choose three distinct categories. Start with the highest `priority_score` entries that are not present in `data/semrush/used-keywords.csv` and do not duplicate an existing article intent. Rotate categories fairly.
+The table is documentation, not the queue discovery mechanism. Update it when a queue is added, removed, rebuilt, or its recorded count changes.
 
-## Daily Alternatives queue
+## One article per queue rule
 
-`data/semrush/queues/alternatives.csv` contains 424 deduplicated alternatives topics. It includes the strongest keyword for each canonical product or tool topic discovered across the seven complete seed exports.
+An explicitly invoked queue run is an all-queues batch:
 
-For the two daily Alternatives articles:
+1. Count every valid queue CSV found at preflight.
+2. Select exactly one eligible unused keyword from every queue.
+3. Create exactly one article for each selected keyword.
+4. The required article count must equal the queue count.
+5. Never take two topics from one queue to compensate for another queue.
+6. If any queue is malformed, has an ambiguous category, or contains no eligible unused intent, stop before creating the batch and report the blocker.
 
-1. Choose two different `canonical_topic` values.
-2. Prefer KD 0 through 29, measurable volume, strong relevance, and an active emerging product.
-3. Verify the product through its current official site before writing.
-4. Reject broad incumbents, irrelevant semantic matches, abandoned products, and any intent already covered on the site.
-5. Treat other rows about the same canonical topic as fanout queries, not separate articles.
+Within each queue, inspect rows in descending `priority_score` order when that column exists. Continue past a row when it is already used, duplicates an existing article intent, is off topic, is obsolete, lacks adequate sources, concerns an inactive product, or would produce a weak or unsafe article. The first high-ranked row is not automatically publishable.
+
+For `alternatives.csv`, treat `canonical_topic` as an additional duplicate key. Other rows for the same product are supporting query ideas, not separate articles.
+
+## Duplicate and eligibility checks
+
+Before accepting a row:
+
+- normalize its primary keyword by trimming it, converting it to lowercase, and collapsing repeated whitespace
+- compare it with every normalized `primary_keyword` in `data/semrush/used-keywords.csv`
+- compare its canonical topic, when present, with the ledger
+- inspect all existing article filenames, slugs, titles, descriptions, tags, and primary intent
+- reject exact duplicates and semantic cannibalization, even when the wording differs
+- confirm the topic is still current and can be supported by at least two authoritative sources
+- treat `volume`, `kd`, `cpc_usd`, and `priority_score` only as October 13, 2026 snapshot data unless a newer verified export is documented
+
+## Queue to category mapping
+
+The current mappings are Alternatives, ChatGPT, Claude, Gemini, and Perplexity. For a future CSV:
+
+1. Use the nonempty `category` column when every eligible row uses the same category.
+2. If there is no category column, derive a readable category label from the filename stem.
+3. Stop for owner direction if the category is ambiguous or conflicts with an existing label.
+4. Add the category to `lib/articles.ts` and `scripts/validate-content.mjs` only when required.
+5. Confirm its generated archive route, breadcrumb, static export, master sitemap entry, and `/sitemaps/category-slug/sitemap.xml` file.
+6. Do not redesign navigation or the site to add a category.
 
 ## Used keyword ledger
 
-`data/semrush/used-keywords.csv` is the durable cross run memory. Before selecting topics, compare normalized primary keywords, canonical topics, article titles, and slugs against this ledger and the existing article library.
+`data/semrush/used-keywords.csv` is the append-only selection ledger. It is checked before selection, but the existing article library remains the primary record of article intent.
 
-After a successful live deployment, append exactly five rows with:
+After the complete queue batch passes content validation, the production build, static page checks, and sitemap checks, append one row per commit-ready queue article with:
 
 - publication date
 - article slug
 - category
 - canonical topic when applicable
 - exact primary keyword
-- source queue
+- source queue path
 
-Commit the ledger update with the five articles. Do not mark a keyword used when deployment fails.
+Append the ledger rows before the publication commit and include them with the same commit-ready batch. At that point the only remaining publication action should be the owner's commit and push to `main`, which triggers the existing deployment pipeline. Do not add rows for incomplete drafts, rejected topics, Reddit-only articles, or a batch that has not passed every required local check. Never wait for live deployment before recording a fully validated commit-ready queue batch.
+
+## Documentation maintenance
+
+At the end of each queue run, compare this file and `data/semrush/README.md` with the actual filesystem and inventory metadata. Update them only when a queue was added or removed, a category mapping or schema changed, a queue was rebuilt, provenance changed, or a recorded count became inaccurate. A normal ledger append does not require rewriting the backlog documentation.
 
 ## Queue maintenance
 
-The queues are generated by `scripts/build-semrush-inventory.mjs`. Raw exports are immutable research evidence except for removal of exact duplicate rows caused by pagination retries. Rebuild the queues after adding a new verified Semrush export. Never delete the used ledger when rebuilding.
+The current queues are generated by `scripts/build-semrush-inventory.mjs`. Raw exports are immutable research evidence except for removal of exact duplicate rows caused by pagination retries. Run `npm run build:semrush-inventory` only after adding or correcting a verified raw export. Never delete or regenerate the used keyword ledger.

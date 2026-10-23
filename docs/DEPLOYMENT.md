@@ -21,6 +21,8 @@ If Hostinger supplies a deployment webhook, add it to the GitHub repository's `p
 - Point the domain using the DNS values supplied by Hostinger.
 - Enable HTTPS before setting `NEXT_PUBLIC_SITE_URL`.
 - Verify `/`, two article routes, two category routes, `/search/`, `/robots.txt`, and `/sitemap.xml`.
+- Confirm `/sitemap.xml` is a sitemap index that lists `/sitemaps/pages/sitemap.xml` and one XML sitemap for every registered category.
+- Confirm each tested article appears in its category sitemap, for example `/sitemaps/chatgpt/sitemap.xml`, `/sitemaps/claude/sitemap.xml`, or `/sitemaps/ai-news/sitemap.xml`.
 - Inspect the page source for canonical, description, Open Graph, Twitter, and JSON-LD fields.
 - Confirm refreshes on nested URLs work. If not, configure Hostinger to serve directory `index.html` files for trailing-slash URLs.
 

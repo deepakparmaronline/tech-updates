@@ -7,6 +7,9 @@ export type FAQ = { question: string; answer: string };
 export type Article = { slug: string; title: string; description: string; category: string; author: string; date: string; readingTime: string; featuredImage: string; tags: string[]; featured?: boolean; keyTakeaways: string[]; faqs: FAQ[]; content: string; html: string; headings: { id: string; text: string }[] };
 const directory = path.join(process.cwd(), 'content/articles');
 const slugify = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+export const categorySlug = (value: string) => value === 'AI News' ? 'ai-news' : value.toLowerCase();
+export const getCategoryHref = (category: string) => category === 'AI News' ? '/ai-news/' : `/category/${categorySlug(category)}/`;
+export const categorySitemapSlug = (value: string) => slugify(value);
 
 export function getAllArticles(): Article[] {
   if (!fs.existsSync(directory)) return [];
@@ -20,7 +23,7 @@ export function getAllArticles(): Article[] {
   }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 export const getArticle = (slug: string) => getAllArticles().find((article) => article.slug === slug);
-export const CATEGORIES = ['AI','ChatGPT','Claude','Gemini','Perplexity','OpenAI','Google','Cursor','GitHub','Programming','Python','WordPress','SEO','Automation','AI Tools','Alternatives','Shopify','Development','Microsoft','Apple'];
+export const CATEGORIES = ['AI','AI News','ChatGPT','Claude','Gemini','Perplexity','OpenAI','Google','Cursor','GitHub','Programming','Python','WordPress','SEO','Automation','AI Tools','Alternatives','Shopify','Development','Coding','Microsoft','Apple'];
 export const getCategories = () => CATEGORIES;
 export const formatDate = (value: string) => new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(value));
 export function getRelated(article: Article) { return getAllArticles().filter((item) => item.slug !== article.slug).sort((a,b) => Number(b.category === article.category) - Number(a.category === article.category) || b.tags.filter((t) => article.tags.includes(t)).length - a.tags.filter((t) => article.tags.includes(t)).length).slice(0,3); }
