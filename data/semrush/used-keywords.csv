@@ -34,3 +34,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-15,why-is-gemini-so-slow,Gemini,,why is gemini so slow,data/semrush/queues/gemini.csv
 2026-10-15,otterly-ai-alternatives,Alternatives,otterly ai,otterly ai alternatives,data/semrush/queues/alternatives.csv
 2026-10-15,kling-ai-alternatives,Alternatives,kling ai,kling ai alternative,data/semrush/queues/alternatives.csv
+2026-10-23,how-many-images-can-chatgpt-plus-generate,ChatGPT,,how many images can i generate with chatgpt plus,data/semrush/queues/chatgpt.csv
+2026-10-23,how-to-open-claude-code-in-terminal,Claude,,how to open claude code in terminal,data/semrush/queues/claude.csv
+2026-10-23,how-to-stop-gemini-data-training,Gemini,,how to stop gemini from using my data for training,data/semrush/queues/gemini.csv
+2026-10-23,v0-alternatives,Alternatives,v0,v0 alternatives,data/semrush/queues/alternatives.csv
+2026-10-23,glean-alternatives,Alternatives,glean,glean competitors,data/semrush/queues/alternatives.csv
