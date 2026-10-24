@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Does Perplexity Use ChatGPT?</title><desc id="desc">Editorial comparison illustration showing web sources flowing into an AI answer and a separate chat interface.</desc>
+<rect width="1600" height="900" fill="#101827"/><circle cx="180" cy="140" r="250" fill="#203e5c"/><circle cx="1450" cy="800" r="300" fill="#2a3357"/>
+<rect x="180" y="190" width="1240" height="520" rx="38" fill="#f6f8fb"/>
+<text x="270" y="270" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#5c6c82">AI SEARCH EXPLAINED</text>
+<text x="270" y="335" font-family="Arial,sans-serif" font-size="50" font-weight="700" fill="#15263e">Perplexity vs ChatGPT</text>
+<rect x="270" y="390" width="440" height="235" rx="22" fill="#e3f3ed"/>
+<circle cx="325" cy="450" r="24" fill="#17775f"/><path d="M315 450h20M325 440v20" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<text x="370" y="458" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#155d4c">Web research</text>
+<path d="M310 510h330M310 550h280M310 590h300" stroke="#8eb6a9" stroke-width="13" stroke-linecap="round"/>
+<rect x="890" y="390" width="440" height="235" rx="22" fill="#e6edfb"/>
+<circle cx="945" cy="450" r="24" fill="#3468bd"/><path d="M935 443h20M935 451h15M935 459h18" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<text x="990" y="458" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#254d8f">AI assistant</text>
+<path d="M930 510h330M930 550h280M930 590h300" stroke="#a1b6dd" stroke-width="13" stroke-linecap="round"/>
+<path d="M730 505h130" stroke="#657a97" stroke-width="7" stroke-linecap="round"/><path d="M840 488l20 17-20 17" fill="none" stroke="#657a97" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="800" y="670" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#62748b">Different products can offer overlapping AI models</text>
+</svg>
