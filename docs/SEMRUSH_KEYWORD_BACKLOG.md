@@ -89,7 +89,7 @@ The current mappings are Alternatives, ChatGPT, Claude, Gemini, and Perplexity. 
 
 `data/semrush/used-keywords.csv` is the append-only selection ledger. It is checked before selection, but the existing article library remains the primary record of article intent.
 
-After the complete queue batch passes content validation, the production build, static page checks, and sitemap checks, append one row per commit-ready queue article with:
+After the complete queue batch passes content validation, the production build, static page checks, and sitemap checks, append one row per verified queue article with:
 
 - publication date
 - article slug
@@ -98,7 +98,7 @@ After the complete queue batch passes content validation, the production build, 
 - exact primary keyword
 - source queue path
 
-Append the ledger rows before the publication commit and include them with the same commit-ready batch. At that point the only remaining publication action should be the owner's commit and push to `main`, which triggers the existing deployment pipeline. Do not add rows for incomplete drafts, rejected topics, Reddit-only articles, or a batch that has not passed every required local check. Never wait for live deployment before recording a fully validated commit-ready queue batch.
+Append the ledger rows before the publication commit and include them with the same verified batch. The full Semrush prompt authorizes the agent to commit and push that batch to `main`, which triggers the existing deployment pipeline. Do not add rows for incomplete drafts, rejected topics, Reddit-only articles, or a batch that has not passed every required local check. Never wait for live deployment before recording a fully validated queue batch.
 
 ## Documentation maintenance
 

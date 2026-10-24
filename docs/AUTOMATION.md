@@ -41,15 +41,15 @@ For every article, verify current claims with at least two authoritative sources
 The owner's requested scope controls the endpoint:
 
 - For a draft or writing request, create and validate the files but do not push or deploy.
-- For the last seven days news prompt, complete current research, qualifying articles, images, validation, the production build, static export checks, sitemap checks, and the intended file manifest. Stop with a commit-ready batch before git add, commit, or push.
-- For the explicit Semrush queue prompt, complete the articles, images, validation, production build, static export checks, sitemap checks, documentation checks, and used keyword ledger. Stop with a commit-ready batch so the owner's only remaining publication action is committing and pushing it to `main`.
+- For the last seven days news prompt, complete current research, qualifying articles, images, validation, the production build, static export checks, sitemap checks, commit, push, deployment monitoring, and live verification.
+- For the explicit Semrush queue prompt, complete the articles, images, validation, production build, static export checks, sitemap checks, documentation checks, and used keyword ledger, then commit and push the verified batch to `main`, monitor deployment, and verify every live page.
 - For a publishing request, commit and push, monitor the existing deployment pipeline, and verify every live article plus the homepage and relevant category pages.
 
 ## Semrush status
 
 The saved Semrush exports and queues remain dated research. They are not the default topic source and must not be used to fill a Reddit, alternatives, or news batch. Use them when the owner explicitly invokes the Semrush queue prompt, explicitly requests Semrush research, or when a matching saved keyword adds context to an already supplied topic.
 
-Never fabricate or silently refresh metrics. Never treat lack of Semrush access as a blocker for an owner-supplied Reddit or alternatives topic. For an explicit queue batch, update `data/semrush/used-keywords.csv` only after the complete batch passes content validation, the production build, static page checks, and sitemap checks. Append one row per commit-ready queue article before the owner commits and pushes the batch. Do not wait for live deployment, and do not add rows for an incomplete or failing batch.
+Never fabricate or silently refresh metrics. Never treat lack of Semrush access as a blocker for an owner-supplied Reddit or alternatives topic. For an explicit queue batch, update `data/semrush/used-keywords.csv` only after the complete batch passes content validation, the production build, static page checks, and sitemap checks. Append one row per verified queue article before the publication commit. Do not wait for live deployment, and do not add rows for an incomplete or failing batch.
 
 ## Deployment automation remains active
 

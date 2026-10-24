@@ -1,15 +1,19 @@
-# Copy and Paste Prompt: Prepare a Last Seven Days News Batch
+# Copy and Paste Prompt: Publish Last Seven Days News
 
-Use this prompt in ChatGPT with the `deepakparmaronline/tech-updates` GitHub repository connected, Codex in VS Code with the repository open, Codex CLI, Codex Cloud, or another capable AI agent with repository write access, current web research, image generation, and a terminal that can run the project checks.
+Use the full publishing prompt in Codex for VS Code, Codex CLI, or a Codex cloud environment with `deepakparmaronline/tech-updates` checked out. It authorizes Codex to create the complete batch, commit it, push it to `main`, monitor deployment, and verify the live site.
 
-The prompt prepares a complete, validated, commit-ready news batch. It intentionally stops before `git add`, commit, push, deployment, and live verification. The repository owner performs the final commit and push to `main`, which triggers the existing GitHub Actions and Hostinger deployment pipeline. It never creates a recurring or scheduled task.
+The standard GitHub app in ordinary ChatGPT is read-only. It can inspect the repository but cannot edit files, run the build, or push changes. If only that connector is available, use the research handoff prompt later in this file and pass its result to Codex. A user statement granting permission does not add tools that the environment does not have. See [OpenAI's GitHub connection documentation](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt).
 
-## Commit-ready news prompt
+Neither prompt creates a recurring or scheduled task.
+
+## Full Codex publishing prompt
 
 ```text
-Work in the Tech Updates repository `deepakparmaronline/tech-updates` from the current `main` branch. In VS Code or Codex CLI, use the repository currently open in the workspace and confirm its Git remote before editing. In ChatGPT with GitHub connected, open that exact repository and branch. Stop if the repository or branch does not match.
+Work in a writable checkout of the Tech Updates repository `deepakparmaronline/tech-updates` from the current `main` branch. Confirm the Git remote and branch before editing. This prompt explicitly authorizes you to commit the verified changes and push them to `main`. Never force push.
 
-This is an explicit, one-time manual request to research and prepare commit-ready articles about the major technology news from the last seven calendar days. Execute the work by editing the repository. Do not merely return a plan or paste article drafts into chat. Do not run git add, commit, push, deploy, or create, resume, or modify any recurring or scheduled task.
+This is an explicit, one-time manual request to research, write, publish, and verify articles about the major technology news from the last seven calendar days. Execute the work by editing the repository. Do not merely return a plan or paste article drafts into chat. Do not create, resume, or modify any recurring, scheduled, background, or unattended task.
+
+Before research, verify that you have a writable repository checkout, current web access, image generation that can save files, a terminal, Git push access, GitHub Actions visibility, and the ability to inspect the live site. If you have only the read-only ChatGPT GitHub connector, do not claim that permission alone solves the limitation. Switch to the GitHub research handoff instructions in this file, complete that handoff, and stop.
 
 Before taking action, read these repository files completely from the current `main` branch:
 
@@ -59,11 +63,11 @@ After creating all qualifying articles and images, run:
 
 Fix every in-scope failure. Confirm that all new article pages and category pages are included in the static export. Confirm that `/sitemap.xml` is a sitemap index and that every new article appears in the correct `/sitemaps/category-slug/sitemap.xml` file.
 
-Stop after all local checks pass. Leave only the intended article files, image files, and any narrowly required compatibility or documentation changes in the workspace. Do not stage or commit them. Provide the exact file manifest the repository owner should review, commit, and push to `main`. Do not monitor GitHub Actions or Hostinger, because those actions begin only after the owner's push.
+After all local checks pass, inspect the Git diff and stage only the intended article files, image files, and any narrowly required compatibility or documentation changes. Commit them to `main` with a clear message and push to `origin/main`. Confirm that the GitHub validation, production build, and Hostinger branch workflows succeed. Confirm that Hostinger deploys the generated branch. Open every new live article URL and verify the homepage, every relevant category page, `/ai-news/` when used, the live master sitemap index, and every relevant category sitemap.
 
-If the environment cannot browse current sources, create and save distinct article images, edit repository files, run content validation, run the production build, or inspect the static export, report the exact blocker and do not describe the batch as commit-ready. Stop and ask me only if the workflow requires a new login, OAuth grant, CAPTCHA, OTP, 2FA, payment, destructive action, permission change, DNS or hosting change, force push, or a decision that would materially change the requested scope. Never expose credentials or authentication data.
+If the environment cannot browse current sources, create and save distinct article images, edit repository files, run content validation, run the production build, inspect the static export, push to `main`, inspect workflows, or verify the live site, complete every safe step available and report the exact blocker without claiming publication. Stop and ask me only if the workflow requires a new login, OAuth grant, CAPTCHA, OTP, 2FA, payment, destructive action, permission change, DNS or hosting change, force push, or a decision that would materially change the requested scope. Never expose credentials or authentication data.
 
-Do not claim that any article is published. Report the batch as commit-ready only after every required local check succeeds.
+Do not claim that any article is published until the commit, push, workflows, Hostinger deployment, and live checks all succeed.
 
 Finish with a concise run report containing:
 
@@ -73,42 +77,38 @@ Finish with a concise run report containing:
 - source links used for each article
 - article paths, image paths, and word counts
 - validation and build results
-- static article, category, homepage data, master sitemap index, and category sitemap checks
-- the complete list of intended files the owner should review, commit, and push
-- confirmation that no git add, commit, push, deployment, or live verification was performed
+- committed file manifest, commit hash, and push result
+- GitHub Actions and Hostinger deployment results
+- every verified article, category, homepage, master sitemap, and category sitemap URL
 - any unresolved fact, access problem, or blocker
 
-Begin now and continue autonomously until the complete news batch passes every required local check and is ready for the owner's commit, or until a repository-defined stop condition occurs. Stop before any Git commit or push.
+Begin now and continue autonomously until the complete news batch is published and verified, or until a repository-defined stop condition occurs.
 ```
 
-## How to use it
+## GitHub-connected ChatGPT research handoff prompt
 
-For VS Code Codex or Codex CLI, open the repository root, start a new agent session, and paste the complete prompt above. For ChatGPT with GitHub connected, select the `deepakparmaronline/tech-updates` repository and paste the same prompt. The prompt is intentionally identical in both environments.
-
-Do not use a read-only GitHub connection for the commit-ready prompt. If the connected agent cannot save images or run repository commands, use the research-only prompt below instead.
-
-## Research only
-
-To receive a qualified story list without creating files, use this shorter prompt:
+Use this in ordinary ChatGPT when the standard GitHub app is connected. It performs useful research and produces a handoff for Codex without pretending it can edit or publish.
 
 ```text
-Work in or inspect the Tech Updates repository `deepakparmaronline/tech-updates` on `main`.
+Inspect the connected Tech Updates repository `deepakparmaronline/tech-updates` on `main`. The standard ChatGPT GitHub connection is read-only, so do not claim that you edited, committed, built, or published anything.
 
-Read `AGENTS.md` and `docs/LAST_SEVEN_DAYS_NEWS_PUBLISHING.md` completely. Follow the research, date-window, significance, source, duplication, and category rules in those files.
+Read `AGENTS.md`, `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, `docs/LAST_SEVEN_DAYS_NEWS_PUBLISHING.md`, and the current article index completely enough to apply their research, date-window, significance, source, duplication, category, and internal-link rules.
 
 Research the seven calendar days ending today in Asia/Kolkata, inclusive. Find only major, independently verifiable news involving ChatGPT, OpenAI, Claude, Anthropic, Gemini, Google AI, Google DeepMind, Perplexity, other important AI models, meaningful new AI tools, AI research, safety, security, policy, infrastructure, and genuinely important broader technology breakthroughs.
 
-Do not write files, create images, commit, push, deploy, or schedule future work. Return a table of selected and rejected candidates with event dates, proposed categories, primary search intents, significance reasons, duplication findings, and links to the primary and independent sources. If nothing qualifies, say so clearly.
+Do not write files, create images, commit, push, deploy, or schedule future work. Produce a Codex handoff packet containing the exact research window, selected and rejected candidates, event dates, proposed categories, primary search intents, proposed titles and slugs, image concepts, suggested existing internal links, duplication findings, and links to the primary and independent sources. If nothing qualifies, say so clearly. End with this instruction for Codex: read the current repository rules, independently verify the sources, implement the qualified batch, validate and build it, commit and push it to `main`, monitor deployment, and verify the live pages.
 ```
 
 ## Connection requirements
 
-The agent needs:
+Full publishing requires Codex with:
 
-- read and write access to the correct repository and current `main` branch
+- a writable checkout of the correct repository and current `main` branch
 - current web access for news verification
 - an image-generation capability that can save the resulting files under `public/images/`
 - a terminal capable of running `npm run validate:content` and `npm run build`
 - access to the generated `out/` directory for static page and sitemap verification
+- permission to commit and push to `main`
+- access to GitHub Actions status and the live website
 
-The prompt does not require permission to commit or push. If the agent has only GitHub read access, cannot save images, or cannot run the project checks, use the research-only prompt.
+The ordinary ChatGPT GitHub app provides repository reading for analysis and search, not a writable checkout or Git push. Use its handoff prompt, then run the full prompt in Codex.

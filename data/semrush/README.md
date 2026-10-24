@@ -16,7 +16,7 @@ In queue mode, discover files from the directory instead of relying on a hard-co
 - `queues/claude.csv`: 1,304 ranked Claude questions
 - `queues/gemini.csv`: 458 ranked Gemini questions
 - `queues/perplexity.csv`: 165 ranked Perplexity questions
-- `used-keywords.csv`: append-only selection ledger for queue keywords used by complete, validated, commit-ready article batches
+- `used-keywords.csv`: append-only selection ledger for queue keywords used by complete, validated publication batches
 - `inventory-summary.json`: machine-readable counts for the current generated inventory
 - `../semrush-exports/`: complete dated raw exports
 
@@ -31,7 +31,7 @@ This list documents the current snapshot. The filesystem is authoritative during
 5. Use the alternatives article template for `alternatives.csv` and the authority question template for standard question queues.
 6. Verify current claims with at least two authoritative sources per article.
 7. Do not write a partial batch. If any queue cannot supply one eligible topic, stop before article creation and report it.
-8. After the entire batch passes content validation, the production build, static page checks, and sitemap checks, append exactly one ledger row per queue article before the publication commit. Include the ledger with the same commit-ready batch. Do not append rows for an incomplete or failing batch.
+8. After the entire batch passes content validation, the production build, static page checks, and sitemap checks, append exactly one ledger row per queue article before the publication commit. Include the ledger with the same verified batch. Do not append rows for an incomplete or failing batch.
 9. Verify the master sitemap index and every relevant category sitemap.
 
 All metrics remain an October 13, 2026 snapshot unless a newer verified export and provenance record are added. Never fabricate or silently refresh metrics.

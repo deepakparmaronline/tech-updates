@@ -1,15 +1,19 @@
-# Copy and Paste Prompt: Prepare One Commit-Ready Article per Semrush Queue
+# Copy and Paste Prompt: Publish One Article per Semrush Queue
 
-Use the same prompt below in VS Code Codex with the repository open, Codex CLI from the repository root, or ChatGPT with the `deepakparmaronline/tech-updates` GitHub repository connected. The agent needs repository write access, current web research, image generation that can save files, and a terminal that can run the project checks. This is a one-time manual preparation instruction, not a schedule. It finishes with a validated, commit-ready batch and leaves the final commit and push to the repository owner.
+Use the full publishing prompt in Codex for VS Code, Codex CLI, or a Codex cloud environment with `deepakparmaronline/tech-updates` checked out. It authorizes Codex to create the complete batch, update the used-keyword ledger, commit, push to `main`, monitor deployment, and verify the live site.
+
+The standard GitHub app in ordinary ChatGPT is read-only. It can inspect the repository but cannot edit files, run the build, or push changes. If only that connector is available, use the research handoff prompt later in this file and pass its result to Codex. A user statement granting permission does not add tools that the environment does not have. See [OpenAI's GitHub connection documentation](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt).
 
 The current repository uses `claude.csv` and the category name `Claude`. If the request informally says “Cloud,” interpret it as Claude only when the file and row data clearly confirm that mapping.
 
-## Commit-ready batch prompt
+## Full Codex publishing prompt
 
 ```text
-Work in the Tech Updates repository `deepakparmaronline/tech-updates` from the current `main` branch. In VS Code or Codex CLI, use the repository currently open in the workspace and confirm its Git remote before editing. In ChatGPT with GitHub connected, open that exact repository and branch. Stop if the repository or branch does not match. This is an explicit, one-time manual request to prepare one commit-ready article from every Semrush queue CSV currently present in data/semrush/queues/. Do not create, resume, or modify any recurring, scheduled, background, or unattended task. Do not run git add, commit, push, or deploy. The repository owner will perform the final commit and push to main, which triggers the existing GitHub Actions and Hostinger deployment pipeline.
+Work in a writable checkout of the Tech Updates repository `deepakparmaronline/tech-updates` from the current `main` branch. Confirm the Git remote and branch before editing. This prompt explicitly authorizes you to commit the verified changes and push them to `main`. Never force push. This is an explicit, one-time manual request to publish one article from every Semrush queue CSV currently present in data/semrush/queues/. Do not create, resume, or modify any recurring, scheduled, background, or unattended task.
 
 Execute the work. Do not merely give me a plan or paste draft article text into chat.
+
+Before selection, verify that you have a writable repository checkout, current web access, image generation that can save files, a terminal, Git push access, GitHub Actions visibility, and the ability to inspect the live site. If you have only the read-only ChatGPT GitHub connector, do not claim that permission alone solves the limitation. Switch to the GitHub research handoff instructions in this file, complete that handoff, and stop.
 
 Before selecting any topic, read these repository files completely:
 
@@ -84,7 +88,7 @@ Backlog documentation
 
 After the article files are prepared, compare docs/SEMRUSH_KEYWORD_BACKLOG.md and data/semrush/README.md with the actual queue directory, CSV headers, inventory summary, category mappings, provenance, and row counts. Update those documents only if a queue was added or removed, a schema or category mapping changed, a queue was rebuilt, provenance changed, or a recorded count is inaccurate. Do not rewrite them merely because a keyword was selected.
 
-Validation and commit-ready handoff
+Validation and publication
 
 Run:
 
@@ -95,13 +99,13 @@ Fix every in-scope failure. Confirm that the number of new articles equals the n
 
 Used keyword ledger before the commit
 
-Only after the entire batch passes content validation, the production build, static page checks, and sitemap checks, append exactly one row per commit-ready article to data/semrush/used-keywords.csv. Preserve its existing header and append-only history. Each new row must contain used_on, article_slug, category, canonical_topic when applicable, the exact primary_keyword from the source row, and the exact source_queue path.
+Only after the entire batch passes content validation, the production build, static page checks, and sitemap checks, append exactly one row per article to data/semrush/used-keywords.csv. Preserve its existing header and append-only history. Each new row must contain used_on, article_slug, category, canonical_topic when applicable, the exact primary_keyword from the source row, and the exact source_queue path.
 
-Include the ledger change with the same commit-ready batch. Do not wait for live deployment. Do not add rows for an incomplete or failing batch, and never delete or rewrite earlier ledger rows.
+Include the ledger change with the same publication commit. Do not wait for live deployment. Do not add rows for an incomplete or failing batch, and never delete or rewrite earlier ledger rows.
 
-Stop before running git add, git commit, or git push. Do not monitor GitHub Actions or Hostinger and do not claim that the articles are published. Leave the workspace in a state where the repository owner's only remaining publication action is reviewing, committing, and pushing the intended files to `main`; the existing pipeline will deploy from that push.
+Inspect the Git diff and stage only the intended article files, image files, ledger rows, required category or sitemap compatibility changes, and justified documentation updates. Commit them to `main` with a clear message and push to `origin/main`. Confirm that the GitHub validation, production build, and Hostinger branch workflows succeed. Confirm that Hostinger deploys the generated branch. Open every new live article URL and verify the homepage, every relevant category page, the live master sitemap index, and every relevant category sitemap.
 
-If the environment cannot browse current sources, create and save distinct article images, edit repository files, run content validation, run the production build, or inspect the static export, report the exact blocker. Do not append the selected keywords to the used-keyword ledger and do not describe the batch as commit-ready. Stop and ask me only if the local preparation requires a new login, OAuth grant, CAPTCHA, OTP, 2FA, payment, destructive operation, DNS or hosting change, permission change, or a decision that would materially alter the requested scope. Git commit, push, workflow monitoring, deployment, and live verification are intentionally outside this prompt.
+If the environment cannot browse current sources, create and save distinct article images, edit repository files, run content validation, run the production build, inspect the static export, push to `main`, inspect workflows, or verify the live site, complete every safe step available and report the exact blocker without claiming publication. Do not append the selected keywords to the used-keyword ledger unless every required local check passed. Stop and ask me only if the workflow requires a new login, OAuth grant, CAPTCHA, OTP, 2FA, payment, destructive operation, DNS or hosting change, permission change, force push, or a decision that would materially alter the requested scope.
 
 Final report
 
@@ -116,18 +120,35 @@ Finish with a concise report containing:
 - whether the Semrush backlog documentation required an update and why
 - validation and build results
 - master sitemap index and relevant category sitemap checks
-- ledger rows added to the commit-ready batch
-- the complete list of intended files the owner should review, commit, and push
-- confirmation that no git add, commit, push, deployment, or live verification was performed
+- ledger rows added to the publication commit
+- committed file manifest, commit hash, and push result
+- GitHub Actions and Hostinger deployment results
+- every verified article, category, homepage, master sitemap, and category sitemap URL
 - any unresolved fact, access problem, or blocker
 
-Begin now and continue autonomously until the full batch, all local checks, and the pre-commit ledger update are complete, or until a repository-defined stop condition occurs. Stop before any Git commit or push.
+Begin now and continue autonomously until the full batch is published and verified, or until a repository-defined stop condition occurs.
 ```
 
 ## Expected batch size today
 
-At the time this prompt was created, the queue directory contains five CSV files, so a successful run should prepare five commit-ready articles: one each for Alternatives, ChatGPT, Claude, Gemini, and Perplexity. This note is informational only. The agent must recount the files every time because a later queue file increases the required article count automatically.
+At the time this prompt was created, the queue directory contains five CSV files, so a successful run should publish five articles: one each for Alternatives, ChatGPT, Claude, Gemini, and Perplexity. This note is informational only. The agent must recount the files every time because a later queue file increases the required article count automatically.
+
+## GitHub-connected ChatGPT research handoff prompt
+
+Use this in ordinary ChatGPT when the standard GitHub app is connected. It performs queue inspection and research, then produces a handoff for Codex without pretending it can edit or publish.
+
+```text
+Inspect the connected Tech Updates repository `deepakparmaronline/tech-updates` on `main`. The standard ChatGPT GitHub connection is read-only, so do not claim that you edited, committed, built, or published anything.
+
+Read `AGENTS.md`, `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, `docs/SEMRUSH_KEYWORD_BACKLOG.md`, `data/semrush/README.md`, the complete `data/semrush/used-keywords.csv`, every CSV under `data/semrush/queues/`, and the existing article index.
+
+Apply all queue discovery, category mapping, used-keyword, duplication, eligibility, priority, and all-queues rules from `docs/PROMPT_SEMRUSH_QUEUE_PUBLISHING.md`. Use current web research to verify candidate freshness and identify at least two authoritative sources per proposed article. Do not fabricate metrics or silently refresh the saved Semrush snapshot.
+
+Do not write files, create images, update the ledger, commit, push, deploy, or schedule future work. Produce a Codex handoff packet containing the queue count, one eligible selection per queue, rejected higher-ranked rows with reasons, exact saved metrics, proposed titles and slugs, image concepts, suggested existing internal links, and authoritative source URLs. If any queue has no eligible candidate, report it and do not propose a partial batch.
+
+End with this instruction for Codex: read the current repository rules, independently recheck the selections and sources, implement the complete batch, generate and save the images, validate and build, inspect static pages and sitemaps, append the used-keyword rows after all local checks pass, commit and push to `main`, monitor deployment, and verify every live page.
+```
 
 ## Connection requirements
 
-The commit-ready prompt requires repository write access, current web research, an image-generation capability that can save files under `public/images/`, a terminal capable of running `npm run validate:content` and `npm run build`, and access to the generated `out/` directory. It does not require permission to commit or push. A read-only GitHub connection or an environment that cannot save images and run the required checks cannot complete this workflow.
+Full publishing requires Codex with a writable checkout, current web research, image generation that can save files under `public/images/`, a terminal capable of running `npm run validate:content` and `npm run build`, access to the generated `out/` directory, permission to commit and push to `main`, GitHub Actions visibility, and access to the live website. The ordinary ChatGPT GitHub app provides repository reading for analysis and search, not a writable checkout or Git push. Use its handoff prompt, then run the full prompt in Codex.

@@ -6,7 +6,7 @@ This is the source of truth for every Tech Updates article run. Read it with the
 
 Do not create, schedule, resume, or run a recurring or unattended article publisher. Begin work only when the repository owner supplies the editorial input in the current conversation. There is no daily deadline, fixed daily quota, or automatic category rotation.
 
-The owner may request drafting only, a commit-ready last seven days news batch, a commit-ready Semrush queue batch, or full publication. For a drafting request, create and validate the requested articles but do not push or deploy unless the owner explicitly asks. For either reusable prompt, complete every required local check, include the Semrush used-keyword ledger when applicable, and stop before the owner's commit and push. For a separate explicit publishing request, complete the validation, build, push, deployment, and live-page checks in this run.
+The owner may request drafting only or full publication. For a drafting request, create and validate the requested articles but do not push or deploy unless the owner explicitly asks. Invoking either reusable full publishing prompt authorizes the agent to complete every required local check, update the Semrush used-keyword ledger when applicable, commit and push the intended files to `main`, monitor deployment, and verify the live pages.
 
 Never touch `toolboxcard.tech`, its repository, or any task associated with it.
 
@@ -118,4 +118,4 @@ Record the date, start time, completion time, owner-supplied topics, source Redd
 
 Also record duplicate conflicts, merged or rejected topics, access problems, and any claim that could not be verified. Include Semrush metrics only when Semrush evidence was actually used.
 
-Update `data/semrush/used-keywords.csv` only when an article intentionally uses a saved Semrush queue keyword. In an explicitly invoked queue batch, append exactly one row per queue article after the complete batch passes validation, the production build, static page checks, and sitemap checks. Include those rows in the commit-ready batch before the owner commits and pushes it. Do not wait for live deployment. Do not update the ledger for Reddit-only topics, incomplete drafts, rejected selections, or a queue batch that fails a required local check.
+Update `data/semrush/used-keywords.csv` only when an article intentionally uses a saved Semrush queue keyword. In an explicitly invoked queue batch, append exactly one row per queue article after the complete batch passes validation, the production build, static page checks, and sitemap checks. Include those rows in the verified publication commit before pushing it. Do not wait for live deployment. Do not update the ledger for Reddit-only topics, incomplete drafts, rejected selections, or a queue batch that fails a required local check.
