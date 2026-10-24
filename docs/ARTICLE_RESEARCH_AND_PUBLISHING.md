@@ -1,10 +1,12 @@
-# Manual Article Research and Publishing Runbook
+# Article Research and Publishing Runbook
 
 This is the source of truth for every Tech Updates article run. Read it with the root `AGENTS.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, and `docs/SEMRUSH_KEYWORD_BACKLOG.md` before research or publication.
 
-## Manual trigger only
+## Authorized triggers
 
-Do not create, schedule, resume, or run a recurring or unattended article publisher. Begin work only when the repository owner supplies the editorial input in the current conversation. There is no daily deadline, fixed daily quota, or automatic category rotation.
+The recurring `Tech Updates Daily Publisher` is authorized to run unattended under `docs/AUTOMATION.md`. Each scheduled run uses the current Semrush queue directory and publishes exactly one eligible unused topic from every valid queue. At present that is a five article batch. The task must not create duplicate schedules or backfill a missed date.
+
+All other article work begins only when the repository owner supplies the editorial input in the current conversation. There is no automatic topic discovery outside the single authorized scheduled queue workflow.
 
 The owner may request drafting only or full publication. For a drafting request, create and validate the requested articles but do not push or deploy unless the owner explicitly asks. Invoking either reusable full publishing prompt authorizes the agent to complete every required local check, update the Semrush used-keyword ledger when applicable, commit and push the intended files to `main`, monitor deployment, and verify the live pages.
 
@@ -61,7 +63,7 @@ Use `Alternatives` for a requested alternatives article. Do not force a category
 
 ## Semrush evidence outside a queue batch
 
-Semrush never selects topics on a schedule. Outside an explicitly invoked queue batch, the saved queues under `data/semrush/queues/` are historical research assets and may be used only when the owner explicitly asks for Semrush input or when an exact supplied topic already has a matching saved keyword that adds useful context.
+Semrush selects topics automatically only for the single authorized `Tech Updates Daily Publisher`. Outside that schedule or an explicitly invoked queue batch, the saved queues under `data/semrush/queues/` are historical research assets and may be used only when the owner explicitly asks for Semrush input or when an exact supplied topic already has a matching saved keyword that adds useful context.
 
 Never replace a user-supplied topic with a queue entry. Never present snapshot metrics as current, invent a metric, or make Semrush access a condition for writing a supplied topic. When Semrush evidence is intentionally used, record the exact keyword, volume, KD, intent, database, and snapshot or research date.
 
@@ -108,7 +110,7 @@ npm run build
 
 Fix every failure. For a full publication request, commit only intended files, push to `main`, confirm GitHub Actions succeeds, confirm Hostinger deploys, then open every new live article URL plus the homepage and relevant category pages.
 
-The push-triggered GitHub and Hostinger deployment pipeline remains active. Retiring scheduled article generation does not retire deployment automation.
+The push-triggered GitHub and Hostinger deployment pipeline remains active for both the authorized daily publisher and owner-triggered publication runs.
 
 If a recoverable validation, build, or deployment problem occurs, diagnose and correct it in the same run. Never force push, delete unrelated files, alter hosting, change permissions, or touch another repository. Preserve completed draft work and report the blocker if publication cannot safely finish.
 

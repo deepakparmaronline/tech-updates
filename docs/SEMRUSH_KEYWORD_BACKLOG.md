@@ -1,6 +1,6 @@
 # Semrush Saved Keyword Inventory
 
-This repository contains a durable, dated Semrush keyword inventory. It never starts work automatically. The queues become a topic source only when the repository owner explicitly invokes `docs/PROMPT_SEMRUSH_QUEUE_PUBLISHING.md` or explicitly requests Semrush research in the current conversation.
+This repository contains a durable, dated Semrush keyword inventory. The queues are the authorized topic source for the recurring `Tech Updates Daily Publisher` described in `docs/AUTOMATION.md`. They may also be used when the repository owner explicitly invokes `docs/PROMPT_SEMRUSH_QUEUE_PUBLISHING.md` or explicitly requests Semrush research in the current conversation.
 
 For Reddit, owner-named alternatives, and last seven days news runs, follow their own topic-selection rules. Do not use Semrush rows to fill or replace those batches.
 

@@ -10,7 +10,7 @@ The site is a fixed newspaper system. The application owns the layout; Markdown 
 
 ## Non-negotiable rules
 
-1. Manual article publishing normally adds files only under `content/articles/` and `public/images/`.
+1. Routine article publishing normally adds files only under `content/articles/` and `public/images/`.
 2. Do not change the header, footer, navigation, homepage structure, article template, cards, colors, typography, dark mode, search, SEO system, components, dependencies, workflows, or deployment configuration during an article run.
 3. Never edit an existing article merely to publish a new one.
 4. Never hard-code a new article into a page or component. The Markdown index must discover it automatically.
@@ -75,16 +75,18 @@ A normal article therefore requires no component or route change. Add the Markdo
 - Internal links must point only to routes that exist. Public article URLs use `/articles/topic-slug/` without the publication date.
 - Important factual claims must cite current primary or authoritative sources in the prose.
 
-## Manual publishing trigger and topic source
+## Publishing triggers and topic sources
 
-Tech Updates no longer authorizes scheduled, recurring, or unattended article creation. Start an article run only after the repository owner supplies the editorial input in the current conversation.
+Tech Updates authorizes one recurring task named `Tech Updates Daily Publisher` under the durable rules in `docs/AUTOMATION.md`. That task is an explicit standing instruction from the repository owner and may run unattended. It must use the saved Semrush queues, publish one eligible unused topic from every current queue, and use the protected `daily-publisher-YYYY-MM-DD-standalone` branch flow. Do not create a second recurring publisher.
+
+Manual article runs still require the repository owner to supply the editorial input in the current conversation.
 
 The approved inputs are:
 
 1. A pasted Reddit research packet, normally containing questions, posts, or comments from the previous seven days. Derive the article topics from that supplied packet only. Preserve every distinct owner-supplied topic and the requested batch size, whether it is four, five, six, seven, or another stated number. Do not add replacement topics from Semrush or autonomous Reddit discovery merely to reach an old quota.
 2. An explicit request for one or more alternatives articles. Write about the products or comparison intents the owner names. Do not add a second alternatives article unless it was requested.
 3. An explicit instruction to use `docs/LAST_SEVEN_DAYS_NEWS_PUBLISHING.md`. In that mode only, research and select major news from the exact previous seven-day window according to that file. The workflow remains manual and starts only when the owner invokes it.
-4. An explicit instruction to use `docs/PROMPT_SEMRUSH_QUEUE_PUBLISHING.md`. In that mode only, inspect every CSV currently under `data/semrush/queues/`, select exactly one eligible unused keyword from each queue, and create one article per queue. The number of articles must equal the number of valid queue CSV files present at preflight. This remains a one-time manual run and must never become a schedule.
+4. An explicit instruction to use `docs/PROMPT_SEMRUSH_QUEUE_PUBLISHING.md`. In that manual mode, inspect every CSV currently under `data/semrush/queues/`, select exactly one eligible unused keyword from each queue, and create one article per queue. The same queue rule is also the authorized topic source for `Tech Updates Daily Publisher` under `docs/AUTOMATION.md`.
 
 When the owner provides raw Reddit material rather than a clean topic list, cluster it into distinct reader intents without changing the substance. Merge or reject a topic only for a clear duplicate, cannibalization, safety, or verification problem, and report that decision instead of silently substituting another topic. Reddit material is a discovery signal, not factual proof. Verify important claims with current authoritative sources.
 
@@ -128,7 +130,7 @@ The static export is written to `out/`.
 
 ## Git and deployment
 
-Approved articles are committed to `main`. GitHub Actions validates and builds the static export, then publishes the generated output to `hostinger-dist`. Hostinger deploys that branch to the production document root. This post-push deployment automation remains active; it is separate from the retired scheduled article-generation process.
+Approved articles reach `main` either through an owner-triggered publication run or through the validated daily publisher branch flow in `docs/AUTOMATION.md`. GitHub Actions validates and builds the static export, then publishes the generated output to `hostinger-dist`. Hostinger deploys that branch to the production document root.
 
 Never manually place Next.js source files on Hostinger. Production needs the generated static files, including `index.html`, from `hostinger-dist`.
 
@@ -154,6 +156,6 @@ Before any task:
 4. Preserve unrelated user changes.
 5. State any required assumption that could materially change the result.
 
-Before every manual article run, additionally read `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, and `docs/SEMRUSH_KEYWORD_BACKLOG.md` completely. If any file is missing or unreadable, stop and report the problem instead of improvising a publishing workflow.
+Before every scheduled or manual article run, additionally read `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, and `docs/SEMRUSH_KEYWORD_BACKLOG.md` completely. If any file is missing or unreadable, stop and report the problem instead of improvising a publishing workflow.
 
 For an invoked last seven days news run, also read `docs/LAST_SEVEN_DAYS_NEWS_PUBLISHING.md` completely. If it is missing or unreadable, stop and report the problem.

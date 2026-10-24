@@ -1,11 +1,12 @@
 # Semrush Inventory Usage
 
-This directory contains the dated keyword inventory for Tech Updates. It never starts a scheduled or unattended publisher.
+This directory contains the dated keyword inventory for Tech Updates. It is the topic source for the single authorized recurring publisher defined in `docs/AUTOMATION.md` and for explicitly requested manual queue runs.
 
-## Two permitted uses
+## Permitted uses
 
-1. For an owner-supplied Reddit, alternatives, news, or exact topic request, a matching row may provide dated keyword context. It must not replace or expand the owner's scope.
-2. When the owner explicitly invokes `docs/PROMPT_SEMRUSH_QUEUE_PUBLISHING.md`, every `.csv` file directly under `queues/` becomes one required publishing queue for that manual run.
+1. On each run of `Tech Updates Daily Publisher`, every `.csv` file directly under `queues/` is one required publishing queue.
+2. For an owner-supplied Reddit, alternatives, news, or exact topic request, a matching row may provide dated keyword context. It must not replace or expand the owner's scope.
+3. When the owner explicitly invokes `docs/PROMPT_SEMRUSH_QUEUE_PUBLISHING.md`, every `.csv` file directly under `queues/` becomes one required publishing queue for that manual run.
 
 In queue mode, discover files from the directory instead of relying on a hard-coded list. Select one eligible unused keyword from every queue, so the article count equals the queue count. Read `docs/SEMRUSH_KEYWORD_BACKLOG.md` for selection, duplicate, category, ledger, and documentation rules.
 
