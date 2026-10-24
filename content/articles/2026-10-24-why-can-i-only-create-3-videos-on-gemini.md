@@ -119,7 +119,7 @@ Usage limits and feature availability are controlled by the service and can chan
 
 - [Why Is Gemini So Slow?](/articles/why-is-gemini-so-slow/)
 - [How to Add Gemini to Chrome](/articles/how-to-add-gemini-to-chrome/)
-- [How to Stop Gemini Using Your Data for Training](/articles/how-to-stop-gemini-using-your-data-for-training/)
+- [How to Stop Gemini Data Training](/articles/how-to-stop-gemini-data-training/)
 
 ## FAQ
 

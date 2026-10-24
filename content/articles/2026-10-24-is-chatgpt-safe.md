@@ -119,7 +119,7 @@ No AI service can promise that every output will be correct or that every user w
 
 - [Does ChatGPT Share Your Data?](/articles/does-chatgpt-share-your-data/)
 - [How Accurate Is ChatGPT?](/articles/how-accurate-is-chatgpt/)
-- [How to Stop Gemini Using Your Data for Training](/articles/how-to-stop-gemini-using-your-data-for-training/)
+- [How to Stop Gemini Data Training](/articles/how-to-stop-gemini-data-training/)
 
 ## FAQ
 
