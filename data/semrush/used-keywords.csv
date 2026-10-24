@@ -44,3 +44,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-23,how-to-install-claude-mem,Claude,,how to install claude mem,data/semrush/queues/claude.csv
 2026-10-23,can-i-create-a-project-in-gemini,Gemini,,can i create a project in gemini,data/semrush/queues/gemini.csv
 2026-10-23,is-perplexity-down,Perplexity,,is perplexity down,data/semrush/queues/perplexity.csv
+2026-10-24,claude-alternatives,Alternatives,claude,claude alternatives,data/semrush/queues/alternatives.csv
+2026-10-24,is-chatgpt-safe,ChatGPT,,is chatgpt safe,data/semrush/queues/chatgpt.csv
+2026-10-24,is-claude-code-free,Claude,,is claude code free,data/semrush/queues/claude.csv
+2026-10-24,why-can-i-only-create-3-videos-on-gemini,Gemini,,why can i only create 3 videos on gemini,data/semrush/queues/gemini.csv
+2026-10-24,is-perplexity-or-chatgpt-better,Perplexity,,is perplexity or chatgpt better,data/semrush/queues/perplexity.csv
