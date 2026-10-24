@@ -3,6 +3,9 @@ name: Build Hostinger branch
 on:
   push:
     branches: [main]
+  workflow_run:
+    workflows: ["Finalize complete daily publisher branches"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -14,9 +17,16 @@ concurrency:
 
 jobs:
   build-and-publish:
+    # A merge made by the finisher may not trigger the normal push workflow
+    # when it uses GITHUB_TOKEN. Deploy after a successful finisher completion.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # For workflow_run, build the latest default branch commit. For a
+          # normal push, use the exact pushed commit.
+          ref: ${{ github.event_name == 'workflow_run' && 'main' || github.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -26,7 +36,10 @@ jobs:
         env:
           NEXT_PUBLIC_SITE_URL: https://techupates.blog
       - name: Publish static site to hostinger-dist
+        shell: bash
         run: |
+          set -euo pipefail
+          source_sha="$(git rev-parse HEAD)"
           mv out /tmp/tech-updates-site
           git config user.name github-actions-bot
           git config user.email a@b
@@ -36,5 +49,5 @@ jobs:
           cp -R /tmp/tech-updates-site/. .
           touch .nojekyll
           git add --all
-          git commit -m Deploy-$GITHUB_SHA
+          git commit -m "Deploy-$source_sha"
           git push --force origin hostinger-dist
