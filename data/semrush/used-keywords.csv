@@ -49,3 +49,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-24,is-claude-code-free,Claude,,is claude code free,data/semrush/queues/claude.csv
 2026-10-24,why-can-i-only-create-3-videos-on-gemini,Gemini,,why can i only create 3 videos on gemini,data/semrush/queues/gemini.csv
 2026-10-24,is-perplexity-or-chatgpt-better,Perplexity,,is perplexity or chatgpt better,data/semrush/queues/perplexity.csv
+2026-10-25,builtwith-alternatives,Alternatives,builtwith,builtwith alternative,data/semrush/queues/alternatives.csv
+2026-10-25,what-is-chatgpt-and-how-does-it-work,ChatGPT,,what is chatgpt and how does it work,data/semrush/queues/chatgpt.csv
+2026-10-25,does-claude-have-student-discount,Claude,,does claude have student discount,data/semrush/queues/claude.csv
+2026-10-25,how-to-get-gemini-to-generate-images,Gemini,,how to get gemini to generate images,data/semrush/queues/gemini.csv
+2026-10-25,what-is-perplexity-app-on-android,Perplexity,,what is perplexity app on android,data/semrush/queues/perplexity.csv
