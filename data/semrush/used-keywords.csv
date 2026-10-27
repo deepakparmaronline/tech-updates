@@ -59,3 +59,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-26,is-claude-code-down,Claude,,is claude code down,data/semrush/queues/claude.csv
 2026-10-26,how-much-is-gemini-advanced,Gemini,,how much is gemini advanced,data/semrush/queues/gemini.csv
 2026-10-26,how-to-cancel-perplexity-subscription,Perplexity,,how to cancel perplexity subscription,data/semrush/queues/perplexity.csv
+2026-10-27,google-colab-alternatives,Alternatives,google colab,alternatives to google colab,data/semrush/queues/alternatives.csv
+2026-10-27,who-invented-chatgpt,ChatGPT,,who invented chatgpt,data/semrush/queues/chatgpt.csv
+2026-10-27,how-much-is-claude,Claude,,how much is claude,data/semrush/queues/claude.csv
+2026-10-27,what-is-gemini-in-chrome,Gemini,,what is gemini in chrome,data/semrush/queues/gemini.csv
+2026-10-27,is-perplexity-free,Perplexity,,is perplexity free,data/semrush/queues/perplexity.csv
