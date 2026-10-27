@@ -57,6 +57,16 @@ jobs:
             exit 0
           fi
 
+          queue_count="$(find data/semrush/queues -maxdepth 1 -type f -name '*.csv' | wc -l | tr -d ' ')"
+          if [[ "$queue_count" -lt 1 ]]; then
+            echo "::error::No Semrush queue CSV files were found."
+            exit 1
+          fi
+          expected_article_count=$((queue_count + 2))
+          expected_image_count="$expected_article_count"
+          expected_added_count=$((expected_article_count * 2))
+          expected_changed_count=$((expected_added_count + 1))
+
           mapfile -t changed < <(git diff --name-only origin/main...HEAD)
           mapfile -t added < <(git diff --diff-filter=A --name-only origin/main...HEAD)
           mapfile -t removed < <(git diff --diff-filter=DR --name-only origin/main...HEAD)
@@ -84,6 +94,15 @@ jobs:
               | grep -Ec "^\+${run_date}," || true
           )"
 
+          news_article_count=0
+          while IFS= read -r path; do
+            [[ -z "$path" ]] && continue
+            if grep -Eq '^category:[[:space:]]*"?AI News"?[[:space:]]*$' "$path" \
+               && grep -Eq '^contentType:[[:space:]]*"?news"?[[:space:]]*$' "$path"; then
+              news_article_count=$((news_article_count + 1))
+            fi
+          done < <(printf '%s\n' "${added[@]}" | grep -E "^content/articles/${run_date}-.*\.md$" || true)
+
           invalid_count=0
           for path in "${changed[@]}"; do
             case "$path" in
@@ -92,23 +111,26 @@ jobs:
             esac
           done
 
-          if [[ "${#changed[@]}" -ne 11 \
-             || "${#added[@]}" -ne 10 \
+          if [[ "${#changed[@]}" -ne "$expected_changed_count" \
+             || "${#added[@]}" -ne "$expected_added_count" \
              || "${#removed[@]}" -ne 0 \
-             || "$article_count" -ne 5 \
-             || "$image_count" -ne 5 \
+             || "$article_count" -ne "$expected_article_count" \
+             || "$image_count" -ne "$expected_image_count" \
+             || "$news_article_count" -ne 2 \
              || "$ledger_count" -ne 1 \
-             || "$ledger_row_count" -ne 5 \
-             || "$valid_ledger_row_count" -ne 5 \
+             || "$ledger_row_count" -ne "$queue_count" \
+             || "$valid_ledger_row_count" -ne "$queue_count" \
              || "$invalid_count" -ne 0 ]]; then
             echo "ready=false" >> "$GITHUB_OUTPUT"
             {
               echo "The branch is not a complete, safe daily batch yet."
               echo ""
-              echo "- Changed paths: ${#changed[@]} (expected 11)"
-              echo "- New articles: $article_count (expected 5)"
-              echo "- New images: $image_count (expected 5)"
-              echo "- New current-date ledger rows: $valid_ledger_row_count (expected 5)"
+              echo "- Semrush queues: $queue_count"
+              echo "- Changed paths: ${#changed[@]} (expected $expected_changed_count)"
+              echo "- New articles: $article_count (expected $expected_article_count)"
+              echo "- New images: $image_count (expected $expected_image_count)"
+              echo "- AI News articles with contentType news: $news_article_count (expected 2)"
+              echo "- New current-date ledger rows: $valid_ledger_row_count (expected $queue_count)"
               echo "- Removed or renamed paths: ${#removed[@]} (expected 0)"
               echo "- Disallowed paths: $invalid_count (expected 0)"
             } >> "$GITHUB_STEP_SUMMARY"
