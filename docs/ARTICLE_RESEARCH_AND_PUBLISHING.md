@@ -1,12 +1,12 @@
 # Article Research and Publishing Runbook
 
-This is the source of truth for every Tech Updates article run. Read it with the root `AGENTS.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, and `docs/SEMRUSH_KEYWORD_BACKLOG.md` before research or publication.
+This is the source of truth for every Tech Updates article run. Read it with the root `AGENTS.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, and `docs/SEMRUSH_KEYWORD_BACKLOG.md` before research or publication. Scheduled runs must also read `docs/DAILY_AI_NEWS_PUBLISHING.md`.
 
 ## Authorized triggers
 
-The recurring `Tech Updates Daily Publisher` is authorized to run unattended under `docs/AUTOMATION.md`. Each scheduled run uses the current Semrush queue directory and publishes exactly one eligible unused topic from every valid queue. At present that is a five article batch. The task must not create duplicate schedules or backfill a missed date.
+The recurring `Tech Updates Daily Publisher` is authorized to run unattended under `docs/AUTOMATION.md`. Each scheduled run publishes exactly one eligible unused topic from every valid Semrush queue plus exactly two verified AI News articles covering distinct events announced in the preceding 24 hours under `docs/DAILY_AI_NEWS_PUBLISHING.md`. With the current five queues, the complete batch is seven articles. The task must not create duplicate schedules, separate news branches, or backfill a missed date.
 
-All other article work begins only when the repository owner supplies the editorial input in the current conversation. There is no automatic topic discovery outside the single authorized scheduled queue workflow.
+All other article work begins only when the repository owner supplies the editorial input in the current conversation. There is no automatic topic discovery outside the single authorized scheduled workflow, whose topic sources are the current Semrush queues and the two-article daily AI News extension.
 
 The owner may request drafting only or full publication. For a drafting request, create and validate the requested articles but do not push or deploy unless the owner explicitly asks. Invoking either reusable full publishing prompt authorizes the agent to complete every required local check, update the Semrush used-keyword ledger when applicable, commit and push the intended files to `main`, monitor deployment, and verify the live pages.
 
@@ -37,9 +37,13 @@ The owner may name a product, a target query, or a list of alternatives articles
 
 A manual batch may contain Reddit-derived authority articles, requested alternatives articles, or both. The owner's supplied scope controls the mix.
 
+### Scheduled daily AI news extension
+
+Only the existing recurring `Tech Updates Daily Publisher` may autonomously select the two daily AI News stories. Follow `docs/DAILY_AI_NEWS_PUBLISHING.md` exactly: use the preceding 24-hour window, choose exactly two distinct verified stories, assign both to `AI News`, set `contentType: news`, and include them in the same atomic branch batch as the Semrush queue articles. These two stories do not create Semrush ledger rows.
+
 ### Last seven days news workflow
 
-When the owner explicitly invokes `docs/LAST_SEVEN_DAYS_NEWS_PUBLISHING.md`, follow that file to discover major current stories. This is the only mode that permits autonomous news topic discovery. It remains manually triggered and must not become a scheduled task.
+When the owner explicitly invokes `docs/LAST_SEVEN_DAYS_NEWS_PUBLISHING.md`, follow that file to discover major current stories. Outside the authorized recurring task, this is the only mode that permits autonomous news topic discovery. It remains manually triggered and must not create a second scheduled task.
 
 ### Semrush queue batch
 
