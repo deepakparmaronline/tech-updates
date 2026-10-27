@@ -1,6 +1,6 @@
 # Tech Updates: AI Agent Site Guide
 
-This file is the mandatory starting point for any AI agent working in this repository. Read this file completely before planning, editing, researching, publishing, debugging, or deploying. For article work, also read `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, and `docs/SEMRUSH_KEYWORD_BACKLOG.md` completely before taking action. When the owner invokes the last seven days news workflow, also read `docs/LAST_SEVEN_DAYS_NEWS_PUBLISHING.md` completely.
+This file is the mandatory starting point for any AI agent working in this repository. Read this file completely before planning, editing, researching, publishing, debugging, or deploying. For article work, also read `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, and `docs/SEMRUSH_KEYWORD_BACKLOG.md` completely before taking action. For the recurring daily publisher, also read `docs/DAILY_AI_NEWS_PUBLISHING.md` completely. When the owner invokes the last seven days news workflow, also read `docs/LAST_SEVEN_DAYS_NEWS_PUBLISHING.md` completely.
 
 ## Mission
 
@@ -48,6 +48,7 @@ The site is a fixed newspaper system. The application owns the layout; Markdown 
 | `scripts/validate-content.mjs` | Content contract validator | No during publishing |
 | `docs/CONTENT_STYLE.md` | Editorial and structural requirements | Read before publishing |
 | `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md` | Mandatory user-supplied topic research and publishing runbook | Read before publishing |
+| `docs/DAILY_AI_NEWS_PUBLISHING.md` | Two-article, last-24-hours AI News extension for the authorized daily publisher | Read for scheduled publishing |
 | `docs/LAST_SEVEN_DAYS_NEWS_PUBLISHING.md` | Owner-triggered last seven days news discovery and publishing runbook | Read when invoked |
 | `docs/PROMPT_LAST_SEVEN_DAYS_NEWS.md` | Full Codex publishing prompt plus a read-only ChatGPT research handoff | Use to invoke the workflow |
 | `docs/DEPLOYMENT.md` | GitHub and Hostinger deployment instructions | Read before deployment changes |
@@ -66,7 +67,7 @@ A normal article therefore requires no component or route change. Add the Markdo
 - Filename: `YYYY-MM-DD-topic-slug.md` (the date remains an internal source filename, not part of the public URL).
 - Use YAML frontmatter matching an existing article.
 - Required metadata includes `title`, `description`, `category`, `author`, `date`, `readingTime`, `featuredImage`, `tags`, at least three `keyTakeaways`, and at least six `faqs` for structured data.
-- Articles created through the last seven days news workflow must also set `contentType: news`.
+- Articles created through the daily AI news extension or the last seven days news workflow must also set `contentType: news`.
 - The article body must contain its FAQ section; the page template must not render a second FAQ section.
 - Use `author: Tech Updates` unless the repository owner explicitly adds another author.
 - The featured image must exist under `public/images/` and the frontmatter path must start with `/images/`.
@@ -77,7 +78,7 @@ A normal article therefore requires no component or route change. Add the Markdo
 
 ## Publishing triggers and topic sources
 
-Tech Updates authorizes one recurring task named `Tech Updates Daily Publisher` under the durable rules in `docs/AUTOMATION.md`. That task is an explicit standing instruction from the repository owner and may run unattended. It must use the saved Semrush queues, publish one eligible unused topic from every current queue, and use the protected `daily-publisher-YYYY-MM-DD-standalone` branch flow. Do not create a second recurring publisher.
+Tech Updates authorizes one recurring task named `Tech Updates Daily Publisher` under the durable rules in `docs/AUTOMATION.md`. That task is an explicit standing instruction from the repository owner and may run unattended. It must publish one eligible unused topic from every current Semrush queue plus exactly two distinct AI News articles about verified events from the preceding 24 hours under `docs/DAILY_AI_NEWS_PUBLISHING.md`, all in the same protected `daily-publisher-YYYY-MM-DD-standalone` branch flow. Do not create a second recurring publisher or a separate news branch.
 
 Manual article runs still require the repository owner to supply the editorial input in the current conversation.
 
@@ -156,6 +157,6 @@ Before any task:
 4. Preserve unrelated user changes.
 5. State any required assumption that could materially change the result.
 
-Before every scheduled or manual article run, additionally read `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, and `docs/SEMRUSH_KEYWORD_BACKLOG.md` completely. If any file is missing or unreadable, stop and report the problem instead of improvising a publishing workflow.
+Before every scheduled or manual article run, additionally read `docs/ARTICLE_RESEARCH_AND_PUBLISHING.md`, `docs/CONTENT_STYLE.md`, `docs/AUTOMATION.md`, and `docs/SEMRUSH_KEYWORD_BACKLOG.md` completely. Scheduled runs must also read `docs/DAILY_AI_NEWS_PUBLISHING.md` completely. If any required file is missing or unreadable, stop and report the problem instead of improvising a publishing workflow.
 
 For an invoked last seven days news run, also read `docs/LAST_SEVEN_DAYS_NEWS_PUBLISHING.md` completely. If it is missing or unreadable, stop and report the problem.
