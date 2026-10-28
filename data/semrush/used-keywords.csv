@@ -64,3 +64,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-27,how-much-is-claude,Claude,,how much is claude,data/semrush/queues/claude.csv
 2026-10-27,what-is-gemini-in-chrome,Gemini,,what is gemini in chrome,data/semrush/queues/gemini.csv
 2026-10-27,is-perplexity-free,Perplexity,,is perplexity free,data/semrush/queues/perplexity.csv
+2026-10-28,free-alternatives-to-grok-imagine-2026,Alternatives,grok imagine 2026,free alternatives to grok imagine 2026,data/semrush/queues/alternatives.csv
+2026-10-28,can-chatgpt-hear-audio,ChatGPT,,can chatgpt hear audio,data/semrush/queues/chatgpt.csv
+2026-10-28,how-much-is-claude-code,Claude,,how much is claude code,data/semrush/queues/claude.csv
+2026-10-28,can-gemini-upscale-images,Gemini,,can gemini upscale images,data/semrush/queues/gemini.csv
+2026-10-28,how-to-optimize-for-perplexity-ecommerce,Perplexity,,how to optimize for perplexity ecommerce,data/semrush/queues/perplexity.csv
