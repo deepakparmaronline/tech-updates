@@ -69,3 +69,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-28,how-much-is-claude-code,Claude,,how much is claude code,data/semrush/queues/claude.csv
 2026-10-28,can-gemini-upscale-images,Gemini,,can gemini upscale images,data/semrush/queues/gemini.csv
 2026-10-28,how-to-optimize-for-perplexity-ecommerce,Perplexity,,how to optimize for perplexity ecommerce,data/semrush/queues/perplexity.csv
+2026-10-29,supabase-alternatives,Alternatives,supabase,supabase alternatives,data/semrush/queues/alternatives.csv
+2026-10-29,what-is-chatgpt-canvas,ChatGPT,,what is chatgpt canvas,data/semrush/queues/chatgpt.csv
+2026-10-29,how-to-change-model-in-claude-code,Claude,,how to change model in claude code,data/semrush/queues/claude.csv
+2026-10-29,is-gemini-safe-to-use,Gemini,,is gemini safe to use,data/semrush/queues/gemini.csv
+2026-10-29,is-perplexity-safe,Perplexity,,is perplexity safe,data/semrush/queues/perplexity.csv
