@@ -74,3 +74,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-29,how-to-change-model-in-claude-code,Claude,,how to change model in claude code,data/semrush/queues/claude.csv
 2026-10-29,is-gemini-safe-to-use,Gemini,,is gemini safe to use,data/semrush/queues/gemini.csv
 2026-10-29,is-perplexity-safe,Perplexity,,is perplexity safe,data/semrush/queues/perplexity.csv
+2026-10-30,whmcs-alternatives,Alternatives,whmcs,whmcs alternative,data/semrush/queues/alternatives.csv
+2026-10-30,is-chatgpt-an-llm,ChatGPT,,is chatgpt an llm,data/semrush/queues/chatgpt.csv
+2026-10-30,what-claude-model-is-best-for-coding,Claude,,what claude model is best for coding,data/semrush/queues/claude.csv
+2026-10-30,does-gemini-have-unlimited-uploads,Gemini,,does gemini have unlimited uploads,data/semrush/queues/gemini.csv
+2026-10-30,can-perplexity-generate-images,Perplexity,,can perplexity generate images,data/semrush/queues/perplexity.csv
