@@ -79,3 +79,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-30,what-claude-model-is-best-for-coding,Claude,,what claude model is best for coding,data/semrush/queues/claude.csv
 2026-10-30,does-gemini-have-unlimited-uploads,Gemini,,does gemini have unlimited uploads,data/semrush/queues/gemini.csv
 2026-10-30,can-perplexity-generate-images,Perplexity,,can perplexity generate images,data/semrush/queues/perplexity.csv
+2026-10-31,splice-alternatives,Alternatives,splice,splice alternatives,data/semrush/queues/alternatives.csv
+2026-10-31,does-chatgpt-give-the-same-answers-to-everyone,ChatGPT,,does chatgpt give the same answers to everyone,data/semrush/queues/chatgpt.csv
+2026-10-31,how-to-use-claude-code-in-vs-code,Claude,,how to use claude code in vs code,data/semrush/queues/claude.csv
+2026-10-31,does-gemini-have-a-desktop-app,Gemini,,does gemini have a desktop app,data/semrush/queues/gemini.csv
+2026-10-31,what-is-perplexity-finance,Perplexity,,what is perplexity finance,data/semrush/queues/perplexity.csv
