@@ -84,3 +84,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-10-31,how-to-use-claude-code-in-vs-code,Claude,,how to use claude code in vs code,data/semrush/queues/claude.csv
 2026-10-31,does-gemini-have-a-desktop-app,Gemini,,does gemini have a desktop app,data/semrush/queues/gemini.csv
 2026-10-31,what-is-perplexity-finance,Perplexity,,what is perplexity finance,data/semrush/queues/perplexity.csv
+2026-11-01,vercel-alternatives,Alternatives,vercel,vercel alternatives,data/semrush/queues/alternatives.csv
+2026-11-01,how-to-change-chatgpt-voice,ChatGPT,,how to change chatgpt voice,data/semrush/queues/chatgpt.csv
+2026-11-01,does-claude-have-memory,Claude,,does claude have memory,data/semrush/queues/claude.csv
+2026-11-01,why-is-gemini-not-working,Gemini,,why is gemini not working,data/semrush/queues/gemini.csv
+2026-11-01,can-perplexity-generate-video,Perplexity,,can perplexity generate video,data/semrush/queues/perplexity.csv
