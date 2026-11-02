@@ -89,3 +89,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-11-01,does-claude-have-memory,Claude,,does claude have memory,data/semrush/queues/claude.csv
 2026-11-01,why-is-gemini-not-working,Gemini,,why is gemini not working,data/semrush/queues/gemini.csv
 2026-11-01,can-perplexity-generate-video,Perplexity,,can perplexity generate video,data/semrush/queues/perplexity.csv
+2026-11-02,prtg-alternatives,Alternatives,prtg,prtg alternative,data/semrush/queues/alternatives.csv
+2026-11-02,how-can-a-professor-detect-chatgpt,ChatGPT,,how can a professor detect chat gpt,data/semrush/queues/chatgpt.csv
+2026-11-02,is-claude-pro-worth-it,Claude,,is claude pro worth it,data/semrush/queues/claude.csv
+2026-11-02,is-gemini-pro-worth-it,Gemini,,is gemini pro worth it,data/semrush/queues/gemini.csv
+2026-11-02,what-is-the-difference-between-perplexity-and-claude,Perplexity,,what is the difference between perplexity and claude,data/semrush/queues/perplexity.csv
