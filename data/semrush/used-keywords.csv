@@ -94,3 +94,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-11-02,is-claude-pro-worth-it,Claude,,is claude pro worth it,data/semrush/queues/claude.csv
 2026-11-02,is-gemini-pro-worth-it,Gemini,,is gemini pro worth it,data/semrush/queues/gemini.csv
 2026-11-02,what-is-the-difference-between-perplexity-and-claude,Perplexity,,what is the difference between perplexity and claude,data/semrush/queues/perplexity.csv
+2026-11-03,domo-alternatives,Alternatives,domo,domo alternatives,data/semrush/queues/alternatives.csv
+2026-11-03,why-cant-i-upload-images-to-chatgpt,ChatGPT,,why can't i upload images to chatgpt,data/semrush/queues/chatgpt.csv
+2026-11-03,does-claude-have-unlimited-image-uploads,Claude,,does claude have unlimited image uploads,data/semrush/queues/claude.csv
+2026-11-03,how-to-disable-gemini-in-gmail,Gemini,,how to disable gemini in gmail,data/semrush/queues/gemini.csv
+2026-11-03,does-perplexity-have-its-own-llm,Perplexity,,does perplexity have its own llm,data/semrush/queues/perplexity.csv
