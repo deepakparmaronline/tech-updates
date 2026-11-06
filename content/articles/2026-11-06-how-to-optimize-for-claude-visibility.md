@@ -34,7 +34,7 @@ If you want your website to appear in answers from Claude, start with crawl acce
 
 There is no public Claude ranking formula and no technical switch that guarantees a citation. This guide explains what Anthropic documents today, how to check your crawler rules and which SEO practices make your pages easier to find, read and verify.
 
-## Quick answer: focus on access, not an AI ranking trick
+## Short Answer
 
 To improve the chance that Claude can use a public page, make sure the page is available without a login, returns a normal response, has useful text and is not blocked from the relevant Anthropic bots. Pay special attention to **Claude-SearchBot** and **Claude-User**. They are the bots tied to search indexing and user-directed retrieval.
 
@@ -42,7 +42,11 @@ Do not confuse those bots with **ClaudeBot**, which Anthropic describes as a cra
 
 Anthropic's [crawler documentation](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler) is the primary source for these differences. Review it before changing your site rules.
 
-## Understand Anthropic's three web bots
+## What the Question Really Means
+
+Claude visibility can mean three different things: a page being available to Claude when a person asks for it, a page being indexed for Claude search, or public content being collected for model development. Those are separate access paths, so a site owner should not treat every Anthropic crawler as one bot.
+
+## How It Works
 
 Anthropic documents three main robots that website owners should understand.
 
@@ -64,7 +68,7 @@ Claude-SearchBot is used to improve search result quality. Anthropic says that d
 
 If search visibility is your goal, check this bot separately. Do not assume that allowing ClaudeBot is enough. The bots have different jobs and separate controls.
 
-## Review robots.txt before changing anything
+## Practical Steps
 
 Robots.txt is a public file at the top level of a site, usually at the root domain. It tells compliant crawlers which paths they may request. Anthropic says its bots respect standard robots.txt directives and the Crawl-delay extension.
 
@@ -83,7 +87,7 @@ This is an example, not a ready-made replacement for your current robots.txt. Me
 
 Anthropic recommends using robots.txt to express crawler preferences. It also warns that blocking crawler IP addresses is not a reliable substitute for robots.txt because it can interfere with the crawler's ability to read the file. The company publishes an [official crawler IP list](https://claude.com/crawling/bots.json) so site owners can verify whether a request is coming from Anthropic.
 
-## Check more than the user-agent name
+## Common Problems
 
 A request can be blocked before it reaches your web server. A CDN, web application firewall, bot-management tool, rate limit or hosting rule may reject it. Review those systems if the robots.txt file appears correct but the server logs show repeated errors.
 
@@ -143,13 +147,17 @@ Review pages that contain limits, pricing, product features or policy details. U
 
 Show who created or reviewed important content when that information is relevant. Explain the author's experience honestly. Use original screenshots or diagrams when they help, and label them accurately. Do not claim first-hand testing unless it happened.
 
-## What not to do
+## What Does Not Work
 
 Do not promise a client that adding an llms.txt file will make Claude cite a page. Do not buy fake mentions or publish copied paragraphs across many domains. Do not stuff a page with the phrase Claude AI in every heading. Do not block every Anthropic bot and then expect search retrieval to work.
 
 Structured data can help describe a page to systems that use it, but it is not a guaranteed Claude ranking control. Keep schema accurate and consistent with visible content. The same applies to FAQs, author details and dates: they should help the reader, not exist only to create a signal.
 
 Anthropic also announced on October 30, 2026 that it had begun recognizing a machine-readable preference signal for AI training. The company says the rollout is continuing and that its interpretation may change as standards develop. Treat that signal as a training preference, not as a replacement for the separate crawler rules.
+
+## Safety and Limitations
+
+No public Claude ranking formula is available, and crawler access does not guarantee a citation. Keep privacy, training preferences and search access separate. Before allowing a bot to read a page, confirm that the page is public and that your organization's content policy permits the access. Do not expose customer records, private documents or restricted areas through a broad allow rule.
 
 ## How to measure progress
 
@@ -167,9 +175,17 @@ The most useful first step is to separate the three Anthropic bots in your crawl
 
 Then apply strong technical SEO and publish original, well-sourced content. These steps make your pages easier to access and verify. They do not guarantee a citation, because Anthropic does not publish a fixed ranking formula for Claude search.
 
+## Related Reading
+
 For more AI search work, see our guides on [optimizing for Perplexity search](/articles/how-to-optimize-for-perplexity-search/) and [optimizing Perplexity visibility for ecommerce](/articles/how-to-optimize-for-perplexity-ecommerce/).
 
-## Frequently asked questions
+## Key Takeaways
+
+- ClaudeBot, Claude-User and Claude-SearchBot have different purposes.
+- Allowing Claude-SearchBot and Claude-User can support search and user-directed retrieval, but it does not guarantee visibility.
+- Use clear content and sound technical SEO instead of relying on unsupported ranking tricks.
+
+## FAQ
 
 ### How do I make my website visible in Claude?
 

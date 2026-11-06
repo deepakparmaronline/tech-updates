@@ -34,13 +34,17 @@ Yes. You can upload videos to Gemini Apps and ask questions about their content.
 
 This guide explains how to upload a video, what the current limits mean and how to fix common upload problems. It also separates the consumer Gemini app from the Gemini API, because developers have different file input options.
 
-## Quick answer: Gemini supports video uploads
+## Short Answer
 
 Gemini Apps supports documents, spreadsheets, notebooks, photos, videos and other supported files. On the web app, you can add a video from your device and submit it with a question. The official [Upload and analyze files in Gemini Apps guide](https://support.google.com/gemini/answer/14903178?hl=en) lists the current file and duration limits.
 
 The important distinction is between the size of one video and the total video length in a prompt. A file can be below the 2 GB size limit and still fail if the total duration is above the account's limit.
 
-## Current Gemini video upload limits
+## What the Question Really Means
+
+Uploading a video to Gemini Apps means attaching a supported video file to a chat so the consumer app can analyze it. It is different from asking Gemini to create a video, pasting a YouTube link or sending video data through the developer API. Each path has separate rules.
+
+## How It Works
 
 Google's help page currently lists these limits for Gemini Apps:
 
@@ -56,7 +60,7 @@ These limits can change. They may also depend on the account, product surface an
 
 The one-hour allowance is a total duration limit, not a promise that every account can upload one hour in a single file or every day. Gemini also has rolling limits for how much content you can upload and analyze over a period of time.
 
-## How to upload a video to Gemini on the web
+## Practical Steps
 
 The basic process is simple:
 
@@ -111,7 +115,7 @@ Ask what the presenter shows, which features appear and what the demo does not p
 
 If you remember a topic but not the time, ask Gemini to locate the section where it appears. Treat the result as a pointer and confirm the timestamp in the video player.
 
-## Why Gemini may reject a video
+## Common Problems
 
 If an upload fails, check the most common causes before trying again.
 
@@ -127,6 +131,10 @@ If an upload fails, check the most common causes before trying again.
 
 **Your work account has restrictions.** A Workspace administrator may control access to connected apps or Drive. Contact the administrator if an option is missing or blocked by your organization.
 
+## What Does Not Work
+
+Do not assume that every video link can be opened, that a 2 GB file can exceed the total duration allowance or that the Gemini API and Gemini Apps share one limit. Do not use a video summary as a verified transcript. Check the recording when exact wording, names or timestamps matter.
+
 ## Gemini Apps and Gemini API are different
 
 Developers can also send video to Gemini models through the Gemini API. That is not the same upload flow as the consumer Gemini app.
@@ -135,7 +143,7 @@ Google's [Gemini API video understanding documentation](https://ai.google.dev/ge
 
 Do not copy an API limit into a consumer-app guide. The app has its own account and duration rules. If you are building a product, use the API documentation and check the model-specific limits. If you are using gemini.google.com, use the Gemini Apps help page.
 
-## Privacy and accuracy checks
+## Safety and Limitations
 
 Before you upload a video, check whether it contains personal, confidential or customer information. Do not upload a private meeting or client recording unless your organization allows that use and you understand the relevant account settings.
 
@@ -147,9 +155,17 @@ For work or school use, check the organization's AI and data policy. A connected
 
 You can upload videos to Gemini Apps. Start with a short clip, ask one clear question and check the result against the recording. Keep the 2 GB per-video limit and the total duration limit in mind. If you need longer videos or a repeatable developer workflow, compare the consumer app rules with the Gemini API documentation instead of assuming they are the same.
 
+## Related Reading
+
 For related help, see our guide to [Gemini file upload limits](/articles/does-gemini-have-unlimited-uploads/) and our article about [Gemini video generation limits](/articles/why-can-i-only-create-3-videos-on-gemini/).
 
-## Frequently asked questions
+## Key Takeaways
+
+- Gemini Apps supports video uploads, with a 2 GB per-video size limit in the current help documentation.
+- The total video duration is five minutes on the free tier and up to one hour on Google AI Pro or Ultra.
+- Consumer app rules and Gemini API rules are separate, so use the documentation for the product you are using.
+
+## FAQ
 
 ### Can I upload videos to Gemini for free?
 
