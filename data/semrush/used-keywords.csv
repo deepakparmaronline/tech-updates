@@ -119,3 +119,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-11-07,how-many-tokens-in-claude-pro,Claude,,how many tokens in claude pro,claude.csv
 2026-11-07,how-to-talk-to-gemini,Gemini,,how to talk to gemini,gemini.csv
 2026-11-07,how-to-use-perplexity,Perplexity,,how to use perplexity,perplexity.csv
+2026-11-08,streamlit-alternatives,Alternatives,streamlit,streamlit alternatives,data/semrush/queues/alternatives.csv
+2026-11-08,how-long-does-it-take-chatgpt-to-generate-an-image,ChatGPT,,how long does it take chatgpt to generate an image,data/semrush/queues/chatgpt.csv
+2026-11-08,how-to-use-claude,Claude,,how to use claude,data/semrush/queues/claude.csv
+2026-11-08,what-is-guided-learning-gemini,Gemini,,what is guided learning gemini,data/semrush/queues/gemini.csv
+2026-11-08,is-perplexity-a-public-company,Perplexity,,is perplexity a public company,data/semrush/queues/perplexity.csv
