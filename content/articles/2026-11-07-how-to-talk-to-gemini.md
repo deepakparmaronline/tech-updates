@@ -1,6 +1,6 @@
 ---
 title: "How to Talk to Gemini: Use Voice Chat and Gemini Live"
-description: "Learn how to talk to Gemini with voice chat and Gemini Live on Android, including screen sharing, camera controls, privacy and common fixes."
+description: "Learn how to talk to Gemini with voice chat and Gemini Live on Android, including screen sharing, camera controls, privacy settings, and common fixes."
 category: "Gemini"
 author: "Tech Updates"
 date: 2026-11-07

@@ -1,6 +1,6 @@
 ---
 title: "Claude Code Skills: Build Reusable Workflows with SKILL.md"
-description: "Learn how to create Claude Code Skills with SKILL.md, choose where they load, add scripts and test reusable workflows without widening access."
+description: "Create Claude Code Skills with SKILL.md, organize project and personal workflows, add scripts safely, and test reusable instructions before sharing them."
 category: "AI News"
 author: "Tech Updates"
 date: 2026-11-07
