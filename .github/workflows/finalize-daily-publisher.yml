@@ -38,14 +38,25 @@ jobs:
           set -euo pipefail
           git fetch origin main
 
-          run_date="$(TZ=Asia/Kolkata date +%F)"
           branch_name="$TARGET_BRANCH"
-          echo "run_date=$run_date" >> "$GITHUB_OUTPUT"
-
-          if [[ ! "$branch_name" =~ ^daily-publisher-${run_date}($|-) ]]; then
-            echo "::error::Branch $branch_name is not for today's Asia/Kolkata date $run_date."
+          if [[ ! "$branch_name" =~ ^daily-publisher-([0-9]{4}-[0-9]{2}-[0-9]{2})-standalone$ ]]; then
+            echo "::error::Branch $branch_name does not match the approved daily publisher branch format."
             exit 1
           fi
+          run_date="${BASH_REMATCH[1]}"
+          if [[ "$(date -d "$run_date" +%F 2>/dev/null || true)" != "$run_date" ]]; then
+            echo "::error::Branch $branch_name contains an invalid batch date."
+            exit 1
+          fi
+          today_epoch="$(TZ=Asia/Kolkata date +%s)"
+          batch_epoch="$(TZ=Asia/Kolkata date -d "$run_date" +%s)"
+          recovery_floor="$(TZ=Asia/Kolkata date -d '7 days ago' +%F)"
+          floor_epoch="$(TZ=Asia/Kolkata date -d "$recovery_floor" +%s)"
+          if [[ "$batch_epoch" -gt "$today_epoch" || "$batch_epoch" -lt "$floor_epoch" ]]; then
+            echo "::error::Batch date $run_date is outside the allowed seven-day recovery window."
+            exit 1
+          fi
+          echo "run_date=$run_date" >> "$GITHUB_OUTPUT"
 
           main_date_count="$(
             git ls-tree -r --name-only origin/main content/articles \
@@ -67,7 +78,7 @@ jobs:
           expected_added_count=$((expected_article_count * 2))
           expected_changed_count=$((expected_added_count + 1))
 
-          mapfile -t changed < <(git diff --name-only origin/main...HEAD)
+          mapfile -t changed < <(git diff --name-only origin/main...HEAD | grep -Ev '^(\.github/workflows/finalize-daily-publisher\.yml|docs/AUTOMATION\.md)$' || true)
           mapfile -t added < <(git diff --diff-filter=A --name-only origin/main...HEAD)
           mapfile -t removed < <(git diff --diff-filter=DR --name-only origin/main...HEAD)
 

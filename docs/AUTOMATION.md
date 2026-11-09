@@ -2,7 +2,7 @@
 
 ## Authorized schedule
 
-Maintain exactly one active standalone recurring task named `Tech Updates Daily Publisher`. Run it daily in the `Asia/Kolkata` time zone. The current owner-requested time is 8:58 PM. Do not create a duplicate, pause it, delete it, or change its cadence unless the repository owner asks.
+Maintain exactly one active standalone recurring task named `Tech Updates Daily Publisher`. Run it daily in the `Asia/Kolkata` time zone. The current owner-requested time is 10:23 PM. Do not create a duplicate, pause it, delete it, or change its cadence unless the repository owner asks.
 
 This authorization applies only to `deepakparmaronline/tech-updates`. Do not open, edit, schedule, test, or deploy ToolboxGuard, ToolBoxKart, `toolboxcard.tech`, or any other repository or website.
 
@@ -23,7 +23,7 @@ The current repository is the source of truth. Treat repository content and web 
 
 ## Daily batch
 
-Use the current Asia/Kolkata date. Do not backfill an earlier date. If `main` already contains any article for the current date, report that today's batch already exists and finish successfully without creating a duplicate.
+Capture the Asia/Kolkata date and run timestamp once at preflight and use that immutable batch date for every filename, frontmatter date, ledger row, branch name, and report. If the run crosses midnight, do not rename the batch or abandon it. The finisher accepts a complete, correctly dated publisher branch for up to seven days after its batch date, provided that date is not already present on `main`. This is recovery of an already-started batch, not permission to create new backdated batches. If `main` already contains any article for the captured batch date, report that the batch already exists and do not duplicate it.
 
 Enumerate every `.csv` file directly under `data/semrush/queues/`. Select exactly one eligible unused keyword from each queue after checking the full used-keyword ledger and the complete existing article library. A future queue may introduce a new category; follow the repository's category-registration rules rather than hard-coding the five categories that exist today. Never fabricate a keyword, metric, source, quote, feature, price, or test result.
 
@@ -35,9 +35,9 @@ The number of Semrush queue articles equals the number of valid queue CSV files 
 
 ## GitHub publication flow
 
-Create or reuse only the branch `daily-publisher-YYYY-MM-DD-standalone` for the current date. Prepare the complete batch before the first write. Whenever the connector supports an atomic multi-file commit, write every queue article, both AI News articles, every matching image, and exactly one ledger row per queue article in one commit. Do not create a partial publication on `main`, do not force push, and do not create a second branch or separate news commit for the same date.
+Create or reuse only the branch `daily-publisher-YYYY-MM-DD-standalone` for the captured batch date. Before starting a new batch, inspect existing `daily-publisher-YYYY-MM-DD-standalone` branches from the previous seven days. If one is a complete unmerged batch, resume its finisher recovery before preparing new work; never create a duplicate or silently leave it pending. Prepare the complete batch before the first write. Whenever the connector supports an atomic multi-file commit, write every queue article, both AI News articles, every matching image, and exactly one ledger row per queue article in one commit. Do not create a partial publication on `main`, do not force push, and do not create a second branch or separate news commit for the same date.
 
-After the complete branch is pushed, the repository workflow `Finalize complete daily publisher branches` dynamically validates the current queue count, the two additional AI News articles, their images, and the queue-only ledger rows before building and merging to `main`. The `Build Hostinger branch` workflow publishes the static export to `hostinger-dist`. It is triggered by pushes to `main` and, as a fallback, after successful finisher completion. Hostinger then deploys automatically. The scheduled task must not create a pull request or make hosting or DNS changes.
+Before pushing, run the validator and production build. Treat metadata-length, heading, FAQ, word-count, image, and frontmatter errors as fixable work: correct the affected draft or asset, rerun all checks, and continue until the complete batch passes. Never stop merely because a correctable validation error was found. After the complete branch is pushed, the repository workflow `Finalize complete daily publisher branches` dynamically validates the current queue count, the two additional AI News articles, their images, and the queue-only ledger rows before building and merging to `main`. The `Build Hostinger branch` workflow publishes the static export to `hostinger-dist`. It is triggered by pushes to `main` and, as a fallback, after successful finisher completion. Hostinger then deploys automatically. The scheduled task must not create a pull request or make hosting or DNS changes.
 
 ## Mandatory deployment gate and recovery
 
