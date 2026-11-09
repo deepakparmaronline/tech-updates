@@ -100,6 +100,25 @@ For the PSI repository, the public README says the formal development contains n
 
 A good report should state what the machine checked, what the authors claim, what the repository makes available and what remains for independent review. This avoids both extremes: dismissing a formal proof because AI helped write it, or treating a successful kernel check as proof that every related claim is settled.
 
+
+## Who Is Affected
+
+This development is relevant to mathematicians who work on quantum information, researchers who use AI for theorem discovery, and developers who want a reliable way to check formal arguments. It is also useful for educators who want to show students the difference between a plausible written explanation and a proof that a formal system can verify. The PSI example is not a reason for every developer to install Lean immediately. It is a concrete case for people who need to understand how proof assistants can support research.
+
+The practical audience includes anyone who reviews AI generated mathematical claims. A researcher can inspect the theorem statement and proof dependencies. A software engineer can reproduce the Lean build. A reader can check the repository notes and distinguish author reported checks from an independent reproduction. Each role can verify a different part of the claim.
+
+## What Happens Next
+
+The next useful step is independent review of the formalization and the paper to Lean mapping. Researchers can clone the public repository, install the declared Lean toolchain, run the documented build and compare the formal theorem with the conjecture as stated in the paper. Any report should identify the commit, toolchain and exact command used, so another person can repeat the check.
+
+A second review should focus on the mathematical interpretation. Does the formal statement capture the intended conjecture? Are the assumptions equivalent to those in the paper? Are the consequences described by the authors also formalized, or are they arguments in the paper that still need human review? These questions help separate a verified formal proof from broader claims about what the result means for quantum computing.
+
+## What We Know and Do Not Know
+
+The public PSI announcement is dated November 6, 2026. PSI says its internal system used a non-public Anthropic model and that the resulting proof was formalized in Lean 4. The repository provides source code, a paper and notes about the formalization. Its README states that the named formal theorems contain no placeholder and no added axiom, and describes checks using two Lean kernel implementations within the project.
+
+The public material does not establish that an independent outside research group has reproduced every part of the result or reviewed every consequence in the paper. It also does not mean that every sentence in the paper is formalized. The repository notes identify portions without a Lean counterpart. The careful conclusion is that PSI reports a Lean checked formal proof for the stated development, while the wider mathematical interpretation remains a matter for expert review.
+
 ## Key Takeaways
 
 - Lean 4 checks formal proof terms against precise definitions and assumptions.
