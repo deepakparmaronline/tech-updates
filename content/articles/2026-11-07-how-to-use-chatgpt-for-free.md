@@ -40,7 +40,11 @@ To use ChatGPT for free, open chatgpt.com, create a free account, start a new ch
 
 You do not need ChatGPT Plus for normal text conversations. A paid plan mainly gives higher limits and wider access to advanced tools. The Free plan is useful if you are happy to work within separate limits for uploads, images, voice and research.
 
-## What the Free Plan Actually Includes
+## What the Question Really Means
+
+People often ask whether ChatGPT is free as if every feature has one shared limit. The Free plan does include everyday chat, but tools such as file uploads, image creation, voice and research have separate usage limits. The useful question is which task you want to do and whether the Free plan currently supports it.
+
+## How It Works
 
 OpenAI's current pricing page lists unlimited text chats on Free, subject to abuse guardrails. It also lists limited messages with uploads, image creation, voice chats, deep research, memory and context, Codex access and ChatGPT Work access on desktop. The Free Tier FAQ also says free users can search the web, analyse data, upload images or files, discover and use GPTs, create images and use Library storage.
 
@@ -48,7 +52,7 @@ These pages describe access at the time they were updated. Model names, feature 
 
 There is one important restriction around GPTs. Free users can discover and use existing GPTs, but OpenAI says personal accounts on Free, Go, Plus and Pro cannot create or publish new GPTs. If you need to build and share a custom GPT, check the current workspace and plan rules rather than assuming a Free account can publish one.
 
-## How to Start Using ChatGPT for Free
+## Practical Steps
 
 ### 1. Open the official ChatGPT website
 
@@ -94,7 +98,7 @@ Break large jobs into smaller parts. Ask for a plan first, review it, then work 
 
 Save important output outside the chat. Copy a final draft into your document system and keep source links with it. Chat history is useful, but it should not be the only copy of a business document, project brief or research note.
 
-## Common Problems on the Free Plan
+## Common Problems
 
 If you can send text but cannot upload a file, the upload tool may have reached its separate allowance. If image creation is unavailable, that tool may have its own reset. OpenAI says ChatGPT shows a notice when you reach an applicable limit. Wait for the reset shown in the product rather than repeatedly retrying the same action.
 
@@ -102,7 +106,7 @@ If a conversation says its context is full, the current chat has reached its ava
 
 If a feature is missing, check that you are signed in to the correct account and using the official app or website. Update the app, check the current pricing page and look for a staged rollout note. Do not assume a feature is broken just because another account or device shows it.
 
-## What Does Not Work on a Free Account
+## What Does Not Work
 
 A Free account is not a way to get every paid limit at no cost. You cannot create and publish a personal GPT under the current OpenAI rule. You also do not receive the same tool limits as Plus or Pro. The current pricing comparison lists no monthly API credits for Free, so a ChatGPT Free account should not be treated as a free API subscription.
 

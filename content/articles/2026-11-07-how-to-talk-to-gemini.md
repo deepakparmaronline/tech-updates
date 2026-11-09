@@ -40,13 +40,17 @@ On a supported Android phone or tablet, open the Gemini mobile app and tap Live 
 
 Gemini Live is different from speaking one prompt into a microphone. Live keeps the conversation open so you can interrupt, ask a follow-up and switch between voice and text. Google says the feature is not currently available in the Gemini web app or Gemini in Google Messages. Availability can change as Google rolls out updates.
 
-## What It Means to Talk to Gemini
+## What the Question Really Means
 
 A spoken prompt is useful when you want to dictate one question without typing. Gemini Live is designed for a longer conversation. You can explain an idea, stop Gemini while it is speaking, add context and change the subject without starting from a blank chat.
 
 That difference matters for tasks such as practising for an interview, brainstorming a plan or asking for help while looking at something in front of you. Live can also use camera or screen sharing on supported Android devices. You should still treat it as an assistant, not as a person who can see everything accurately or understand every detail.
 
 Google's Android Help page describes Gemini Live as a natural, free-flowing conversation with spoken replies. It also says you can interrupt Gemini and use it to explore a topic or practise aloud. The same page explains the controls for holding, muting, ending and resuming a session.
+
+## How It Works
+
+Gemini voice input records a spoken prompt, while Gemini Live is designed for a continuing spoken conversation. Live sessions can be interrupted and resumed, and supported devices may offer camera or screen sharing controls. Availability depends on the device, account, language and rollout.
 
 ## What You Need Before You Start
 
@@ -56,7 +60,7 @@ Some features are released gradually, so two people can see different controls e
 
 If you are using a managed work or school account, an administrator may control access to Gemini Apps and connected services. If the Live option is missing, check the account and app version before assuming that your phone is unsupported.
 
-## How to Start a Gemini Live Conversation
+## Practical Steps
 
 ### Step 1: Open the Gemini mobile app
 
@@ -104,7 +108,7 @@ If you want a different spoken voice, open Gemini settings and look for the voic
 
 Changing the voice does not change the model or guarantee a different answer. It changes how Gemini sounds. If you want a different style of response, give Gemini an instruction in the conversation, such as asking it to speak more slowly or use shorter explanations.
 
-## Common Problems and Fixes
+## Common Problems
 
 If Live is missing, update the Google app and Gemini app, confirm that you are signed in and check whether your account is eligible. If you use a work or school account, ask the administrator whether Gemini Apps access is enabled. Some features are still rolling out and may not appear on every account.
 
@@ -112,7 +116,11 @@ If Gemini cannot hear you, check microphone permission and make sure another app
 
 If Gemini answers the wrong question, repeat the key detail in a short sentence. Live is useful for conversation, but voice recognition can mishear names, numbers and technical terms. For exact instructions, paste the text into a normal chat and ask Gemini to review it.
 
-## Privacy and Safety
+## What Does Not Work
+
+Gemini Live is not a universal desktop voice feature. Google's help guidance says it is not available in the Gemini web app or Google Messages. Camera and screen sharing also depend on supported Android devices and should not be assumed to appear on every account.
+
+## Safety and Limitations
 
 Google asks users to respect other people's privacy and get permission before recording or including them in a Live chat. Treat camera and screen sharing as a deliberate action. Do not assume that a private conversation is safe to share with a screen or camera when other people are nearby.
 

@@ -40,7 +40,7 @@ There is no published fixed token allowance for Claude Pro. Anthropic says Pro u
 
 The context window is a different number. Anthropic's current paid-plan table lists some newer Claude models with a one-million-token context window, other models at 500K and some at 200K. That number describes how much information can fit in one conversation on a supported model. It is not a monthly token balance or a promise of unlimited messages.
 
-## What the Token Question Really Means
+## What the Question Really Means
 
 People often use "token limit" to describe three different things. First is the context window: the maximum amount of text and other supported input that the model can consider at once. Second is the plan usage limit: how much work your account can do during a time period. Third is the output limit: how much the model can generate in one response.
 
@@ -48,7 +48,7 @@ Claude Pro's subscription mainly changes the amount of usage you receive compare
 
 This is why two Pro users can reach a limit after different amounts of work. A short question with a short answer uses less of the allowance than a long conversation with large files, a reasoning-heavy model and several tools. The model you select also affects how much usage a task consumes.
 
-## Context Window and Usage Limit Are Different
+## How It Works
 
 Think of the context window as a desk. It is the amount of information Claude can keep available while working on one task. The usage limit is more like the amount of time or work available to your account during a period. A large desk does not mean you can work without a break.
 
@@ -66,7 +66,7 @@ The limits are shared across Claude's product surfaces. Anthropic says activity 
 
 Anthropic currently lists Pro at $20 per month in the United States, with local currency and tax treatment varying by region. That price does not buy a fixed token bucket. Pro gives more usage per session than Free, priority access during busy periods and access to Claude Code, but the usage rules still apply.
 
-## How to Check Your Current Claude Pro Usage
+## Practical Steps
 
 Open Claude and go to Settings, then Usage. The Current session area shows how much of the five-hour allowance you have used and the time remaining. The weekly section shows the reset information assigned to your account. The exact labels can change as Anthropic updates its settings pages.
 
@@ -84,7 +84,7 @@ Choose the model and effort level based on the task. A routine summary may not n
 
 For a long code or research task, ask Claude to work in stages. Request a plan, confirm it, then ask for one stage at a time. This makes it easier to review results and reduces the chance that one oversized request consumes a large part of the available allowance.
 
-## Why You Might Hit a Limit Earlier Than Expected
+## Common Problems
 
 A long conversation can use more context and more usage than a short one. Large attachments add more material for Claude to process. Research and coding tasks can involve several model steps, tools and intermediate outputs. A high effort setting can also use more tokens than a quick response.
 
@@ -92,7 +92,7 @@ Automatic context management can help with long conversations when code executio
 
 If you hit a limit, check whether it is a session limit or a weekly limit. A session limit has a five-hour reset. A weekly limit resets at the time assigned to your account. Anthropic also offers usage credits for eligible paid plans, but you must enable them and review the billing terms before using them.
 
-## What You Should Not Assume
+## What Does Not Work
 
 Do not assume that every Claude model has a one-million-token context window. The current table shows different values by model and product surface. Do not assume that a one-million-token context window gives you one million tokens to spend every week. It is a capacity limit for one conversation, not a subscription allowance.
 
