@@ -124,3 +124,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-11-08,how-to-use-claude,Claude,,how to use claude,data/semrush/queues/claude.csv
 2026-11-08,what-is-guided-learning-gemini,Gemini,,what is guided learning gemini,data/semrush/queues/gemini.csv
 2026-11-08,is-perplexity-a-public-company,Perplexity,,is perplexity a public company,data/semrush/queues/perplexity.csv
+2026-11-10,claude-code-alternatives,Alternatives,claude code,claude code alternatives,data/semrush/queues/alternatives.csv
+2026-11-10,how-many-uploads-with-chatgpt-plus,ChatGPT,,how many uploads with chatgpt plus,data/semrush/queues/chatgpt.csv
+2026-11-10,password-protect-claude-chats,Claude,,how to have password-protected chats in claude,data/semrush/queues/claude.csv
+2026-11-10,does-gemini-remember-conversations,Gemini,,does gemini remember conversations,data/semrush/queues/gemini.csv
+2026-11-10,does-perplexity-have-an-api,Perplexity,,does perplexity have an api,data/semrush/queues/perplexity.csv
