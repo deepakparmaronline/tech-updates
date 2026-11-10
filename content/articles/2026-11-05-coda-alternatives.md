@@ -119,7 +119,7 @@ Do not assume that an export preserves every feature. A document can look correc
 
 ## Related Reading
 
-- [Airtable alternatives for teams and builders](/articles/airtable-alternatives/)
+- [Airtable alternatives for teams and builders](/airtable-alternatives/)
 
 ## FAQ
 

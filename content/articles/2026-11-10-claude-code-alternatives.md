@@ -132,7 +132,7 @@ Avoid treating an agent's summary as proof that the work is correct. Read the di
 
 ## Related Reading
 
-If you are comparing coding tools, read our guides to [Claude alternatives](/articles/claude-alternatives/), [OpenCode alternatives](/articles/opencode-alternatives/), and [Cursor alternatives](/articles/cursor-alternatives/). They cover adjacent tools and different replacement questions.
+If you are comparing coding tools, read our guides to [Claude alternatives](/claude-alternatives/), [OpenCode alternatives](/opencode-alternatives/), and [Cursor alternatives](/cursor-alternatives/). They cover adjacent tools and different replacement questions.
 
 ### Sources and further reading
 

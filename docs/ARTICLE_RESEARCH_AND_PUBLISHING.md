@@ -63,7 +63,7 @@ This explicit queue mode does not change the rules for Reddit, owner-requested a
 
 Assign each topic to the most accurate category already supported by the site. Available categories may include AI News, ChatGPT, Claude, Gemini, Perplexity, OpenAI, AI Tools, Automation, Coding, GitHub, and Alternatives. Inspect the current category implementation and existing frontmatter before assigning a label.
 
-Use `Alternatives` for a requested alternatives article. Do not force a category rotation or change the user's topics to create category variety. A new category requires the approval or narrow compatibility allowance defined in `AGENTS.md`.
+Use `Alternatives` for a requested alternatives article. Its canonical public URL is root-level (`/topic-slug/`), and every internal link to it must use that form instead of `/articles/topic-slug/`. Do not force a category rotation or change the user's topics to create category variety. A new category requires the approval or narrow compatibility allowance defined in `AGENTS.md`.
 
 ## Semrush evidence outside a queue batch
 

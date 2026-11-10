@@ -124,7 +124,7 @@ Do not assume a framework eliminates native expertise. Store signing, entitlemen
 
 ## Related Reading
 
-If coding assistance is also part of your tool decision, compare our guides to [Cursor alternatives](/articles/cursor-alternatives/) and [Replit alternatives](/articles/replit-alternatives/). For primary technical details, review the official documentation for [Flutter](https://docs.flutter.dev/platform-integration), [React Native](https://reactnative.dev/docs/getting-started), [Kotlin Multiplatform](https://kotlinlang.org/docs/multiplatform/kmp-overview.html), [.NET MAUI](https://learn.microsoft.com/en-us/dotnet/maui/supported-platforms), and [Ionic](https://ionicframework.com/docs).
+If coding assistance is also part of your tool decision, compare our guides to [Cursor alternatives](/cursor-alternatives/) and [Replit alternatives](/replit-alternatives/). For primary technical details, review the official documentation for [Flutter](https://docs.flutter.dev/platform-integration), [React Native](https://reactnative.dev/docs/getting-started), [Kotlin Multiplatform](https://kotlinlang.org/docs/multiplatform/kmp-overview.html), [.NET MAUI](https://learn.microsoft.com/en-us/dotnet/maui/supported-platforms), and [Ionic](https://ionicframework.com/docs).
 
 ## FAQ
 

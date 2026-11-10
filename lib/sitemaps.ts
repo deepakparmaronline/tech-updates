@@ -1,4 +1,5 @@
 import { categorySitemapSlug, getAllArticles, getCategories, getCategoryHref } from '@/lib/articles';
+import { getArticleHref } from '@/lib/article-routes';
 
 const XML_HEADER = '<?xml version="1.0" encoding="UTF-8"?>';
 const DEFAULT_SITE_URL = 'https://techupates.blog';
@@ -52,7 +53,7 @@ export function buildUrlSitemap(key: string) {
   const articles = getAllArticles().filter((article) => article.category === category);
   const entries = [
     urlEntry(`${base}${getCategoryHref(category)}`, articles[0]?.date),
-    ...articles.map((article) => urlEntry(`${base}/articles/${article.slug}/`, article.date)),
+    ...articles.map((article) => urlEntry(`${base}${getArticleHref(article)}`, article.date)),
   ];
 
   return `${XML_HEADER}\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join('\n')}\n</urlset>\n`;

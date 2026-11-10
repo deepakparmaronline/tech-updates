@@ -87,7 +87,7 @@ Bolt is a useful comparison for people who want a fast route from a prompt to a 
 
 The limitation is that token usage can grow with project size and the amount of context the builder needs to read. A large application may consume more resources than a small landing page. Hosting and database limits also need to match the expected traffic and data needs.
 
-Choose Bolt when you want an integrated build and publish workflow. Since our site already has a separate [Bolt alternatives guide](/articles/bolt-new-alternatives/), use that article for a deeper look at tools aimed specifically at people moving away from Bolt.
+Choose Bolt when you want an integrated build and publish workflow. Since our site already has a separate [Bolt alternatives guide](/bolt-new-alternatives/), use that article for a deeper look at tools aimed specifically at people moving away from Bolt.
 
 ## Comparison Table
 
@@ -127,7 +127,7 @@ Do not migrate a live app without a backup and rollback plan. Export the code an
 
 ## Related Reading
 
-Read our [Bolt.new alternatives guide](/articles/bolt-new-alternatives/) for a related comparison, and our guide to [choosing AI tools without a bloated stack](/articles/how-to-choose-ai-tools-without-bloated-stack/). Before subscribing, compare the official [Base44](https://base44.com/pricing), [Lovable](https://lovable.dev/pricing), [Replit](https://replit.com/pricing), [v0](https://api2.v0.dev/pricing), and [Bolt](https://bolt.new/pricing) pages.
+Read our [Bolt.new alternatives guide](/bolt-new-alternatives/) for a related comparison, and our guide to [choosing AI tools without a bloated stack](/articles/how-to-choose-ai-tools-without-bloated-stack/). Before subscribing, compare the official [Base44](https://base44.com/pricing), [Lovable](https://lovable.dev/pricing), [Replit](https://replit.com/pricing), [v0](https://api2.v0.dev/pricing), and [Bolt](https://bolt.new/pricing) pages.
 
 ## FAQ
 

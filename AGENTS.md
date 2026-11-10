@@ -73,7 +73,7 @@ A normal article therefore requires no component or route change. Add the Markdo
 - The featured image must exist under `public/images/` and the frontmatter path must start with `/images/`.
 - The article must be at least 1,200 original words; 1,500–2,000 words is the normal target.
 - Required headings and writing rules are defined in `docs/CONTENT_STYLE.md`. Articles dated October 14, 2026 or later use the applicable question, alternatives, or news template in that guide.
-- Internal links must point only to routes that exist. Public article URLs use `/articles/topic-slug/` without the publication date.
+- Internal links must point only to canonical routes that exist. Articles in the `Alternatives` category use the root-level public URL `/topic-slug/`; every other article uses `/articles/topic-slug/`. Publication dates never appear in public URLs.
 - Important factual claims must cite current primary or authoritative sources in the prose.
 
 ## Publishing triggers and topic sources

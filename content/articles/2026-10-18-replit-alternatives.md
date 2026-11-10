@@ -155,7 +155,7 @@ Do not assume a project can move with one click. Even when source code is availa
 
 ## Related Reading
 
-- [Best Lovable Alternatives for Building AI Apps](/articles/lovable-alternatives/)
+- [Best Lovable Alternatives for Building AI Apps](/lovable-alternatives/)
 - [How to Choose AI Tools Without Creating Tool Sprawl](/articles/ai-tools-how-to-choose-without-tool-sprawl/)
 
 ## FAQ

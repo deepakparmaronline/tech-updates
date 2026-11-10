@@ -105,7 +105,7 @@ Keep a copy of the licence, receipt, project name, track title, and download dat
 
 ## Related Reading
 
-If your work also includes audio production tools, see our guide to [Splice alternatives](/articles/splice-alternatives/). The same rule applies across creator software: compare the actual workflow and licence, not only the monthly price.
+If your work also includes audio production tools, see our guide to [Splice alternatives](/splice-alternatives/). The same rule applies across creator software: compare the actual workflow and licence, not only the monthly price.
 
 ## FAQ
 

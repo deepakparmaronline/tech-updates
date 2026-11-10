@@ -116,9 +116,9 @@ Avoid switching DNS before you have tested the new deployment. Keep the current 
 
 ## Related Reading
 
-- [WHMCS alternatives for hosting billing and client management](/articles/whmcs-alternatives/)
-- [Splice alternatives for creative workflows](/articles/splice-alternatives/)
-- [Supabase alternatives for app backends](/articles/supabase-alternatives/)
+- [WHMCS alternatives for hosting billing and client management](/whmcs-alternatives/)
+- [Splice alternatives for creative workflows](/splice-alternatives/)
+- [Supabase alternatives for app backends](/supabase-alternatives/)
 
 ## FAQ
 

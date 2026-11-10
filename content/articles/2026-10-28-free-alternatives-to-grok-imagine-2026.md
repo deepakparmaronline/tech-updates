@@ -99,7 +99,7 @@ For team work, decide how files and prompts will be stored. Keep the original in
 
 ## Related Reading
 
-For a focused look at other image workflows, read [how to get Gemini to generate images](/articles/how-to-get-gemini-to-generate-images/) and [how many images ChatGPT Plus can generate](/articles/how-many-images-can-chatgpt-plus-generate/). For a broader text assistant comparison, see [Grok alternatives for research and writing](/articles/grok-alternatives/).
+For a focused look at other image workflows, read [how to get Gemini to generate images](/articles/how-to-get-gemini-to-generate-images/) and [how many images ChatGPT Plus can generate](/articles/how-many-images-can-chatgpt-plus-generate/). For a broader text assistant comparison, see [Grok alternatives for research and writing](/grok-alternatives/).
 
 ## FAQ
 

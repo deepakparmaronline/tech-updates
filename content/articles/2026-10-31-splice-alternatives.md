@@ -114,7 +114,7 @@ Do not assume that downloading a sample means you own the recording outright or 
 
 ## Related Reading
 
-If your work includes generated music as well as samples, read [Suno Alternatives for AI Music Creation](/articles/suno-alternatives/). It covers a different need: creating complete music with AI rather than finding individual sounds for a production session.
+If your work includes generated music as well as samples, read [Suno Alternatives for AI Music Creation](/suno-alternatives/). It covers a different need: creating complete music with AI rather than finding individual sounds for a production session.
 
 Use the official product pages for [Splice](https://splice.com/), [Loopcloud](https://www.loopcloud.com/), [LANDR](https://www.landr.com/), [BandLab Sounds](https://www.bandlab.com/sounds) and [Output Arcade](https://output.com/arcade) to confirm current details. The pages were not reopened during this run. Before you move a paid workflow, record the plan name, license version, billing date and any required exports. This simple checklist helps you avoid comparing a current plan with an outdated review or making a change based on a feature that has moved to a different tier.
 

@@ -111,7 +111,7 @@ The pricing information is introductory and should be checked before deployment.
 
 ## Related Reading
 
-For more on agent workflows, read our guide to [OpenAI's GPT-6.1 Terra release](/articles/openai-gpt-6-1-terra-launch/) and [Claude alternatives](/articles/claude-alternatives/). Those articles cover other parts of the coding and model landscape.
+For more on agent workflows, read our guide to [OpenAI's GPT-6.1 Terra release](/articles/openai-gpt-6-1-terra-launch/) and [Claude alternatives](/claude-alternatives/). Those articles cover other parts of the coding and model landscape.
 
 ### Sources and further reading
 

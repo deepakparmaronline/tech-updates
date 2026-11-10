@@ -116,7 +116,7 @@ Do not migrate every check in one weekend. Run both systems together long enough
 
 ## Related Reading
 
-If your team also manages application deployment, our guide to [Vercel alternatives](/articles/vercel-alternatives/) explains how to compare hosting platforms by runtime, deployment flow, and operating effort. The same principle applies here: write down what the current system actually does before replacing it.
+If your team also manages application deployment, our guide to [Vercel alternatives](/vercel-alternatives/) explains how to compare hosting platforms by runtime, deployment flow, and operating effort. The same principle applies here: write down what the current system actually does before replacing it.
 
 For further reading, start with [PRTG](https://www.paessler.com/prtg), [Zabbix](https://www.zabbix.com/documentation/current/en/manual), [Checkmk](https://docs.checkmk.com/latest/en/), [LibreNMS](https://docs.librenms.org/), [Prometheus](https://prometheus.io/docs/introduction/overview/), and [Datadog](https://docs.datadoghq.com/). External pages were not reopened in this repository only run, so verify current support, editions, and licensing directly with the vendors.
 

@@ -31,6 +31,8 @@ In the same run, follow `docs/DAILY_AI_NEWS_PUBLISHING.md` and select exactly tw
 
 Research every topic with at least two current authoritative sources. Follow `docs/CONTENT_STYLE.md` exactly. Create one original Markdown article and one distinct 16:9 image per topic. Run content validation and the production build before publication. Append exactly one current-date row per Semrush queue article to `data/semrush/used-keywords.csv` only after the complete batch passes all local checks.
 
+URL routing is category-specific. Every article whose frontmatter uses `category: Alternatives` has the root-level canonical URL `/topic-slug/`; never publish or internally link it as `/articles/topic-slug/`. All other article categories keep `/articles/topic-slug/`. The production build generates permanent redirects from legacy `/articles/.../` Alternatives URLs to their root-level canonical URLs.
+
 The number of Semrush queue articles equals the number of valid queue CSV files found at preflight. The complete daily article count is that queue count plus two, and the image count is the same. With the current five queues, the complete batch is seven articles, seven images, and five ledger rows.
 
 ## GitHub publication flow

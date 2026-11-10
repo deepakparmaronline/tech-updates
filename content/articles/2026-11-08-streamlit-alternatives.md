@@ -112,7 +112,7 @@ Do not treat a framework migration as a one to one code conversion. Streamlit wi
 
 ## Related Reading
 
-If you are comparing tools for a developer workflow, read our [Burp Suite alternatives guide](/articles/burp-suite-alternatives/) for another example of choosing by task instead of popularity. If you are building AI powered interfaces, our [ChatGPT Free guide](/articles/how-to-use-chatgpt-for-free/) explains the difference between app features and service limits. Before you move a data app, write down its required users, data sources, authentication rules, expected traffic and deployment budget. That list will make the comparison more useful than a generic ranking.
+If you are comparing tools for a developer workflow, read our [Burp Suite alternatives guide](/burp-suite-alternatives/) for another example of choosing by task instead of popularity. If you are building AI powered interfaces, our [ChatGPT Free guide](/articles/how-to-use-chatgpt-for-free/) explains the difference between app features and service limits. Before you move a data app, write down its required users, data sources, authentication rules, expected traffic and deployment budget. That list will make the comparison more useful than a generic ranking.
 
 ### Practical checklist
 

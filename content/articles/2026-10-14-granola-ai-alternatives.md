@@ -128,7 +128,7 @@ Do not cancel the old service before exporting important notes and confirming th
 
 ## Related Reading
 
-Read our guide to [Wispr Flow alternatives](/articles/wispr-flow-alternatives/) if you are comparing voice tools, and our guide to [choosing AI tools without a bloated stack](/articles/how-to-choose-ai-tools-without-bloated-stack/). For current product details, use the official [Granola](https://www.granola.ai/pricing), [Fathom](https://www.fathom.ai/pricing), [Fireflies](https://fireflies.ai/pricing), and [Otter](https://otter.ai/pricing) pages.
+Read our guide to [Wispr Flow alternatives](/wispr-flow-alternatives/) if you are comparing voice tools, and our guide to [choosing AI tools without a bloated stack](/articles/how-to-choose-ai-tools-without-bloated-stack/). For current product details, use the official [Granola](https://www.granola.ai/pricing), [Fathom](https://www.fathom.ai/pricing), [Fireflies](https://fireflies.ai/pricing), and [Otter](https://otter.ai/pricing) pages.
 
 ## FAQ
 

@@ -151,8 +151,8 @@ Finally, do not use free hosted compute to evade a service's stated restrictions
 
 ## Related Reading
 
-- [Best Base44 alternatives for building web apps](/articles/base44-alternatives/)
-- [Replit alternatives for online development](/articles/replit-alternatives/)
+- [Best Base44 alternatives for building web apps](/base44-alternatives/)
+- [Replit alternatives for online development](/replit-alternatives/)
 - [How to choose AI tools without a bloated stack](/articles/ai-tools-how-to-choose-without-tool-sprawl/)
 
 ## FAQ

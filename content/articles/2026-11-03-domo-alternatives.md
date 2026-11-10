@@ -128,7 +128,7 @@ Also avoid assuming that open source means zero cost or that a managed service r
 
 ## Related Reading
 
-If your monitoring or analytics work also involves infrastructure reporting, see our guide to [PRTG alternatives](/articles/prtg-alternatives/). For broader tool selection, compare the way your team evaluates [Airtable alternatives](/articles/airtable-alternatives/).
+If your monitoring or analytics work also involves infrastructure reporting, see our guide to [PRTG alternatives](/prtg-alternatives/). For broader tool selection, compare the way your team evaluates [Airtable alternatives](/airtable-alternatives/).
 
 ## FAQ
 

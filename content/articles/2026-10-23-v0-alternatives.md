@@ -121,10 +121,10 @@ Avoid locking the whole workflow into a platform before checking whether you can
 
 ## Related Reading
 
-- [Bolt.new Alternatives](/articles/bolt-new-alternatives/)
-- [Lovable Alternatives](/articles/lovable-alternatives/)
-- [Replit Alternatives](/articles/replit-alternatives/)
-- [Cursor Alternatives](/articles/cursor-alternatives/)
+- [Bolt.new Alternatives](/bolt-new-alternatives/)
+- [Lovable Alternatives](/lovable-alternatives/)
+- [Replit Alternatives](/replit-alternatives/)
+- [Cursor Alternatives](/cursor-alternatives/)
 - [v0 documentation](https://v0.app/docs/faqs)
 
 ## FAQ

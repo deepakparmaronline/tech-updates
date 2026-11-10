@@ -42,6 +42,8 @@ Adapt the content under each heading to the topic. Do not force fake problems or
 
 Use these H2 headings in this order for every article in the `Alternatives` category:
 
+Alternatives articles use the root-level canonical URL `/topic-slug/`. Never create or retain an internal link to an Alternatives article under `/articles/topic-slug/`; that legacy path exists only as a permanent redirect.
+
 1. `Quick Answer`
 2. `How We Chose These Alternatives`
 3. `Best Alternatives`

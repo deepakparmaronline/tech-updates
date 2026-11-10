@@ -117,7 +117,7 @@ Do not use old screenshots to judge today's plans. Prices, usage allowances and 
 
 ## Related Reading
 
-If your project started in an AI app builder, see [Base44 alternatives](/articles/base44-alternatives/) and [Replit alternatives](/articles/replit-alternatives/) for the wider app building decision.
+If your project started in an AI app builder, see [Base44 alternatives](/base44-alternatives/) and [Replit alternatives](/replit-alternatives/) for the wider app building decision.
 
 ## FAQ
 
