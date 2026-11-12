@@ -129,3 +129,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-11-10,password-protect-claude-chats,Claude,,how to have password-protected chats in claude,data/semrush/queues/claude.csv
 2026-11-10,does-gemini-remember-conversations,Gemini,,does gemini remember conversations,data/semrush/queues/gemini.csv
 2026-11-10,does-perplexity-have-an-api,Perplexity,,does perplexity have an api,data/semrush/queues/perplexity.csv
+2026-11-12,rest-api-alternatives,Alternatives,rest api,alternatives to rest api,data/semrush/queues/alternatives.csv
+2026-11-12,chatgpt-vs-waymo-ai,ChatGPT,,how does chatgpt differ from waymo ai,data/semrush/queues/chatgpt.csv
+2026-11-12,can-claude-analyze-video,Claude,,can claude analyze video,data/semrush/queues/claude.csv
+2026-11-12,longest-gemini-video,Gemini,,what is the longest ai video google gemini cna make,data/semrush/queues/gemini.csv
+2026-11-12,is-perplexity-profitable,Perplexity,,is perplexity profitable,data/semrush/queues/perplexity.csv
