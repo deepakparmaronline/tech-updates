@@ -10,7 +10,7 @@ export function ArticleDetail({ article }: { article: Article }) {
   const previous = all[index + 1];
   const next = all[index - 1];
   const related = getRelated(article);
-  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://techupdates.example.com';
+  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://techupates.blog';
   const categoryHref = getCategoryHref(article.category);
   const articleHref = getArticleHref(article);
   const articleSchema = {

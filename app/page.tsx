@@ -9,5 +9,5 @@ export default function Home(){const articles=getAllArticles();const featured=ar
   <section className="section surface" id="latest"><div className="shell"><div className="section-heading"><div><p className="eyebrow">Always current</p><h2>Latest articles</h2></div></div><div className="story-grid">{articles.map((a,i)=><ArticleCard key={a.slug} article={a} index={i}/>)}</div></div></section>
   <section className="section shell" id="categories"><div className="section-heading"><div><p className="eyebrow">Browse a beat</p><h2>Explore categories</h2></div></div><div className="category-grid">{categories.map((c,i)=>{const count=articles.filter(a=>a.category===c).length;return <a key={c} href={getCategoryHref(c)}><span>0{i+1}</span><h3>{c}</h3><p>{count} {count===1?'article':'articles'}</p><ArrowRight/></a>})}</div></section>
   <div className="shell"><Newsletter/></div>
-  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({'@context':'https://schema.org','@type':'Organization',name:'Tech Updates',url:process.env.NEXT_PUBLIC_SITE_URL||'https://techupdates.example.com'})}}/>
+  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({'@context':'https://schema.org','@type':'Organization',name:'Tech Updates',url:process.env.NEXT_PUBLIC_SITE_URL||'https://techupates.blog'})}}/>
   </main>}
