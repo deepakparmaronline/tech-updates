@@ -62,6 +62,8 @@ Immersive explorations, announced in the Workspace Updates blog on October 28, 2
 
 The important distinction is that Gemini generates these experiences from a prompt or a prepared library. They are not proof that the model has created a fully tested scientific simulation or a production-ready application. The interface can look convincing while still containing errors.
 
+Google introduced Dynamic View and visual layout in its [November 18, 2025 Gemini 3 announcement](https://blog.google/products-and-platforms/products/gemini/gemini-3-gemini-app/). The company later documented [interactive simulations and models on August 24, 2026](https://workspaceupdates.googleblog.com/2026/08/generate-interactive-simulations-and-models-in-the-Gemini-app.html) and [immersive explorations on October 28, 2026](https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html). These updates describe related visual experiences, not a promise that the original Dynamic View label appears in every account.
+
 ## Practical Steps
 
 ### 1. Start with the Gemini app

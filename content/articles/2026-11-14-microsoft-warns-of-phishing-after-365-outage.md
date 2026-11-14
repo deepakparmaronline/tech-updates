@@ -43,6 +43,8 @@ Some emails falsely claim that messages held during the outage will be deleted w
 
 The warning is separate from the cause of the Microsoft 365 outage. Microsoft said the outage was a technical issue, not a cyberattack or an AI agent problem. The phishing campaign uses the real disruption as a story to make a fake message feel urgent.
 
+The [Microsoft Threat Intelligence post](https://x.com/MsftSecIntel/status/2121491564161581148) is the primary warning. The [Times of India report](https://timesofindia.indiatimes.com/technology/tech-news/microsoft-has-an-email-warning-for-its-outlook-and-teams-users-after-24-hour-plus-outage-says-do-not-/articleshow/135829069.cms) independently summarises the campaign. Microsoft's guidance for [Threat Explorer](https://learn.microsoft.com/en-us/defender-office-365/threat-explorer-email-security), [EmailUrlInfo](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailurlinfo-table) and [UrlClickEvents](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-urlclickevents-table) explains how administrators can investigate suspicious messages and links.
+
 ## What Happened
 
 Microsoft Threat Intelligence said it observed an active campaign exploiting the November 12 Microsoft 365 service disruption. The messages copy the appearance of service health notifications and include the legitimate incident number EX1550543. That number relates to the Exchange Online incident, but anyone who has seen a public outage update could copy it into a fake email.

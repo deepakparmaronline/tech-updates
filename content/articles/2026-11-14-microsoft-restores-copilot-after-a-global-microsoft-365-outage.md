@@ -43,6 +43,8 @@ The outage disrupted Outlook, Teams, Copilot and other services that rely on Exc
 
 This was a cloud reliability incident, not a new Copilot feature or a failure caused by an AI model. Microsoft said the technical issue was not related to cyber activity or AI agents. The full technical post-incident report had not yet been published when the restoration update was reported.
 
+The [Microsoft 365 Status post](https://x.com/MSFT365Status/status/2121485746334777593) is the primary restoration update. The [Associated Press report](https://apnews.com/article/ca395c0f1e51af784b6d70afb6554f6a) and [Times of India report](https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-ends-after-over-24-hours-outlook-teams-restored-as-company-says-underlying-issue-addressed/articleshow/135825217.cms) describe the wider impact and gradual recovery. Administrators can check the [Microsoft 365 service health page](https://status.cloud.microsoft/) and incident MO1550821 in their admin centre.
+
 ## What Happened
 
 The disruption began on November 12 and continued through the following day before Microsoft announced full restoration on November 14. Users reported problems with Outlook mailboxes, delayed email delivery, calendar functions and parts of Teams. Copilot and integrations that connect AI assistants to Microsoft 365 services were also affected.
