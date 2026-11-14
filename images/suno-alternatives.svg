@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Suno Alternatives for AI Music</title><desc id="desc">Editorial illustration comparing full songs, soundtrack composition, and creator background music.</desc>
+<rect width="1600" height="900" fill="#171329"/><circle cx="1380" cy="130" r="280" fill="#44305c"/><circle cx="120" cy="820" r="320" fill="#19494b"/>
+<text x="170" y="180" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#c6c4df">AI MUSIC TOOL GUIDE</text>
+<text x="170" y="255" font-family="Arial,sans-serif" font-size="58" font-weight="700" fill="#fff">Find the right sound</text>
+<text x="170" y="310" font-family="Arial,sans-serif" font-size="27" fill="#c6c4df">Full songs, composed scores, or background tracks</text>
+<rect x="170" y="385" width="390" height="310" rx="28" fill="#f6e8ff"/><rect x="605" y="385" width="390" height="310" rx="28" fill="#e3f4ed"/><rect x="1040" y="385" width="390" height="310" rx="28" fill="#e5ecfc"/>
+<circle cx="365" cy="485" r="65" fill="#9d6cc4"/><path d="M350 450v76a25 25 0 1 1-16-23v-53l60-14v67a25 25 0 1 1-16-23v-43z" fill="#fff"/>
+<text x="365" y="605" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#4c3564">Full songs</text><text x="365" y="645" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#6d5a80">Vocals and lyrics</text>
+<circle cx="800" cy="485" r="65" fill="#26866a"/><path d="M760 505l22-40 20 30 20-45 20 55" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="800" y="605" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#205c4b">Composed scores</text><text x="800" y="645" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#4f7b6e">Mood and arrangement</text>
+<circle cx="1235" cy="485" r="65" fill="#5279c6"/><path d="M1190 485h18l12-25 18 50 15-35 12 10h20" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1235" y="605" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#2c4d8b">Background music</text><text x="1235" y="645" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#5e7398">Video and podcasts</text>
+<text x="800" y="770" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#c9c5de">Check the license before you publish</text>
+</svg>

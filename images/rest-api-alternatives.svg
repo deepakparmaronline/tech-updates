@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">REST API alternatives illustration</title><desc id="d">A central API gateway branches into five distinct communication patterns.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#07172e"/><stop offset=".55" stop-color="#102d54"/><stop offset="1" stop-color="#071222"/></linearGradient>
+ <linearGradient id="cyan" x2="1" y2="1"><stop stop-color="#6ff4ff"/><stop offset="1" stop-color="#178bd4"/></linearGradient>
+ <linearGradient id="violet" x2="1" y2="1"><stop stop-color="#d2a3ff"/><stop offset="1" stop-color="#7547d8"/></linearGradient>
+ <linearGradient id="teal" x2="1" y2="1"><stop stop-color="#9effd9"/><stop offset="1" stop-color="#1aa58f"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#6fb7ff" stroke-opacity=".09"/></pattern>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#grid)"/>
+<circle cx="810" cy="450" r="330" fill="#1a6fb0" opacity=".09"/><circle cx="810" cy="450" r="245" fill="none" stroke="#58dfff" stroke-opacity=".14" stroke-width="2"/>
+<g fill="none" stroke-linecap="round" filter="url(#glow)">
+ <path d="M800 450 C620 450 570 210 390 210" stroke="#4fe6f4" stroke-width="7"/>
+ <path d="M800 450 C620 450 570 690 390 690" stroke="#9d79ff" stroke-width="7"/>
+ <path d="M800 450 C980 450 1030 210 1210 210" stroke="#68f5c8" stroke-width="7"/>
+ <path d="M800 450 C980 450 1030 690 1210 690" stroke="#9d79ff" stroke-width="7"/>
+ <path d="M800 450 C1050 450 1110 450 1330 450" stroke="#3ab9ff" stroke-width="7"/>
+</g>
+<g transform="translate(650 300)">
+ <path d="M160 0 300 80 160 160 20 80Z" fill="#1e5488" stroke="#7aeaff" stroke-width="5"/>
+ <path d="M20 80v150l140 80V160Z" fill="#11385f" stroke="#7aeaff" stroke-width="5"/>
+ <path d="M300 80v150l-140 80V160Z" fill="#0c2b4c" stroke="#7aeaff" stroke-width="5"/>
+ <path d="M160 45 235 88 160 132 85 88Z" fill="#5ce9f4" opacity=".9"/>
+ <circle cx="160" cy="238" r="26" fill="#b8ffff" filter="url(#glow)"/>
+</g>
+<g transform="translate(150 115)">
+ <rect width="290" height="185" rx="28" fill="#0d2947" stroke="#4eeaff" stroke-width="3"/>
+ <g stroke="#62efff" stroke-width="7" fill="none"><path d="M74 84 130 44 185 84 130 124Z"/><path d="M130 44v80M74 84h111"/></g>
+ <circle cx="74" cy="84" r="11" fill="#c2ffff"/><circle cx="130" cy="44" r="11" fill="#c2ffff"/><circle cx="185" cy="84" r="11" fill="#c2ffff"/><circle cx="130" cy="124" r="11" fill="#c2ffff"/>
+</g>
+<g transform="translate(150 600)">
+ <rect width="290" height="185" rx="28" fill="#211d48" stroke="#9c79ff" stroke-width="3"/>
+ <path d="M75 62h140M75 92h90M75 122h120" stroke="#c6a8ff" stroke-width="12" stroke-linecap="round"/>
+ <path d="M208 54 238 92 208 130" fill="none" stroke="#f0d7ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g transform="translate(1160 115)">
+ <rect width="290" height="185" rx="28" fill="#0d3b3c" stroke="#69f5c8" stroke-width="3"/>
+ <rect x="55" y="52" width="180" height="34" rx="17" fill="#1c8e83"/><rect x="55" y="101" width="180" height="34" rx="17" fill="#176b71"/>
+ <path d="M78 69h80M78 118h125" stroke="#baffec" stroke-width="8" stroke-linecap="round"/>
+</g>
+<g transform="translate(1160 600)">
+ <rect width="290" height="185" rx="28" fill="#241d4a" stroke="#b08cff" stroke-width="3"/>
+ <rect x="55" y="42" width="180" height="100" rx="12" fill="#3e2c79" stroke="#d3b8ff" stroke-width="3"/>
+ <path d="M75 70h140M75 95h110M75 120h75" stroke="#e4d2ff" stroke-width="7" stroke-linecap="round"/>
+</g>
+<g transform="translate(1320 370)">
+ <circle cx="0" cy="0" r="66" fill="#0d3459" stroke="#5acbff" stroke-width="4"/>
+ <path d="M-30 -18h60M-30 18h60" stroke="#a7eaff" stroke-width="8" stroke-linecap="round"/>
+ <path d="M0 -34v68" stroke="#a7eaff" stroke-width="8" stroke-linecap="round"/>
+</g>
+<g fill="#d5f7ff" opacity=".7"><circle cx="520" cy="210" r="5"/><circle cx="520" cy="690" r="5"/><circle cx="1080" cy="210" r="5"/><circle cx="1080" cy="690" r="5"/></g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Is ChatGPT Plus Worth It?</title>
+<desc id="desc">Editorial illustration of a subscription decision with a chat symbol, checklist, and monthly cost card.</desc>
+<rect width="1600" height="900" fill="#101827"/>
+<circle cx="1280" cy="160" r="260" fill="#233b5b"/>
+<circle cx="250" cy="760" r="300" fill="#183b46"/>
+<rect x="260" y="180" width="1080" height="540" rx="42" fill="#f4f7fb"/>
+<rect x="330" y="250" width="250" height="250" rx="34" fill="#d8f2e7"/>
+<path d="M390 330h130a25 25 0 0 1 25 25v55a25 25 0 0 1-25 25h-50l-42 32v-32h-38a25 25 0 0 1-25-25v-55a25 25 0 0 1 25-25z" fill="#176c58"/>
+<circle cx="405" cy="382" r="10" fill="#fff"/><circle cx="455" cy="382" r="10" fill="#fff"/><circle cx="505" cy="382" r="10" fill="#fff"/>
+<text x="640" y="315" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#526176">A PRACTICAL COST CHECK</text>
+<text x="640" y="390" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#172033">Is Plus worth it?</text>
+<text x="640" y="455" font-family="Arial, sans-serif" font-size="29" fill="#526176">Compare real tasks, limits, and value</text>
+<rect x="640" y="510" width="260" height="110" rx="18" fill="#e1e9f5"/>
+<text x="670" y="555" font-family="Arial, sans-serif" font-size="24" fill="#526176">US list price</text>
+<text x="670" y="595" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#172033">$20 / month</text>
+<rect x="930" y="510" width="340" height="110" rx="18" fill="#d8f2e7"/>
+<path d="M968 558l16 16 30-34" fill="none" stroke="#176c58" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1030" y="565" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#176c58">Check your usage</text>
+<text x="1030" y="600" font-family="Arial, sans-serif" font-size="21" fill="#176c58">Features and limits can change</text>
+</svg>

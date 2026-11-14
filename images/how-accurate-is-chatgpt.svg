@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">How accurate is ChatGPT?</title>
+<desc id="desc">An editorial illustration of an AI answer being checked against source documents with a magnifying glass and verification marks.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102a3b"/><stop offset="1" stop-color="#183d4d"/></linearGradient><linearGradient id="mint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#92ead0"/><stop offset="1" stop-color="#c7f6e8"/></linearGradient></defs>
+<rect width="1600" height="900" rx="42" fill="url(#bg)"/><circle cx="1340" cy="150" r="230" fill="#3e7182" opacity=".25"/><circle cx="120" cy="760" r="230" fill="#3d8a7b" opacity=".15"/>
+<g stroke="#79a8b6" stroke-width="2" opacity=".2"><path d="M0 180H1600M0 720H1600M250 0V900M1350 0V900"/></g>
+<text x="110" y="130" fill="#92ead0" font-family="Arial,sans-serif" font-size="26" letter-spacing="5">AI LITERACY</text>
+<text x="110" y="225" fill="#ffffff" font-family="Arial,sans-serif" font-size="58" font-weight="700">How accurate</text>
+<text x="110" y="293" fill="#ffffff" font-family="Arial,sans-serif" font-size="58" font-weight="700">is ChatGPT?</text>
+<text x="110" y="353" fill="#c8dfe7" font-family="Arial,sans-serif" font-size="25">Confidence is not proof. Check the evidence.</text>
+<g transform="translate(150 455)">
+<rect width="440" height="220" rx="24" fill="#1d4558" stroke="#92ead0" stroke-width="3"/>
+<rect x="38" y="32" width="72" height="72" rx="14" fill="none" stroke="#92ead0" stroke-width="5"/>
+<path d="M52 53H96M52 68H90M52 83H80" stroke="#92ead0" stroke-width="5" stroke-linecap="round"/>
+<text x="140" y="64" fill="#ffffff" font-family="Arial,sans-serif" font-size="29" font-weight="700">AI answer</text>
+<text x="140" y="100" fill="#c8dfe7" font-family="Arial,sans-serif" font-size="21">Useful starting point</text>
+<path d="M38 139H390" stroke="#477789" stroke-width="3"/>
+<text x="38" y="181" fill="#f3c986" font-family="Arial,sans-serif" font-size="23">Needs verification</text>
+</g>
+<path d="M625 560H710M690 540L712 560L690 580" fill="none" stroke="#92ead0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(750 440)">
+<rect width="300" height="240" rx="24" fill="#203b52" stroke="#c7f6e8" stroke-width="3"/>
+<circle cx="116" cy="86" r="49" fill="none" stroke="#c7f6e8" stroke-width="10"/><path d="M151 122L198 169" stroke="#c7f6e8" stroke-width="13" stroke-linecap="round"/>
+<path d="M94 86L109 101L138 68" fill="none" stroke="#92ead0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="34" y="208" fill="#ffffff" font-family="Arial,sans-serif" font-size="27" font-weight="700">Fact check</text>
+</g>
+<path d="M1085 560H1170M1150 540L1172 560L1150 580" fill="none" stroke="#92ead0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(1205 455)">
+<rect width="280" height="220" rx="24" fill="#24544e" stroke="#92ead0" stroke-width="3"/>
+<path d="M45 42H145V112H45Z" fill="none" stroke="#92ead0" stroke-width="5" stroke-linejoin="round"/>
+<path d="M60 61H130M60 78H120M60 95H104" stroke="#92ead0" stroke-width="4" stroke-linecap="round"/>
+<text x="32" y="157" fill="#ffffff" font-family="Arial,sans-serif" font-size="27" font-weight="700">Primary sources</text>
+<text x="32" y="190" fill="#cce9df" font-family="Arial,sans-serif" font-size="20">Confirm each claim</text>
+</g>
+<text x="110" y="790" fill="#c8dfe7" font-family="Arial,sans-serif" font-size="23">Check the source • Check the date • Test important results</text>
+</svg>
