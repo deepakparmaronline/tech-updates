@@ -134,3 +134,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-11-12,can-claude-analyze-video,Claude,,can claude analyze video,data/semrush/queues/claude.csv
 2026-11-12,longest-gemini-video,Gemini,,what is the longest ai video google gemini cna make,data/semrush/queues/gemini.csv
 2026-11-12,is-perplexity-profitable,Perplexity,,is perplexity profitable,data/semrush/queues/perplexity.csv
+2026-11-14,graphql-alternatives,Alternatives,graphql,alternatives to graphql,data/semrush/queues/alternatives.csv
+2026-11-14,how-to-do-the-chatgpt-caricature-trend,ChatGPT,,how to do the chatgpt caricature trend,data/semrush/queues/chatgpt.csv
+2026-11-14,is-claude-ai-safer-than-chatgpt,Claude,,is claude ai safer than chatgpt,data/semrush/queues/claude.csv
+2026-11-14,what-is-dynamic-view-in-gemini,Gemini,,what is dynamic view in gemini,data/semrush/queues/gemini.csv
+2026-11-14,is-perplexity-max-worth-it,Perplexity,,is perplexity max worth it,data/semrush/queues/perplexity.csv
