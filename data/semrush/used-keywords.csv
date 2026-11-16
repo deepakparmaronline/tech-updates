@@ -139,3 +139,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-11-14,is-claude-ai-safer-than-chatgpt,Claude,,is claude ai safer than chatgpt,data/semrush/queues/claude.csv
 2026-11-14,what-is-dynamic-view-in-gemini,Gemini,,what is dynamic view in gemini,data/semrush/queues/gemini.csv
 2026-11-14,is-perplexity-max-worth-it,Perplexity,,is perplexity max worth it,data/semrush/queues/perplexity.csv
+2026-11-16,bandlab-alternatives,Alternatives,bandlab,bandlab alternatives,data/semrush/queues/alternatives.csv
+2026-11-16,how-to-upload-a-photo-to-chatgpt,ChatGPT,,how to upload a photo to chatgpt,data/semrush/queues/chatgpt.csv
+2026-11-16,does-claude-do-image-generation,Claude,,does claude do image generation,data/semrush/queues/claude.csv
+2026-11-16,how-to-log-out-of-gemini,Gemini,,how to log out of gemini,data/semrush/queues/gemini.csv
+2026-11-16,which-is-better-grok-or-perplexity,Perplexity,,which is better grok or perplexity,data/semrush/queues/perplexity.csv
