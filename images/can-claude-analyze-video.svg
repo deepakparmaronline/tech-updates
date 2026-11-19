@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">Video frames and transcript workflow</title><desc id="d">A film strip, selected still frames and an audio transcript flow into an analysis workspace.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#15152d"/><stop offset=".6" stop-color="#26234d"/><stop offset="1" stop-color="#0e1d35"/></linearGradient>
+ <linearGradient id="frame" x2="1" y2="1"><stop stop-color="#5ad4d6"/><stop offset="1" stop-color="#7b67d8"/></linearGradient>
+ <linearGradient id="orange" x2="1" y2="1"><stop stop-color="#ffcb8c"/><stop offset="1" stop-color="#ed7c6c"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<g opacity=".13" stroke="#a8a2ff" stroke-width="2"><path d="M0 120H1600M0 780H1600M120 0V900M1480 0V900"/></g>
+<g transform="translate(100 160)">
+ <rect width="640" height="410" rx="32" fill="#151d3e" stroke="#8a7df1" stroke-width="4"/>
+ <rect x="24" y="24" width="592" height="362" rx="20" fill="#1b2d4d"/>
+ <g fill="#8d84d9"><rect x="38" y="38" width="22" height="30" rx="6"/><rect x="80" y="38" width="22" height="30" rx="6"/><rect x="122" y="38" width="22" height="30" rx="6"/><rect x="164" y="38" width="22" height="30" rx="6"/><rect x="206" y="38" width="22" height="30" rx="6"/><rect x="248" y="38" width="22" height="30" rx="6"/><rect x="290" y="38" width="22" height="30" rx="6"/><rect x="332" y="38" width="22" height="30" rx="6"/><rect x="374" y="38" width="22" height="30" rx="6"/><rect x="416" y="38" width="22" height="30" rx="6"/><rect x="458" y="38" width="22" height="30" rx="6"/><rect x="500" y="38" width="22" height="30" rx="6"/><rect x="542" y="38" width="22" height="30" rx="6"/></g>
+ <g transform="translate(50 105)">
+  <rect width="150" height="160" rx="16" fill="url(#frame)"/><path d="M18 120 55 70l34 30 42-58v100H18Z" fill="#102c4a" opacity=".8"/><circle cx="112" cy="42" r="15" fill="#ffe4b0"/>
+  <rect x="190" width="150" height="160" rx="16" fill="#3a4d83"/><path d="M208 120 245 75l34 30 42-55v70H208Z" fill="#a8e2df"/><circle cx="300" cy="42" r="15" fill="#ffc77e"/>
+  <rect x="380" width="150" height="160" rx="16" fill="url(#orange)"/><path d="M398 120 435 70l34 30 42-50v70H398Z" fill="#5c3659"/><circle cx="490" cy="42" r="15" fill="#fff0c2"/>
+ </g>
+ <g fill="#e9e5ff"><rect x="45" y="300" width="500" height="8" rx="4"/><rect x="45" y="322" width="340" height="8" rx="4"/><rect x="45" y="344" width="420" height="8" rx="4"/></g>
+</g>
+<g transform="translate(910 190)">
+ <rect width="560" height="450" rx="32" fill="#14213c" stroke="#6fe0d0" stroke-width="4"/>
+ <circle cx="280" cy="145" r="86" fill="#193f62" stroke="#82e5df" stroke-width="4"/>
+ <path d="M250 112 330 145 250 178Z" fill="#aaf7e8"/>
+ <path d="M90 285h380M90 320h300M90 355h350" stroke="#6fe0d0" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+ <path d="M90 390h170" stroke="#ffbf85" stroke-width="10" stroke-linecap="round"/>
+</g>
+<g fill="none" stroke="#ffbd86" stroke-width="6" stroke-linecap="round" filter="url(#glow)">
+ <path d="M740 360c70 0 90 20 130 60"/><path d="M820 420 870 420 850 390"/>
+ <path d="M740 530c70 30 90 60 130 90"/>
+</g>
+<g transform="translate(250 670)">
+ <rect width="520" height="95" rx="24" fill="#1e254a" stroke="#ffbd86" stroke-width="3"/>
+ <g stroke="#ffcc9a" stroke-width="6" stroke-linecap="round"><path d="M40 48h30M100 30v36M160 42h30M220 24v48M280 36h30M340 16v62M400 30h30M460 42h20"/></g>
+</g>
+</svg>

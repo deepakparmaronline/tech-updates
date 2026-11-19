@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">AI safety lawsuit and court review</title><desc id="d">A balance scale combines legal symbols with an abstract AI network and circuit paths.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10162d"/><stop offset=".55" stop-color="#202b4a"/><stop offset="1" stop-color="#0a1830"/></linearGradient>
+ <linearGradient id="steel" x2="1" y2="1"><stop stop-color="#d7e7f2"/><stop offset="1" stop-color="#6b9fbc"/></linearGradient>
+ <linearGradient id="amber" x2="1" y2="1"><stop stop-color="#ffd59b"/><stop offset="1" stop-color="#d77c68"/></linearGradient>
+ <filter id="g"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<g opacity=".15" stroke="#9ab8db" stroke-width="2"><path d="M0 160H1600M0 740H1600M120 0V900M1480 0V900"/></g>
+<g transform="translate(520 170)" filter="url(#g)">
+ <path d="M280 70v490" stroke="url(#steel)" stroke-width="20" stroke-linecap="round"/>
+ <path d="M125 160h310" stroke="url(#steel)" stroke-width="18" stroke-linecap="round"/>
+ <path d="M280 70 235 140h90Z" fill="#8abbd2"/>
+ <circle cx="280" cy="70" r="34" fill="#e4f2f8" stroke="#7baac6" stroke-width="6"/>
+ <path d="M125 160 45 340M125 160l80 180M435 160l-80 180M435 160l80 180" stroke="#a9c8d9" stroke-width="7"/>
+ <path d="M15 340q110 130 220 0Z" fill="url(#amber)" stroke="#ffd59b" stroke-width="6"/>
+ <path d="M325 340q110 130 220 0Z" fill="#6b91bd" stroke="#b5d8ef" stroke-width="6"/>
+ <path d="M170 570h220l-32 54H202Z" fill="#6d8ca9"/>
+</g>
+<g transform="translate(160 270)">
+ <circle cx="150" cy="120" r="70" fill="#1c4770" stroke="#7cd7f2" stroke-width="5"/>
+ <g fill="#b6efff"><circle cx="150" cy="60" r="10"/><circle cx="205" cy="110" r="10"/><circle cx="170" cy="175" r="10"/><circle cx="95" cy="150" r="10"/><circle cx="95" cy="90" r="10"/></g>
+ <g stroke="#79d9ee" stroke-width="5"><path d="M150 60 205 110 170 175 95 150 95 90Z"/></g>
+</g>
+<g transform="translate(1180 280)">
+ <rect width="240" height="190" rx="28" fill="#192e4d" stroke="#e4b68c" stroke-width="4"/>
+ <path d="M55 55h130M55 95h130M55 135h85" stroke="#f2c79d" stroke-width="11" stroke-linecap="round"/>
+ <path d="M190 145 210 165 190 185" fill="none" stroke="#f2c79d" stroke-width="6" stroke-linecap="round"/>
+</g>
+<g fill="none" stroke="#70cce6" stroke-width="5" opacity=".6"><path d="M300 650c140 80 250 80 390 0"/><path d="M910 650c140 80 250 80 390 0"/></g>
+</svg>

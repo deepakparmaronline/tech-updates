@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">Gemini video generation timeline</title><desc id="d">A cinematic sequence of generated video frames arranged on an editing timeline with extension segments.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061b36"/><stop offset=".5" stop-color="#123c66"/><stop offset="1" stop-color="#111c3d"/></linearGradient>
+ <linearGradient id="gold" x2="1" y2="1"><stop stop-color="#ffe3a3"/><stop offset="1" stop-color="#f38a6d"/></linearGradient>
+ <linearGradient id="blue" x2="1" y2="1"><stop stop-color="#7ae6ff"/><stop offset="1" stop-color="#6377e9"/></linearGradient>
+ <filter id="g"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<circle cx="1230" cy="210" r="260" fill="#2b8ac8" opacity=".12"/>
+<g transform="translate(110 120)">
+ <rect width="1380" height="500" rx="34" fill="#0b2949" stroke="#5ec9f3" stroke-width="4"/>
+ <rect x="35" y="35" width="1310" height="320" rx="24" fill="#102f55"/>
+ <g transform="translate(65 70)">
+  <rect width="280" height="250" rx="20" fill="url(#blue)"/><path d="M0 195 80 105l65 55 75-110 60 145v55H0Z" fill="#164a6e"/><circle cx="205" cy="58" r="24" fill="#ffe5aa"/>
+  <rect x="310" width="280" height="250" rx="20" fill="#435f9b"/><path d="M310 205 390 105l65 55 75-110 60 145v55H310Z" fill="#8de1d6"/><circle cx="515" cy="58" r="24" fill="#ffe5aa"/>
+  <rect x="620" width="280" height="250" rx="20" fill="url(#gold)"/><path d="M620 205 700 105l65 55 75-110 60 145v55H620Z" fill="#694a65"/><circle cx="825" cy="58" r="24" fill="#fff0c4"/>
+  <rect x="930" width="280" height="250" rx="20" fill="#284c7c"/><path d="M930 205 1010 105l65 55 75-110 60 145v55H930Z" fill="#9de3e5"/><circle cx="1135" cy="58" r="24" fill="#ffe5aa"/>
+ </g>
+ <g transform="translate(55 390)">
+  <rect width="1270" height="58" rx="18" fill="#152f52"/>
+  <rect x="18" y="10" width="330" height="38" rx="12" fill="#3f8fd0"/>
+  <rect x="360" y="10" width="330" height="38" rx="12" fill="#7a68ce"/>
+  <rect x="702" y="10" width="250" height="38" rx="12" fill="#e49b6c"/>
+  <rect x="965" y="10" width="285" height="38" rx="12" fill="#39bba9"/>
+ </g>
+</g>
+<g transform="translate(240 690)">
+ <path d="M0 0h1110" stroke="#9bdfff" stroke-width="5" stroke-linecap="round"/>
+ <g stroke="#9bdfff" stroke-width="4"><path d="M0 -18v36M185 -18v36M370 -18v36M555 -18v36M740 -18v36M925 -18v36M1110 -18v36"/></g>
+ <circle cx="555" cy="0" r="17" fill="#fff0be" filter="url(#g)"/>
+</g>
+<g fill="none" stroke="#ffe0a1" stroke-width="5" stroke-linecap="round"><path d="M350 810c80-40 160-40 240 0s160 40 240 0 160-40 240 0"/></g>
+</svg>
