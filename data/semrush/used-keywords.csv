@@ -154,3 +154,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-11-22,how-to-check-claude-limit-usage,Claude,,how to check claude limit usage,data/semrush/queues/claude.csv
 2026-11-22,how-to-turn-off-ask-gemini-on-chrome,Gemini,,how to turn off ask gemini on chrome,data/semrush/queues/gemini.csv
 2026-11-22,is-perplexity-good-for-research,Perplexity,,is perplexity good for research,data/semrush/queues/perplexity.csv
+2026-11-25,elk-stack-alternatives,Alternatives,elk stack,alternatives to elk stack,data/semrush/queues/alternatives.csv
+2026-11-25,is-chatgpt-go-worth-it,ChatGPT,,is chat gpt go worth it,data/semrush/queues/chatgpt.csv
+2026-11-25,how-to-use-claude-code-agents,Claude,,how to use claude code agents,data/semrush/queues/claude.csv
+2026-11-25,does-gemini-have-a-photo-limit,Gemini,,does gemini have a photo limit,data/semrush/queues/gemini.csv
+2026-11-25,how-to-use-perplexity-computer,Perplexity,,how to use perplexity computer,data/semrush/queues/perplexity.csv
