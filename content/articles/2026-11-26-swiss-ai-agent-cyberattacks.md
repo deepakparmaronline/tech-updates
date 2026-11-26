@@ -51,7 +51,7 @@ The Swiss Federal Office for Cyber Security, known as BACS, has been tracking ca
 
 The new figures are a follow-up to the agency's earlier public warning. In its November 24 [official notice](https://www.bacs.admin.ch/en/26-ki-agenten-1-en), BACS described AI agents that can search for vulnerable systems, identify weaknesses and continue through attack steps. The agency warned that these tools can lower the effort needed to find exposed systems and exploit known weaknesses.
 
-The November 26 [SRF News am Morgen briefing](https://www.srf.ch/news/news-am-morgen-0730) carried the five-case update. [Reuters also reported the five cases](https://www.reuters.com/world/europe/switzerland-warns-cyberattacks-using-ai-agents-2026-11-26/), confirming the same split between successful attacks and critical infrastructure cases.
+The November 26 [SRF News am Morgen briefing](https://www.srf.ch/news/news-am-morgen-0730) carried the five-case update. [Reuters also reported the five cases](https://www.reuters.com/legal/litigation/ai-agents-used-five-cyber-attacks-switzerland-government-says-2026-11-26/), confirming the same split between successful attacks and critical infrastructure cases.
 
 The reporting does not say that the five attacks all happened on November 26. The director described cases from recent days. The important new development is that the agency has now publicly confirmed the number and the impact categories.
 
