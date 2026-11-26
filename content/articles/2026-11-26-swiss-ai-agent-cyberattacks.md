@@ -33,7 +33,7 @@ faqs:
     answer: "Patch internet-facing systems quickly, reduce unnecessary exposure, enforce strong authentication, monitor unusual activity and test incident response plans."
 ---
 
-On November 26, 2026, Swiss public broadcaster SRF reported a new count from the Federal Office for Cyber Security: five recent cyberattack cases involving AI agents had been confirmed. BACS director Florian Schütz told SRF that four of the five attacks were successful and three affected operators classified as critical infrastructure. SRF published the update at 06:15 CET, which was 10:45 IST.
+On November 26, 2026, Swiss public broadcaster SRF reported a new count from the Federal Office for Cyber Security: five recent cyberattack cases involving AI agents had been confirmed. BACS director Florian Schütz told SRF that four of the five attacks were successful and three affected operators classified as critical infrastructure. SRF's 07:30 News am Morgen briefing on November 26 carried the five-case update. Reuters later reported the same figures at 12:25 UTC (17:55 IST).
 
 The report adds a clearer picture to the agency's earlier November 24 warning about AI agents being used in cyberattacks. It does not name the affected organisations or the attackers. The new figures show why security teams should treat automated vulnerability discovery as a current operational risk, while avoiding claims that every attack used a new or unknown exploit.
 
@@ -51,7 +51,7 @@ The Swiss Federal Office for Cyber Security, known as BACS, has been tracking ca
 
 The new figures are a follow-up to the agency's earlier public warning. In its November 24 [official notice](https://www.bacs.admin.ch/en/26-ki-agenten-1-en), BACS described AI agents that can search for vulnerable systems, identify weaknesses and continue through attack steps. The agency warned that these tools can lower the effort needed to find exposed systems and exploit known weaknesses.
 
-The November 26 [SRF report](https://www.srf.ch/news/schweiz/cyberangriffe-mit-ki-agenten-fuenf-angriffe-auf-schweizer-firmen) carried the updated case count and comments from the BACS director. [Reuters also reported the five cases](https://www.reuters.com/world/europe/switzerland-warns-cyberattacks-using-ai-agents-2026-11-26/), confirming the same split between successful attacks and critical infrastructure cases.
+The November 26 [SRF News am Morgen briefing](https://www.srf.ch/news/news-am-morgen-0730) carried the five-case update. [Reuters also reported the five cases](https://www.reuters.com/world/europe/switzerland-warns-cyberattacks-using-ai-agents-2026-11-26/), confirming the same split between successful attacks and critical infrastructure cases.
 
 The reporting does not say that the five attacks all happened on November 26. The director described cases from recent days. The important new development is that the agency has now publicly confirmed the number and the impact categories.
 
@@ -74,7 +74,7 @@ The public details are specific in some areas and limited in others.
 | Confirmed cases | Five recent cases involving AI agents |
 | Successful attacks | Four of the five cases |
 | Critical infrastructure | Three operators affected |
-| First public update of the new count | SRF report on November 26 at 06:15 CET |
+| First public update of the new count | SRF News am Morgen briefing on November 26 at 07:30 CET |
 | Independent follow-up | Reuters report later on November 26 |
 | Named victims | Not disclosed in the public reports |
 | Named attackers | Not disclosed in the public reports |
