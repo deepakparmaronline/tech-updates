@@ -159,3 +159,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-11-25,how-to-use-claude-code-agents,Claude,,how to use claude code agents,data/semrush/queues/claude.csv
 2026-11-25,does-gemini-have-a-photo-limit,Gemini,,does gemini have a photo limit,data/semrush/queues/gemini.csv
 2026-11-25,how-to-use-perplexity-computer,Perplexity,,how to use perplexity computer,data/semrush/queues/perplexity.csv
+2026-11-26,arena-ai-alternatives,Alternatives,arena ai,arena ai alternatives,data/semrush/queues/alternatives.csv
+2026-11-26,is-chatgpt-the-best-ai,ChatGPT,,is chatgpt the best ai,data/semrush/queues/chatgpt.csv
+2026-11-26,how-to-make-a-website-with-claude,Claude,,how to make website with claude,data/semrush/queues/claude.csv
+2026-11-26,can-gemini-generate-multiple-images-at-once,Gemini,,can gemini generate multiple images at once,data/semrush/queues/gemini.csv
+2026-11-26,how-does-perplexity-ai-make-money,Perplexity,,how does perplexity ai make money,data/semrush/queues/perplexity.csv
