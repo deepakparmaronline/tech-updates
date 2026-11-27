@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Perplexity vs Gemini">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#153f65"/><stop offset="1" stop-color="#5a3e78"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d2b48"/><stop offset="1" stop-color="#0c1426"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#020617" flood-opacity=".35"/></filter>
+  <style>text{font-family:Inter,Arial,sans-serif} .small{font-size:18px;letter-spacing:2px;font-weight:700;fill:#b8c7e6} .headline{font-size:44px;font-weight:800;fill:#fff} .sub{font-size:22px;fill:#d6e0f5} .label{font-size:18px;font-weight:700;fill:#f8fafc} .muted{font-size:15px;fill:#a9b8d4}</style>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<circle cx="1060" cy="95" r="240" fill="#ffffff" opacity=".045"/>
+<circle cx="110" cy="590" r="260" fill="#ffffff" opacity=".035"/>
+<text x="64" y="72" class="small">TECH UPDATES  /  FIELD GUIDE</text>
+<text x="64" y="135" class="headline">Perplexity vs Gemini</text>
+<text x="64" y="176" class="sub">Search-first research or connected assistant</text>
+
+<g filter="url(#shadow)">
+ <rect x="625" y="225" width="235" height="310" rx="22" fill="url(#panel)" stroke="#6da7d6" stroke-opacity=".5"/>
+ <circle cx="742" cy="280" r="35" fill="#42a7c8"/><circle cx="742" cy="280" r="17" fill="#e6f7ff"/>
+ <text x="675" y="350" class="label" style="font-size:24px">Perplexity</text><rect x="665" y="378" width="155" height="34" rx="10" fill="#274e70"/><text x="681" y="401" class="muted">Source links</text><rect x="665" y="423" width="155" height="34" rx="10" fill="#274e70"/><text x="681" y="446" class="muted">Research modes</text><rect x="665" y="468" width="155" height="34" rx="10" fill="#274e70"/><text x="681" y="491" class="muted">Model choice</text>
+ <rect x="890" y="225" width="235" height="310" rx="22" fill="#edf4ff" stroke="#c7d7ef"/>
+ <circle cx="1007" cy="280" r="35" fill="#7d66d8"/><path d="M987 281q20-28 40 0q-20 28-40 0" fill="none" stroke="#fff" stroke-width="5"/>
+ <text x="940" y="350" style="font-family:Inter,Arial,sans-serif;font-size:24px;font-weight:800;fill:#243858">Gemini</text><rect x="930" y="378" width="155" height="34" rx="10" fill="#d8e5f7"/><text x="946" y="401" style="font-size:15px;fill:#36506e">Google apps</text><rect x="930" y="423" width="155" height="34" rx="10" fill="#d8e5f7"/><text x="946" y="446" style="font-size:15px;fill:#36506e">Deep Research</text><rect x="930" y="468" width="155" height="34" rx="10" fill="#d8e5f7"/><text x="946" y="491" style="font-size:15px;fill:#36506e">Files and tasks</text>
+</g>
+
+<text x="64" y="630" class="small">RESEARCH • EXPLAINED • UPDATED</text>
+<text x="1030" y="630" class="small">TECH UPDATES</text>
+</svg>

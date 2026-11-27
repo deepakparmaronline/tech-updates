@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">ChatGPT and autonomous driving AI comparison</title><desc id="d">A split scene contrasts a conversational assistant with a sensor-equipped autonomous vehicle.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#07142a"/><stop offset=".52" stop-color="#102a4b"/><stop offset="1" stop-color="#101a31"/></linearGradient>
+ <linearGradient id="left" x2="1" y2="1"><stop stop-color="#36c9ef"/><stop offset="1" stop-color="#5d64df"/></linearGradient>
+ <linearGradient id="right" x2="1" y2="1"><stop stop-color="#f8bd73"/><stop offset="1" stop-color="#db6b55"/></linearGradient>
+ <filter id="g"><feGaussianBlur stdDeviation="18" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<path d="M800 0v900" stroke="#b8d6ff" stroke-opacity=".25" stroke-width="3" stroke-dasharray="10 18"/>
+<path d="M0 0h800v900H0Z" fill="#0c2542" opacity=".75"/><path d="M800 0h800v900H800Z" fill="#1a233c" opacity=".72"/>
+<circle cx="400" cy="400" r="250" fill="#1b91cf" opacity=".11"/><circle cx="1200" cy="400" r="250" fill="#f38a56" opacity=".1"/>
+<g transform="translate(145 200)">
+ <rect width="510" height="390" rx="34" fill="#102e50" stroke="#5edcf6" stroke-width="4"/>
+ <rect x="36" y="40" width="438" height="70" rx="18" fill="url(#left)" opacity=".85"/>
+ <circle cx="75" cy="75" r="14" fill="#e4ffff"/><path d="M116 75h190" stroke="#e6fcff" stroke-width="12" stroke-linecap="round"/>
+ <rect x="42" y="145" width="310" height="82" rx="18" fill="#1a456d"/><path d="M70 177h235M70 201h170" stroke="#a6ecff" stroke-width="10" stroke-linecap="round"/>
+ <rect x="165" y="250" width="300" height="90" rx="18" fill="#292f70"/><path d="M195 284h230M195 309h165" stroke="#d4c5ff" stroke-width="10" stroke-linecap="round"/>
+ <path d="M92 375c45-40 92-40 137 0" fill="none" stroke="#61e9f6" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g transform="translate(895 430)">
+ <path d="M40 160 105 85h310l75 75 20 100H20Z" fill="#1b2d49" stroke="#f4a36d" stroke-width="5"/>
+ <path d="M130 92 180 35h165l55 57Z" fill="#2c5271" stroke="#ffcf9a" stroke-width="4"/>
+ <path d="M185 45h155l35 40H150Z" fill="#72b3c7" opacity=".65"/>
+ <circle cx="135" cy="265" r="48" fill="#08111f" stroke="#f7c58c" stroke-width="9"/><circle cx="410" cy="265" r="48" fill="#08111f" stroke="#f7c58c" stroke-width="9"/>
+ <path d="M255 30v-60M235 -30h40" stroke="#ffdb9d" stroke-width="8" stroke-linecap="round"/>
+ <path d="M255 -60 170 -135M255 -60 340 -135M255 -60 90 -160M255 -60 420 -160" stroke="#f9ad72" stroke-width="4" stroke-dasharray="8 12" opacity=".8"/>
+</g>
+<g fill="none" stroke="#55dff0" stroke-width="4" opacity=".8">
+ <path d="M280 660c70-110 160-160 260-150"/><path d="M280 660c80 70 170 90 260 70"/>
+ <path d="M980 300c90-120 180-150 270-130"/><path d="M980 300c120 80 210 90 300 60"/>
+</g>
+<g fill="#e7f9ff"><circle cx="280" cy="660" r="10"/><circle cx="540" cy="510" r="10"/><circle cx="540" cy="730" r="10"/></g>
+<g fill="#ffd7b2"><circle cx="980" cy="300" r="10"/><circle cx="1250" cy="170" r="10"/><circle cx="1280" cy="360" r="10"/></g>
+<path d="M800 380c-25-25-70-10-70 25 0 35 70 85 70 85s70-50 70-85c0-35-45-50-70-25Z" fill="#f6c17b" opacity=".8" filter="url(#g)"/>
+</svg>
