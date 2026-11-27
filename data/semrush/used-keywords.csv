@@ -164,3 +164,8 @@ used_on,article_slug,category,canonical_topic,primary_keyword,source_queue
 2026-11-26,how-to-make-a-website-with-claude,Claude,,how to make website with claude,data/semrush/queues/claude.csv
 2026-11-26,can-gemini-generate-multiple-images-at-once,Gemini,,can gemini generate multiple images at once,data/semrush/queues/gemini.csv
 2026-11-26,how-does-perplexity-ai-make-money,Perplexity,,how does perplexity ai make money,data/semrush/queues/perplexity.csv
+2026-11-27,grpc-alternatives,Alternatives,grpc,alternatives to grpc,data/semrush/queues/alternatives.csv
+2026-11-27,how-to-ask-chatgpt-to-edit-a-photo,ChatGPT,,how to ask chatgpt to edit a photo,data/semrush/queues/chatgpt.csv
+2026-11-27,can-claude-read-pptx,Claude,,can claude read pptx,data/semrush/queues/claude.csv
+2026-11-27,how-to-integrate-gemini-in-a-website,Gemini,,how to incorporate gemini in a website,data/semrush/queues/gemini.csv
+2026-11-27,how-to-get-free-perplexity-pro,Perplexity,,how to get free perplexity pro,data/semrush/queues/perplexity.csv
