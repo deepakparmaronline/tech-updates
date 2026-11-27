@@ -148,7 +148,7 @@ If the output changes a detail that matters, ask for a correction and identify i
 
 A prompt cannot guarantee pixel-perfect preservation. The selection tool is a guide, not a mask that locks every pixel outside the selected area. A request to keep a face, logo or product label unchanged can improve the instruction, but it cannot guarantee that every small detail will remain identical.
 
-ChatGPT is also not the best final tool when an exact label, serial number, legal mark or precise brand asset must remain unchanged. Use a standard editor to restore exact details from the original file when accuracy matters. Do not treat a generated edit as proof that the original scene looked that way.
+ChatGPT is also not the best final tool when an exact label, serial number, legal mark or precise brand asset must remain unchanged. Use a standard editor to restore exact details from the original file when accuracy matters. Do not treat a generated edit as proof that the original scene looked that way. If the image is a record, contract, identity document or evidence, keep the untouched original as the source of truth and label any edited copy clearly.
 
 ## Safety and Limitations
 
