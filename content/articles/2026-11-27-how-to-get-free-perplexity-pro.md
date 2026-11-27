@@ -42,7 +42,7 @@ You cannot activate a permanent free Perplexity Pro plan from the normal subscri
 
 The official [Perplexity subscription guide](https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you) explains the available plans and the rules for promotional subscriptions. It says a valid credit or debit card is required for trials and promotions. Unless you cancel before the trial ends, the plan renews at the standard monthly or annual rate selected during redemption.
 
-## Understand the Free Standard Plan First
+## What the Question Really Means
 
 Perplexity's Standard plan is free. It includes search history, basic searches, a limited amount of Pro Search, basic file uploads and model selection by Perplexity. The plan does not include the full set of advanced models, image generation or premium support that Pro offers.
 
@@ -50,7 +50,7 @@ For light research, quick answers and occasional follow-up questions, Standard m
 
 The main difference is access and limits, not whether the free plan can answer questions. Standard can still be useful, but it has fewer advanced searches and file features. Check the current plan comparison before paying because feature limits can change.
 
-## Check Whether Your Account Has a Trial
+## How It Works
 
 Perplexity's plan guide includes a section for trial and promotional subscriptions. It says a valid payment method is required to activate and maintain promotional access. The card is not charged during the trial period, but the subscription renews at the normal rate unless you cancel before the end date.
 
@@ -80,7 +80,7 @@ If you already redeemed the offer, the help page still provides recovery steps f
 
 This is an important check before following a free Pro tutorial. Look at the date and the official promotion page first. A guide that was correct in 2025 can be wrong in November 2026.
 
-## How to Check a Partner Offer Safely
+## Practical Steps
 
 Use the Perplexity website or app, the official Help Center and the partner's own promotion page. Check that the offer names the exact plan you want. A discount on Enterprise, a bundle of Computer credits or a statement credit is not the same as free individual Pro access.
 
@@ -89,6 +89,14 @@ Read the renewal terms before you add a card. Check the date the trial ends, the
 Never share your Perplexity password with a seller. Avoid websites that promise lifetime Pro access, sell shared logins or ask you to install an unknown browser extension. A shared account can expose your searches, files and personal information. A fake promotion can also be a way to collect card details.
 
 If an offer appears in a partner app, confirm that the partner is named on Perplexity's official promotions page. If the promotion has expired, do not enter payment details on a page that still claims it is active.
+
+## Common Problems
+
+A common problem is following an old promotion tutorial. A video can show a real offer that has already expired. Check the current official offer page and its end date before trying to redeem a code. The Airtel offer ended in January 2026, so a saved screenshot does not make it active again.
+
+Another problem is confusing a discount with free Pro access. Education Pro is a reduced-price subscription, and a partner reward may apply only to a different plan or a qualifying purchase. Read the plan name and billing terms instead of relying on a headline.
+
+A third problem is forgetting the renewal date. A trial can become a paid subscription if you do not cancel in time. Keep the confirmation email and check the subscription page after redemption.
 
 ## Is the Free Plan Enough for Your Work?
 
@@ -99,6 +107,18 @@ Pro is more useful if you need frequent Pro Search, advanced models, more file a
 Students and educators should compare Education Pro with the normal plan. It offers the Pro feature set at a discount, but it is still a paid subscription. Businesses should check Enterprise pricing and privacy terms rather than using a personal Pro account for company data.
 
 The best plan is the lowest plan that supports your real workflow. Do not pay for features you will not use, and do not chase a promotion that has already ended.
+
+## What Does Not Work
+
+A shared account, a password sold by a third party or a so-called lifetime Pro code is not an official way to get Pro. These offers can expose your search history and uploaded files, and the account owner can change the password at any time.
+
+An expired partner link also cannot create a new free subscription. If the official promotion page says the offer has ended, use the current Standard plan or check whether a new offer is visible in your own account. Do not enter payment details on a page that cannot show the official partner terms.
+
+## Safety and Limitations
+
+Trials and promotional subscriptions can require a payment card and may renew at the standard price. Check the end date, billing period and cancellation path before you accept an offer. If you do not want a paid renewal, cancel through the official account or app store settings before the deadline.
+
+Perplexity plan features and regional offers can change. The plan guide is the source to check before paying. Education Pro requires verification and remains a paid plan, while the free Standard plan has lower limits than Pro.
 
 ## Key Takeaways
 

@@ -42,7 +42,7 @@ Claude can analyze a PPTX file through Anthropic's PowerPoint skill. Enable Code
 
 Anthropic's [PPTX skill on GitHub](https://github.com/anthropics/skills/tree/main/skills/pptx) says it is intended for any task involving a PPTX or POTX file, including reading, parsing, extracting text, editing and creating presentations. The skill includes a slide text script that can extract titles, text, tables, chart data, image alt text and speaker notes.
 
-## Why the Upload Answer Can Look Confusing
+## What the Question Really Means
 
 Anthropic's [Upload files to Claude guide](https://support.claude.com/en/articles/8241126-upload-files-to-claude) lists supported document formats such as PDF, DOCX, CSV, TXT, HTML, ODT, RTF, EPUB, JSON and XLSX. PPTX is not listed in that standard list.
 
@@ -50,7 +50,7 @@ At the same time, Anthropic provides a PowerPoint skill that can work with PPTX 
 
 The difference is between a normal file upload path and a skill-enabled workflow. If your file picker accepts the presentation and the skill is enabled, Claude can process it. If your account rejects the extension, do not assume the feature is broken for every user. Check the capability and skill settings first, then use the PDF fallback if the direct route is not available.
 
-## Enable the PowerPoint Skill
+## Practical Steps
 
 For an individual Free, Pro, Max or Ultra account, Anthropic's current instructions are:
 
@@ -67,7 +67,7 @@ For Team accounts, the organization must allow code execution and skills. For En
 
 Claude Code can also use skills that are enabled or synced from the same Claude account. The official help page says skills are available in Claude Code as well as Claude chat, with some setup requirements. The workflow may differ from the web app, so check the skill instructions for the environment you use.
 
-## Upload a Deck and Ask for the Right Analysis
+## How It Works
 
 Once the capability is available, start with a specific task. Do not only write "read this PowerPoint." Tell Claude what output you need and how much detail to include.
 
@@ -89,7 +89,7 @@ Ask Claude to separate facts from interpretation. For example, it can list what 
 
 For a deck with many slides, process it in sections. Ask for slides 1 to 10 first, then the next group. This makes it easier to find mistakes and reduces the chance that a long answer skips a slide. Keep the slide numbers in the output so you can return to the original presentation.
 
-## If Claude Does Not Accept the PPTX File
+## Common Problems
 
 Use a PDF export as the first fallback. In PowerPoint, export or save the presentation as a PDF. In Google Slides, download the presentation as a PDF. Upload the PDF and ask Claude to analyze the pages in order.
 
@@ -99,7 +99,13 @@ A PDF is useful when the visual appearance of slides matters. If you only need t
 
 Avoid random online converters for confidential presentations. Use PowerPoint, Google Slides or an approved desktop tool. If you use a company deck, follow your organization's rules for moving files into an AI assistant.
 
-## Limits and Things to Check
+## What Does Not Work
+
+The PowerPoint skill does not make every slide detail certain. A text extraction can miss a small label, a chart can be interpreted incorrectly, and a visual layout can carry meaning that is not present in the extracted text. A generated summary is not a substitute for checking the original slide when a number or claim matters.
+
+The standard upload page also does not list PPTX as an ordinary document type. If your account cannot pass the file to the PowerPoint skill, repeatedly dragging the same file into the chat will not fix the capability setting. Use the PDF route or a supported text format instead.
+
+## Safety and Limitations
 
 A text summary cannot guarantee that every visual detail is correct. Small labels, complex diagrams, dense charts and embedded objects may need a human check. Ask Claude to identify which slides it could not interpret confidently.
 

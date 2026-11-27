@@ -45,7 +45,7 @@ The company says the feature extends its agent observability technology and Cond
 
 The announcement is a product capability update, not a confirmed public launch. Railtown says it expects to make the feature available soon. It has not announced a release date, price or independent benchmark results.
 
-## What Railtown Announced
+## What Happened
 
 The new capability is designed to evaluate alternative models against workloads that an AI agent has already handled. Instead of choosing a model only from a public leaderboard, a development team can use historical execution data from its own application.
 
@@ -55,7 +55,7 @@ Railtown says its evaluation technology extends its agent observability platform
 
 The practical goal is to help a team answer a question: can a different model or deployment option complete this task at an acceptable quality level? If the answer is yes, the team may be able to lower inference cost, reduce external calls or move some work closer to the device.
 
-## Why Real Agent Runs Can Be More Useful Than a General Benchmark
+## Why It Matters
 
 A general benchmark can help narrow down a model list, but it does not always reflect the task a company runs in production. An internal support agent, for example, may need to search a knowledge base, call an order system, follow access rules and produce a structured response. A coding agent may need to inspect files, run tests and correct errors.
 
@@ -65,7 +65,7 @@ Historical traces also help teams compare models on the same task. A developer c
 
 There are limits. A historical trace may contain sensitive data, outdated tool responses or a narrow sample of user behavior. Teams should remove personal information where possible, select a representative test set and check the same evaluation rules across models. The evaluation result is only as good as the data and scoring method behind it.
 
-## Which Model Options Railtown Says It Will Support
+## Key Details
 
 Railtown's release describes several model categories.
 
@@ -79,7 +79,7 @@ Railtown's release describes several model categories.
 
 The announcement does not name every model that will be supported. It describes the types of model and hosting options the company expects to compare at launch.
 
-## Why On-Device and Private Models Matter
+## Who Is Affected
 
 Not every agent task needs the largest cloud model. A short classification, a basic summary or a simple text transformation may be handled by a smaller model if it meets the required quality level. Moving that task to an on-device model can reduce external API calls and may allow the feature to work offline when the device and model support it.
 
@@ -99,7 +99,7 @@ Use the same test data and scoring rules across the models being compared. Keep 
 
 A small test set is useful for early exploration, but production decisions need enough examples to cover normal and edge cases. Include tasks that are common, difficult and safety-sensitive. Review failures manually rather than relying only on an aggregate score.
 
-## What Is Not Known Yet
+## What We Know and Do Not Know
 
 Railtown has not published a public launch date for the evaluation capability. The company says it expects to make the feature available soon and plans to publish a technical blog showing how to use it.
 
@@ -109,7 +109,7 @@ The company also has not published a measured cost reduction. Its announcement s
 
 Developers should wait for the technical guide and product availability before making procurement or architecture decisions based on the new feature. A model evaluation tool can support a decision, but it cannot replace application testing and security review.
 
-## What Comes Next
+## What Happens Next
 
 The next update to watch is Railtown's technical blog and release announcement. It should explain how to connect agent traces, choose evaluation tasks, compare outputs and review results. Pricing and supported model lists will also help developers understand whether the tool fits their stack.
 

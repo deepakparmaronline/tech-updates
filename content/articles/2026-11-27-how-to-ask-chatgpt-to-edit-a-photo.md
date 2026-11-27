@@ -44,7 +44,7 @@ If the change is limited to one part of the image, open the editor and use its s
 
 Do not start with a long list of unrelated changes. Ask for one main edit, check the result and then make a second request if needed. This makes it easier to see which instruction worked and which one caused an unwanted change.
 
-## Before You Start
+## What the Question Really Means
 
 Use a clear version of the photo. A small, blurry or heavily compressed image gives the model less detail to work with. If you have a larger original, upload that instead of a screenshot of the photo inside another app.
 
@@ -54,7 +54,7 @@ Decide what must not change. For a portrait, that might be the person's face, ha
 
 If the photo belongs to someone else, make sure you have permission to edit and use it. Avoid uploading private documents, identity cards or sensitive images when they are not needed for the task.
 
-## How to Edit a Photo in ChatGPT
+## Practical Steps
 
 1. Open ChatGPT on the web or in the mobile app.
 2. Select the plus button in the message box and choose the option to add a photo or file.
@@ -68,7 +68,7 @@ You can also open Images in the sidebar and work from an image there. The curren
 
 The exact controls can differ by platform and rollout. If you do not see a selection or comment tool, describe the edit in the message box. The feature may also depend on workspace permissions in Enterprise or Edu accounts.
 
-## A Simple Formula for Better Photo Editing Prompts
+## How It Works
 
 Use this structure:
 
@@ -130,7 +130,7 @@ Work in small steps. If you ask for a new background, new clothing, a different 
 
 If the output changes a detail that matters, ask for a correction and identify it. "Restore the original logo on the bottle" is more useful than "try again." Keep the original image available so you can compare versions.
 
-## Common Problems and How to Fix Them
+## Common Problems
 
 **The model changes the face.** Ask it to keep the face and expression unchanged, and limit the edit to a different part of the image. If the face still changes, start a new edit from the original photo rather than continuing from a version that has already drifted.
 
@@ -144,7 +144,13 @@ If the output changes a detail that matters, ask for a correction and identify i
 
 **The edit does not match the original colors.** Name the color you want and compare it with the original. If the exact shade matters, provide a reference color or use a standard editing tool for the final adjustment.
 
-## Limits, Access and Privacy
+## What Does Not Work
+
+A prompt cannot guarantee pixel-perfect preservation. The selection tool is a guide, not a mask that locks every pixel outside the selected area. A request to keep a face, logo or product label unchanged can improve the instruction, but it cannot guarantee that every small detail will remain identical.
+
+ChatGPT is also not the best final tool when an exact label, serial number, legal mark or precise brand asset must remain unchanged. Use a standard editor to restore exact details from the original file when accuracy matters. Do not treat a generated edit as proof that the original scene looked that way.
+
+## Safety and Limitations
 
 ChatGPT Images is available on supported plans and platforms, but the number of images you can create depends on your plan. Enterprise and Edu workspace access can also depend on administrator permissions. If the editor is missing, check whether the feature is available in your account and workspace.
 

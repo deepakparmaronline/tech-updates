@@ -42,7 +42,13 @@ Create a Gemini API key in Google AI Studio, install Google's @google/genai pack
 
 Google's official [JavaScript SDK repository](https://github.com/googleapis/js-genai) provides the current package, quickstart and model examples. It also warns developers not to expose API keys in client-side code. Google Cloud's [API key security guide](https://cloud.google.com/docs/authentication/api-keys-best-practices) says keys should not be placed in client code or committed to repositories.
 
-## How the Website Integration Works
+## What the Question Really Means
+
+Adding Gemini to a website usually means adding a feature that sends a visitor's request to your own backend, then calls the Gemini API from that backend. It is not the same as embedding a public chat page or copying an API key into a JavaScript file. Your website owns the user interface, access rules and response handling.
+
+The safest design keeps the provider key on the server. The browser should know only your own endpoint, such as /api/gemini. This lets you authenticate users, apply usage limits and change models without exposing a secret to every visitor.
+
+## How It Works
 
 A safe website integration has three parts.
 
@@ -62,7 +68,11 @@ You also need to decide which API service fits your project. The Gemini Develope
 
 The services can have different models, quotas and pricing. Read the current documentation before choosing one for production. Do not copy a model name from an old tutorial without checking that it is still available to your account.
 
-## Step 1: Create a Gemini API Key
+## Practical Steps
+
+The practical sequence is to create a key, install the official SDK, add a server route, call that route from the browser and then add production controls. The next steps show each part. Keep the key out of the browser from the first commit.
+
+### Step 1: Create a Gemini API Key
 
 Open [Google AI Studio](https://aistudio.google.com/) and create an API key for the project you will use. Keep the key private. Do not paste it into a public GitHub repository, a client-side script or a screenshot.
 
@@ -72,7 +82,7 @@ For production, add the key through your hosting provider's environment variable
 
 Do not name the variable NEXT_PUBLIC_GEMINI_API_KEY. In Next.js, variables with the NEXT_PUBLIC_ prefix are designed to be exposed to browser code. A Gemini key should not be exposed that way.
 
-## Step 2: Install the Current JavaScript SDK
+### Step 2: Install the Current JavaScript SDK
 
 Install the official package in the server project:
 
@@ -84,7 +94,7 @@ The current SDK uses the GoogleGenAI client. The official repository shows a ser
 
 If your host only supports Node.js 20, check the SDK version before installing. The current version 3 requires Node.js 22 or later. You can either move the project to a supported Node version or pin a compatible earlier SDK version after checking its documentation. Do not ignore the engine requirement without testing the application.
 
-## Step 3: Add a Server-Side API Route
+### Step 3: Add a Server-Side API Route
 
 In a Next.js App Router project, create a route such as app/api/gemini/route.ts. The example below validates the prompt, calls Gemini on the server and returns a JSON response.
 
@@ -132,7 +142,7 @@ The model name in the sample follows the current Google Gen AI SDK quickstart at
 
 The example is a starting point, not a complete production system. Add authentication if the feature is for signed-in users. Add rate limiting so one visitor cannot use the entire API quota. Add request timeouts and a maximum output length. Log request IDs and error types, but do not store sensitive user prompts unless your privacy policy and product design allow it.
 
-## Step 4: Call Your Route From the Browser
+### Step 4: Call Your Route From the Browser
 
 The front end only needs to send a request to your own endpoint. It does not import the SDK or read the API key.
 
@@ -154,7 +164,7 @@ Show a loading state while the request is running. Disable the submit button to 
 
 For a static website, the front end can call a serverless function instead of a Next.js route. The important point is the same: the function stores the key and calls Gemini. A static HTML file cannot keep a long-lived secret safe after it is sent to the browser.
 
-## Step 5: Protect the API Key and Your Budget
+### Step 5: Protect the API Key and Your Budget
 
 Google's API key guidance recommends restricting keys, avoiding client-side exposure, deleting keys you no longer need, monitoring usage and rotating keys periodically. Treat a Gemini key like a password that can create usage charges.
 
@@ -164,7 +174,7 @@ Add a rate limit by user, IP address or account. The right limit depends on your
 
 Set a budget alert or usage alert in the platform you use. Review the model, input size and output size because long prompts and long responses can increase cost. Cache results only when the response can safely be reused and the data is not private or user-specific.
 
-## Step 6: Choose a Model for the Job
+### Step 6: Choose a Model for the Job
 
 Do not select a model only because it has the newest name. Start with the task. A short FAQ answer, a classification label, a long document summary and a multi-step agent task have different needs.
 
@@ -182,7 +192,7 @@ Add monitoring for request count, error rate, latency and approximate usage. Kee
 
 Finally, test the feature on the hosting environment, not only on your laptop. Node version, environment variables, request timeouts and serverless limits can differ between local and production environments.
 
-## Common Integration Mistakes
+## Common Problems
 
 The most serious mistake is putting the API key in front-end code. A key in a React component, public JavaScript bundle or NEXT_PUBLIC_ variable can be copied by anyone who visits the site.
 
@@ -191,6 +201,18 @@ Another mistake is using an old SDK because a tutorial still ranks in search. Go
 Do not let every visitor send unlimited requests. A public AI endpoint needs authentication, rate limits, usage monitoring and clear error handling. Without those controls, one script can consume the available quota.
 
 Do not assume a model response is safe to publish. Validate output before using it in a page, email or workflow. If the model can call tools or access customer data, add authorization checks in your own server code. The model should not decide whether a user is allowed to access a record.
+
+## What Does Not Work
+
+Putting a long-lived Gemini key in a React component, public JavaScript bundle or NEXT_PUBLIC_ environment variable does not keep it secret. Visitors can inspect the page and copy the key. A static site also cannot safely store a private key in the files it sends to a browser.
+
+Using a deprecated SDK because an old tutorial still appears in search is another weak starting point. Do not assume that an example for an earlier package or model name will work with the current SDK. Check the official package and model documentation before copying code into production.
+
+## Safety and Limitations
+
+Gemini responses can be wrong, incomplete or unsafe for a specific workflow. Validate output before using it to update customer records, publish content or trigger another system. Keep authorization decisions in your own server code rather than asking the model whether a visitor is allowed to access data.
+
+Your usage limits and costs depend on the model, prompt size, output size and request volume. Add rate limits, budget alerts and monitoring before making the endpoint public. Do not log sensitive prompts unless your privacy policy and product design allow it.
 
 ## Key Takeaways
 

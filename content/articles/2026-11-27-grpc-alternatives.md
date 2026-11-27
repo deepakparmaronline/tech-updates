@@ -37,7 +37,7 @@ gRPC is a strong choice for service-to-service communication, but it is not the 
 
 The four options below cover different needs: REST for broad HTTP access, GraphQL for flexible client queries, Connect for typed RPC with familiar HTTP behavior, and Apache Thrift for cross-language RPC systems.
 
-## Short Answer
+## Quick Answer
 
 Choose REST when you need a simple public API that works with browsers, command-line tools and common HTTP clients. Choose GraphQL when several clients need different shapes of related data. Choose Connect when you like Protocol Buffers and generated clients but want a more flexible HTTP experience. Choose Apache Thrift when you need an interface definition language and generated code across several languages and transports.
 
@@ -63,7 +63,19 @@ Public APIs bring another set of needs. Developers expect examples they can run 
 
 Finally, a team may want to reuse existing skills. If the company already has REST gateways, OpenAPI contracts and monitoring for HTTP endpoints, moving every service to gRPC may add work without improving the product.
 
-## The Main Options at a Glance
+## How We Chose These Alternatives
+
+The options were selected because they solve different problems that often lead teams to reconsider gRPC. The comparison focuses on browser access, data shape, type safety, streaming, language support and operational effort. It does not rank them by a single speed score because performance depends on the workload and deployment.
+
+A useful alternative should have active documentation, a clear protocol model and tools that fit the languages your team uses. It should also solve a real constraint. If gRPC already meets your needs, a migration only makes sense when it improves the client experience, developer workflow or operating cost.
+
+## Best Alternatives
+
+REST, GraphQL, Connect and Apache Thrift are the four options worth comparing first. REST is the broadest choice for public HTTP APIs. GraphQL suits clients that need different data shapes. Connect is closest to typed RPC with Protocol Buffers. Thrift is relevant when a system needs its IDL and multi-language transports.
+
+The next sections explain where each option fits and where its trade-offs begin.
+
+## Comparison Table
 
 | Option | Main idea | Good fit |
 |---|---|---|
@@ -118,7 +130,7 @@ Thrift offers a range of protocols and transports. That flexibility can be usefu
 
 Thrift is not automatically a simpler choice than gRPC. If your team has no existing Thrift services, the ecosystem and operational setup may take time to learn. It is most attractive when the organization already has Thrift contracts or needs its particular language and transport options.
 
-## How to Choose the Right Alternative
+## How to Choose
 
 Start with the clients. If most calls come from browsers, public SDKs or simple scripts, REST is usually a safe first choice. If clients need different views of connected data, evaluate GraphQL. If the team wants typed RPC with Protocol Buffers and browser support, test Connect. If the company already uses Thrift across several languages, staying with Thrift may reduce migration work.
 
@@ -138,7 +150,7 @@ Add contract tests before changing the transport. Test valid requests, invalid i
 
 Track the rollout. Compare latency, error rate, infrastructure cost and support tickets. Keep a rollback path until the new API has handled real production traffic for long enough to build confidence.
 
-## Common Mistakes to Avoid
+## What to Avoid
 
 Do not choose a protocol because it is popular in a benchmark. A public API and a private service mesh have different needs. Do not assume GraphQL removes the need for caching or authorization. Do not assume REST means an untyped API; OpenAPI and generated clients can provide strong contracts. Do not assume Connect removes the need to test browser behavior and proxies.
 

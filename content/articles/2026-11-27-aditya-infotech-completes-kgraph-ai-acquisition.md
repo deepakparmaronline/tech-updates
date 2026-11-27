@@ -43,7 +43,7 @@ Aditya Infotech's exchange filing says it completed the acquisition of 30% of KG
 
 The stated purpose is to connect KGraph's AI-based video analytics with the video surveillance products Aditya Infotech markets under the CP PLUS brand. KGraph's main product is BLUE, an enterprise video analytics platform. The company says KGraph's software covers compliance, automation, safety, monitoring and regulatory reporting for industrial and commercial sectors.
 
-## What Happened on November 27
+## What Happened
 
 The filing is an update to an earlier announcement dated November 5, 2026. Aditya Infotech had already told the exchanges about the proposed transaction. The November 27 filing confirms that the purchase has now been completed.
 
@@ -51,7 +51,7 @@ The company acquired 5,798 securities out of KGraph's 19,325 securities on a ful
 
 The filing says KGraph has become an associate company of Aditya Infotech. That is different from saying Aditya Infotech owns or controls all of KGraph. The disclosed holding is a minority stake, and the company has not described the transaction as a full takeover.
 
-## Why the Investment Is Connected to AI Video Analytics
+## Why It Matters
 
 The investment is designed around a product connection. KGraph's BLUE platform analyses video for enterprise use cases. Aditya Infotech sells surveillance products under the CP PLUS brand. The company says the planned collaboration will bring KGraph's AI video analytics into that product ecosystem.
 
@@ -61,7 +61,7 @@ The quality of a video analytics system depends on the cameras, lighting, networ
 
 The exchange filing does not say that the integration is already available in every CP PLUS product. It describes a strategic investment intended to establish collaboration. There is no disclosed launch date, customer list, revenue target or performance result for the combined offering.
 
-## What KGraph AI Solutions Does
+## Key Details
 
 KGraph AI Solutions is an India-based private company incorporated on August 16, 2023. The filing identifies its industry as Information Technology and Artificial Intelligence. Its principal product is BLUE, an enterprise video analytics platform.
 
@@ -71,7 +71,7 @@ The disclosed turnover figures are small compared with the purchase price, so it
 
 The 30% stake is therefore a strategic investment in a business that Aditya Infotech believes can complement its surveillance products. The value of that collaboration will depend on future product work, customer adoption and execution.
 
-## What the Deal Means for CP PLUS Products
+## Who Is Affected
 
 Aditya Infotech says the investment is intended to integrate KGraph's AI-based video analytics with CP PLUS surveillance products. If the integration moves forward, customers could see more software features connected to camera systems, such as event detection, alerts and monitoring workflows.
 
@@ -81,7 +81,7 @@ A customer should not assume that every existing CP PLUS camera will automatical
 
 The potential benefit is a closer connection between hardware and analytics software. The risk is that the value depends on reliable detection, manageable false alerts, clear privacy rules and long-term support. A camera that generates too many false alarms can create more work instead of saving time.
 
-## What the Filing Says About the Transaction
+## What We Know and Do Not Know
 
 Aditya Infotech says the purchase was made for cash and the amount was arrived at on the basis of a valuation report from a registered valuer. The company says the transaction is not a related-party transaction and that its promoters, promoter group and group companies do not have an interest in KGraph.
 
@@ -89,7 +89,7 @@ The filing also says no governmental or regulatory approvals were required. It c
 
 The filing is useful because it gives the stake percentage, consideration, securities acquired and basic financial details of KGraph. It does not explain the valuation methodology or provide a forward-looking financial estimate for the collaboration. Readers should avoid turning the purchase amount into an implied revenue forecast.
 
-## What to Watch Next
+## What Happens Next
 
 The next meaningful updates would be a product integration announcement, a customer deployment, a pricing model or a disclosed commercial target. A demonstration that shows how BLUE works with CP PLUS hardware would help customers understand the actual use cases.
 
